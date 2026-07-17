@@ -2,7 +2,7 @@
 Official corporate website for Jopetnah International Limited — Empowering Businesses Worldwide through integrated solutions across 16+ strategic industries.
 <p align="center">
 
-<!-- file:///C:/Users/carlo/Downloads/Jopetnah%20International%20Limited_LOGO.png -->
+<!-- C:\Users\carlo\Downloads\Jopetnah International Limited_LOGO.png -->
 <img src="assets/images/logo.png" alt="Jopetnah International Limited Logo" width="180">
 
 </p>
