@@ -1461,8 +1461,11 @@ Jopetnah International Limited welcomes strategic partnerships with organization
 Potential partners include:
 
 - Governments
+- MDAs
 - Development Partners
 - NGOs
+- SMEs
+- Business & Non-Business Comunities
 - Universities
 - Research Institutions
 - Investors
