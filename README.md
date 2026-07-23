@@ -13,7 +13,7 @@ Official corporate site for Jopetnah International Limited — Empowering Busine
 
 <p align="center">
 
-Official Corporate Website Repository
+Official Corporate site Repository
 
 </p>
 
