@@ -36,9 +36,6 @@ Official Corporate site Repository
 ![License](https://img.shields.io/badge/Copyright-All%20Rights%20Reserved-darkred?style=for-the-badge)
 
 </p>
-# Executive Summary — Text to Paste Into README.md
-
-Paste this near the top of the README, right after the logo/badges and before the "Welcome" section. It's designed to let a busy partner or donor understand who you are within about 30 seconds, per the recommendation to add a concise overview before the longer detailed sections.
 
 ---
 
@@ -58,7 +55,6 @@ Paste this near the top of the README, right after the logo/badges and before th
 
 # 🌍 Welcome
 
-[README_EXECUTIVE_SUMMARY_INSERT.md](https://github.com/user-attachments/files/30386963/README_EXECUTIVE_SUMMARY_INSERT.md)
 Welcome to the official GitHub repository of **Jopetnah International Limited**, a diversified international conglomerate and social enterprise delivering integrated, innovative, and sustainable business solutions across **sixteen strategic sectors**.
 
 Established in **2016** and headquartered in **Kampala, Uganda**, Jopetnah International Limited partners with governments, development organizations, corporations, NGOs, investors, institutions, and communities to transform challenges into opportunities through strategic thinking, technical excellence, innovation, and responsible business practices.
