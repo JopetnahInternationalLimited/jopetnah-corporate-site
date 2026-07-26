@@ -1,0 +1,26 @@
+{
+  "name": "Jopetnah International Limited",
+  "short_name": "Jopetnah",
+  "description": "Empowering Businesses, Worldwide. A diversified international conglomerate delivering integrated solutions across 16 strategic sectors.",
+  "start_url": "/jopetnah-corporate-site/index.html",
+  "scope": "/jopetnah-corporate-site/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0E86D4",
+  "background_color": "#FFFFFF",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
