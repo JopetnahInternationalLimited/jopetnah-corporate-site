@@ -36,11 +36,29 @@ Official Corporate site Repository
 ![License](https://img.shields.io/badge/Copyright-All%20Rights%20Reserved-darkred?style=for-the-badge)
 
 </p>
+# Executive Summary — Text to Paste Into README.md
+
+Paste this near the top of the README, right after the logo/badges and before the "Welcome" section. It's designed to let a busy partner or donor understand who you are within about 30 seconds, per the recommendation to add a concise overview before the longer detailed sections.
+
+---
+
+## Executive Summary
+
+**Who we are:** Jopetnah International Limited is a diversified international conglomerate and social enterprise headquartered in Kampala, Uganda, established in 2016.
+
+**What we do:** We deliver integrated solutions across 16 strategic sectors — spanning business advisory, engineering, technology, healthcare, agriculture, energy, education, tourism, logistics, and more — so clients can access multiple professional services through a single trusted partner instead of managing separate vendors for each need.
+
+**Where we operate:** 9 branch offices across Uganda, with a growing international business network spanning 20+ countries across Africa, the Middle East, Asia-Pacific, Europe, and the Americas.
+
+**Who we serve:** Governments, development partners, NGOs, universities, corporations, SMEs, and individual clients seeking reliable, integrated, and future-focused solutions.
+
+**Why partner with us:** Our integrated delivery model reduces operational complexity for clients who would otherwise need to coordinate multiple specialized providers — while our commitment to sustainability, governance, and ethical business practices (detailed further in this README) reflects an institutional maturity beyond typical single-sector service providers.
 
 ---
 
 # 🌍 Welcome
 
+[README_EXECUTIVE_SUMMARY_INSERT.md](https://github.com/user-attachments/files/30386963/README_EXECUTIVE_SUMMARY_INSERT.md)
 Welcome to the official GitHub repository of **Jopetnah International Limited**, a diversified international conglomerate and social enterprise delivering integrated, innovative, and sustainable business solutions across **sixteen strategic sectors**.
 
 Established in **2016** and headquartered in **Kampala, Uganda**, Jopetnah International Limited partners with governments, development organizations, corporations, NGOs, investors, institutions, and communities to transform challenges into opportunities through strategic thinking, technical excellence, innovation, and responsible business practices.
