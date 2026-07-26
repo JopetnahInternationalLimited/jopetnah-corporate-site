@@ -1,0 +1,42 @@
+name: Site Quality Checks
+
+# Runs automatically on every push/PR to main, plus a weekly scheduled check
+# (useful for catching links that later became broken externally, e.g. a
+# social media profile that changed its URL).
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * 1'  # every Monday at 06:00 UTC
+  workflow_dispatch:      # allows manually triggering from the Actions tab
+
+jobs:
+  html-validate:
+    name: Validate HTML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all HTML files
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        with:
+          root: .
+          css: false
+          extra: --ignore-re "Attribute .* not allowed on element .* at this point"
+
+  link-check:
+    name: Check for broken links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check internal and external links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --verbose
+            --no-progress
+            --exclude-mail
+            './**/*.html'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
