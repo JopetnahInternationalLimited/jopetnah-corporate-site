@@ -1,4 +1,19 @@
+# =============================================
+# robots.txt for Jopetnah International Limited
+# =============================================
+
 User-agent: *
 Allow: /
 
+# Disallow sensitive folders (even if they don't exist yet)
+Disallow: /assets/documents/private/
+Disallow: /policies/drafts/
+Disallow: /reports/internal/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /test/
+
+Crawl-delay: 1
+
+# Sitemap
 Sitemap: https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/sitemap.xml
