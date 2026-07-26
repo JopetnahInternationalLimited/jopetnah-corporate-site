@@ -37,6 +37,23 @@ Official Corporate site Repository
 
 </p>
 
+## Recent Enhancements & Technical Upgrades
+
+We have significantly strengthened our digital presence to better serve institutional partners, donors, governments, and clients.
+
+### Key Improvements:
+- **Advanced Impact Dashboard** featuring interactive **Chart.js** visualizations and SDG contribution tracking
+- Dark / Light mode support with user preference persistence
+- Enhanced Transparency & Governance sections
+- Updated sitemap and robots.txt
+- JSON-LD structured data implementation for better SEO
+- Professional repository health and documentation
+
+**New Pages Added:**
+- [Impact Dashboard](impact.html) – Live metrics and data visualizations
+- [Transparency Centre](transparency.html) – Official documents and compliance
+- [Governance](governance.html) – Leadership and policies
+
 ---
 
 ## Executive Summary
