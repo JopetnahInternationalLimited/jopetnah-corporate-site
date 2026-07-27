@@ -13,11 +13,12 @@
     <meta property="og:description" content="Driving positive change through responsible business practices and sustainable solutions." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/impact.html" />
+    <meta property="og:image" content="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/assets/impact-og.jpg" />
 
     <!-- External Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <style>
         :root {
@@ -25,6 +26,7 @@
             --text-color: #333333;
             --card-bg: #f8f9fa;
             --accent: #0066cc;
+            --success: #00cc99;
         }
         
         [data-theme="dark"] {
@@ -39,6 +41,7 @@
             color: var(--text-color);
             font-family: system-ui, -apple-system, sans-serif;
             margin: 0;
+            line-height: 1.6;
             transition: all 0.3s ease;
         }
 
@@ -52,44 +55,68 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 20px;
             margin-bottom: 40px;
         }
 
         .stat-card {
             background: var(--card-bg);
-            padding: 25px;
+            padding: 28px 20px;
             border-radius: 12px;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card h3 {
+            font-size: 2.4rem;
+            margin: 0 0 8px 0;
+            color: var(--accent);
         }
 
         .chart-container {
             background: var(--card-bg);
-            padding: 25px;
+            padding: 28px;
             border-radius: 12px;
             margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
 
         .toggle-btn {
-            padding: 10px 20px;
+            padding: 12px 24px;
             background: var(--accent);
             color: white;
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            font-weight: 500;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .toggle-btn:hover {
+            background: #0055aa;
+            transform: translateY(-2px);
         }
 
         #map {
-            height: 400px;
+            height: 420px;
             border-radius: 12px;
+        }
+
+        h2, h3 {
+            margin-top: 0;
         }
     </style>
 </head>
@@ -102,30 +129,43 @@
     </div>
 
     <div class="stats-grid">
-        <div class="stat-card"><h3 id="years">9</h3><p>Years Operating</p></div>
-        <div class="stat-card"><h3 id="countries">20+</h3><p>Countries Served</p></div>
-        <div class="stat-card"><h3 id="projects">150+</h3><p>Projects Completed</p></div>
-        <div class="stat-card"><h3 id="people">25000+</h3><p>Beneficiaries Impacted</p></div>
+        <div class="stat-card">
+            <h3 id="years">9</h3>
+            <p>Years Operating</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="countries">20+</h3>
+            <p>Countries Served</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="projects">150+</h3>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="people">25000+</h3>
+            <p>Beneficiaries Impacted</p>
+        </div>
     </div>
 
-    <!-- Filter -->
+    <!-- Sector Filter -->
     <div class="chart-container">
         <label><strong>Filter by Sector:</strong></label>
-        <select id="sectorFilter" style="padding:8px; margin-left:10px; border-radius:6px;">
+        <select id="sectorFilter" style="padding:10px; margin-left:12px; border-radius:6px; font-size:1rem;">
             <option value="all">All Sectors</option>
             <option value="agri">Agriculture</option>
             <option value="const">Construction</option>
             <option value="edu">Education</option>
+            <option value="energy">Renewable Energy</option>
         </select>
     </div>
 
-    <!-- Line Chart: Impact Over Years -->
+    <!-- Impact Growth Chart -->
     <div class="chart-container">
         <h3>Impact Growth Over Years</h3>
-        <canvas id="impactLineChart" height="100"></canvas>
+        <canvas id="impactLineChart" height="110"></canvas>
     </div>
 
-    <!-- Geographic Map -->
+    <!-- Geographic Footprint -->
     <div class="chart-container">
         <h3>Geographic Footprint</h3>
         <div id="map"></div>
@@ -143,20 +183,19 @@
         localStorage.setItem('theme', theme);
     }
 
-    // Initialize theme
     setTheme(localStorage.getItem('theme') || 'light');
 
     toggleBtn.addEventListener('click', () => {
-        const currentTheme = body.getAttribute('data-theme');
-        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        const current = body.getAttribute('data-theme');
+        setTheme(current === 'dark' ? 'light' : 'dark');
     });
 
     // Counter Animation
     function animateCounter(id, target, suffix = "") {
         let start = 0;
         const el = document.getElementById(id);
-        const increment = target / 30;
-        
+        const increment = target / 35;
+
         const timer = setInterval(() => {
             start += increment;
             if (start >= target) {
@@ -165,12 +204,12 @@
             } else {
                 el.textContent = Math.floor(start) + suffix;
             }
-        }, 30);
+        }, 25);
     }
 
     // Line Chart
-    const lineCtx = document.getElementById('impactLineChart');
-    new Chart(lineCtx, {
+    const ctx = document.getElementById('impactLineChart');
+    new Chart(ctx, {
         type: 'line',
         data: {
             labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026'],
@@ -179,18 +218,23 @@
                     label: 'Projects Completed',
                     data: [12, 28, 45, 67, 89, 110, 128, 142, 150],
                     borderColor: '#0066cc',
-                    tension: 0.4
+                    backgroundColor: 'rgba(0, 102, 204, 0.1)',
+                    tension: 0.4,
+                    fill: true
                 },
                 {
                     label: 'Beneficiaries Reached',
                     data: [1200, 3500, 6800, 10500, 14200, 17800, 21000, 23500, 25000],
                     borderColor: '#00cc99',
-                    tension: 0.4
+                    backgroundColor: 'rgba(0, 204, 153, 0.1)',
+                    tension: 0.4,
+                    fill: true
                 }
             ]
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: { position: 'top' }
             },
@@ -206,30 +250,34 @@
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // Sample Project Markers
     const projects = [
-        { lat: 0.3, lng: 32.5, name: "Kampala HQ - Education Project" },
-        { lat: 2.8, lng: 32.3, name: "Gulu - Agriculture Initiative" },
-        { lat: -1.2, lng: 30.1, name: "Rwanda Border - Renewable Energy" }
+        { lat: 0.3, lng: 32.5, name: "Kampala HQ - Education Project", year: "2025" },
+        { lat: 2.8, lng: 32.3, name: "Gulu - Agriculture Initiative", year: "2024" },
+        { lat: -1.2, lng: 30.1, name: "Rwanda Border - Renewable Energy", year: "2025" }
     ];
 
     projects.forEach(p => {
         L.marker([p.lat, p.lng]).addTo(map)
-         .bindPopup(`<b>${p.name}</b><br>Completed 2025`);
+         .bindPopup(`<b>${p.name}</b><br>Completed ${p.year}`);
     });
 
     // Sector Filter
     document.getElementById('sectorFilter').addEventListener('change', (e) => {
-        alert(`Filtered to: ${e.target.value.toUpperCase()} sector. (Full filtering logic can be added here)`);
+        const value = e.target.value;
+        if (value === "all") {
+            alert("Showing all sectors.");
+        } else {
+            alert(`Filtered to: ${value.toUpperCase()} sector. (Advanced filtering coming soon)`);
+        }
     });
 
-    // Initialize counters
-    window.onload = () => {
+    // Initialize counters when page loads
+    window.addEventListener('load', () => {
         animateCounter("years", 9);
         animateCounter("countries", 20, "+");
         animateCounter("projects", 150, "+");
         animateCounter("people", 25000, "+");
-    };
+    });
 </script>
 </body>
 </html>
