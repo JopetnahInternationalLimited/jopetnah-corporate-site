@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">Jopetnah International Limited</h1>
-<p align="center"><strong>Empowering Businesses, Worldwide</strong></p>
+<p align="center"><strong>Empowering Businesses Worldwide</strong></p>
 <p align="center">Official corporate website repository</p>
 
 <p align="center">
@@ -284,24 +284,24 @@ This reflects what is actually in this repository as of the last update — not 
 ```
 jopetnah-corporate-site/
 │
-├── index.html              Home
+├── index.html               Home
 ├── about.html               About Us
 ├── services.html            Our 16 Sectors (accordion)
 ├── sustainability.html      ESG / Governance / HSE / CSR
 ├── contact.html             Contact form + office locations
-├── careers.html              Coming soon (CV submission CTA)
-├── news.html                 Coming soon (social links CTA)
-├── projects.html              Coming soon (portfolio placeholder)
-├── privacy.html               Privacy Policy
-├── terms.html                  Terms of Service
-├── 404.html                     Custom error page
-├── sectors.html                Redirect → services.html (SEO alias, noindex)
-├── industries.html             Redirect → services.html (SEO alias, noindex)
+├── careers.html             Coming soon (CV submission CTA)
+├── news.html                Coming soon (social links CTA)
+├── projects.html            Coming soon (portfolio placeholder)
+├── privacy.html             Privacy Policy
+├── terms.html               Terms of Service
+├── 404.html                 Custom error page
+├── sectors.html             Redirect → services.html (SEO alias, noindex)
+├── industries.html          Redirect → services.html (SEO alias, noindex)
 │
 ├── css/
-│   └── style.css             Single shared stylesheet
+│   └── style.css            Single shared stylesheet
 ├── js/
-│   └── script.js              Mobile nav toggle + services accordion
+│   └── script.js            Mobile nav toggle + services accordion
 ├── assets/
 │   ├── icon.png                Logo mark
 │   ├── icon-192.png            Manifest icon
@@ -399,7 +399,7 @@ This repository and its contents are the proprietary property of Jopetnah Intern
 ---
 
 <p align="center">
-  <strong>Empowering Businesses, Worldwide</strong><br>
+  <strong>Empowering Businesses Worldwide</strong><br>
   Established 2016 • Kampala, Uganda
 </p>
 [README.md](https://github.com/user-attachments/files/30475336/README.md)
