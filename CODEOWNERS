@@ -1,0 +1,27 @@
+# CODEOWNERS
+#
+# This file defines who must review and approve changes to this repository.
+# It only takes effect once paired with a branch protection rule on `main`
+# that has "Require review from Code Owners" enabled (Settings -> Branches).
+#
+# IMPORTANT -- action required before this file is useful:
+# Replace the placeholder(s) below with the actual GitHub username(s) of
+# trusted maintainers (e.g. @jane-doe), not a display name or email address.
+# You can list more than one person/team per line, separated by spaces.
+#
+# Syntax reference: https://docs.github.com/articles/about-code-owners
+
+# Default: these owners are requested for review on ANY change in the repo,
+# unless a more specific rule below overrides it for a given path.
+*   @REPLACE_WITH_GITHUB_USERNAME
+
+# Optional, more granular examples -- uncomment and edit if useful later.
+# Different people can own different parts of the repo, e.g. if a
+# copywriter should review content changes but not touch site code:
+#
+# /*.html            @REPLACE_WITH_GITHUB_USERNAME
+# /css/               @REPLACE_WITH_GITHUB_USERNAME
+# /js/                @REPLACE_WITH_GITHUB_USERNAME
+# /docs/              @REPLACE_WITH_GITHUB_USERNAME
+# /.github/           @REPLACE_WITH_GITHUB_USERNAME
+# README.md           @REPLACE_WITH_GITHUB_USERNAME
