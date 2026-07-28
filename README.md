@@ -4,8 +4,8 @@
 </p>
 
 <h1 align="center">Jopetnah International Limited</h1>
-<p align="center"><strong>Empowering Businesses, Worldwide</strong></p>
-<p align="center">Official corporate website repository</p>
+<p align="center"><strong>Empowering Businesses Worldwide</strong></p>
+<p align="center">Official repository for the corporate website and digital presence of Jopetnah International Limited</p>
 
 <p align="center"><img src="https://img.shields.io/badge/Website-www.jopetnah.com-blue?style=for-the-badge" alt="Website"> <img src="https://img.shields.io/badge/Hosted%20On-GitHub%20Pages-black?style=for-the-badge" alt="GitHub Pages"> <img src="https://img.shields.io/badge/Strategic%20Sectors-16-orange?style=for-the-badge" alt="16 Strategic Sectors"> <img src="https://img.shields.io/badge/Established-2016-darkgreen?style=for-the-badge" alt="Established 2016"> <img src="https://img.shields.io/badge/Headquarters-Kampala%2C%20Uganda-lightgrey?style=for-the-badge" alt="Headquarters"> <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-darkred?style=for-the-badge" alt="License"></p>
 
