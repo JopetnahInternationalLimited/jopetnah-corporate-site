@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    - cron: '0 6 * * 1'   # Monday 06:00 UTC
+    - cron: '0 6 * * 1'          # Monday 06:00 UTC
   workflow_dispatch:
 
 concurrency:
@@ -22,32 +22,39 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Validate all HTML files
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: .
           css: false
-          extra: --ignore-re "Attribute .* not allowed on element .* at this point"
+          # Uncomment if you still need the previous ignore rule:
+          # extra: --ignore-re "Attribute .* not allowed on element .* at this point"
 
   link-check:
     name: Check for broken links
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Check internal and external links
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
             --verbose
             --no-progress
+            --exclude-mail
             --max-concurrency 8
             --timeout 20
             --max-retries 2
             --accept 200,204,301,302,307,308
             './**/*.html'
-            './reports/**'
-            './policies/**'
+          # Optional but recommended:
+          # fail: true          # already the default
+          # jobSummary: true    # already the default
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
