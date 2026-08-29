@@ -42,7 +42,6 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --exclude-mail
             --max-concurrency 8
             --timeout 20
             --max-retries 2
