@@ -1,0 +1,27 @@
+#############################
+# Lychee configuration
+# Docs: https://lychee.cli.rs
+#############################
+
+accept = ["200", "204", "301", "302", "307", "308"]
+exclude_mail = true
+max_concurrency = 8
+timeout = 20
+max_retries = 2
+
+# ---------------------------------------------------------------
+# EXCLUSIONS
+# ---------------------------------------------------------------
+
+exclude = [
+  # Custom domain – still not live.
+  # REMOVE this pattern once www.jopetnah.com points to GitHub Pages and returns 200.
+  '^https?://(www\.)?jopetnah\.com',
+
+  # Optional: uncomment if these platforms start rate-limiting or blocking CI
+  # '^https://www\.facebook\.com',
+  # '^https://www\.instagram\.com',
+  # '^https://www\.tiktok\.com',
+  # '^https://x\.com',
+  # '^https://twitter\.com',
+]
