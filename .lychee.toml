@@ -8,23 +8,14 @@ max_concurrency = 8
 timeout = 20
 max_retries = 2
 
-# Mail links are excluded by default.
-# Only set the line below to true if you ever want to check mailto: links.
+# Mail is excluded by default; only set true if you want to check mailto: links
 include_mail = false
 
-# ---------------------------------------------------------------
-# EXCLUSIONS
-# ---------------------------------------------------------------
-
 exclude = [
-  # Custom domain – still not live.
-  # REMOVE this pattern once www.jopetnah.com is live and returns 200.
+  # Custom domain – remove once www.jopetnah.com is live and returns 200
   '^https?://(www\.)?jopetnah\.com',
 
-  # Optional: uncomment if these platforms start rate-limiting CI
-  # '^https://www\.facebook\.com',
-  # '^https://www\.instagram\.com',
-  # '^https://www\.tiktok\.com',
-  # '^https://x\.com',
-  # '^https://twitter\.com',
+  # X/Twitter returns 403 to CI runners
+  '^https://x\.com',
+  '^https://twitter\.com',
 ]
