@@ -30,8 +30,6 @@ jobs:
         with:
           root: .
           css: false
-          # Uncomment if you still need the previous ignore rule:
-          # extra: --ignore-re "Attribute .* not allowed on element .* at this point"
 
   link-check:
     name: Check for broken links
@@ -44,21 +42,10 @@ jobs:
       - name: Check internal and external links (HTML + Markdown)
         uses: lycheeverse/lychee-action@v2
         with:
-          # ---------------------------------------------------------------
-          # fail: true  → job turns red on broken links (recommended for PRs)
-          # fail: false → report-only mode (useful while cleaning up links)
-          # ---------------------------------------------------------------
           fail: true
-
-          # jobSummary: true is the default – results appear in the Actions UI
           args: >-
             --verbose
             --no-progress
-            --exclude-mail
-            --max-concurrency 8
-            --timeout 20
-            --max-retries 2
-            --accept 200,204,301,302,307,308
             --config .lychee.toml
             './**/*.html'
             './**/*.md'
