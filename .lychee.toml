@@ -4,10 +4,13 @@
 #############################
 
 accept = ["200", "204", "301", "302", "307", "308"]
-exclude_mail = true
 max_concurrency = 8
 timeout = 20
 max_retries = 2
+
+# Mail links are excluded by default.
+# Only set the line below to true if you ever want to check mailto: links.
+include_mail = false
 
 # ---------------------------------------------------------------
 # EXCLUSIONS
@@ -15,10 +18,10 @@ max_retries = 2
 
 exclude = [
   # Custom domain – still not live.
-  # REMOVE this pattern once www.jopetnah.com points to GitHub Pages and returns 200.
+  # REMOVE this pattern once www.jopetnah.com is live and returns 200.
   '^https?://(www\.)?jopetnah\.com',
 
-  # Optional: uncomment if these platforms start rate-limiting or blocking CI
+  # Optional: uncomment if these platforms start rate-limiting CI
   # '^https://www\.facebook\.com',
   # '^https://www\.instagram\.com',
   # '^https://www\.tiktok\.com',
