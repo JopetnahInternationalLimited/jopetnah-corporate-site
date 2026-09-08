@@ -4,6 +4,7 @@
 #############################
 
 accept = ["200", "204", "301", "302", "307", "308"]
+
 max_concurrency = 8
 timeout = 20
 max_retries = 2
@@ -14,7 +15,7 @@ exclude = [
   # Custom domain – remove once www.jopetnah.com is live and returns 200
   '^https?://(www\.)?jopetnah\.com',
 
-  # X / Twitter returns 403 to CI runners
+  # X / Twitter may return 403 to CI runners
   '^https://x\.com',
   '^https://twitter\.com',
 ]
