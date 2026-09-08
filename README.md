@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">Jopetnah International Limited</h1>
-<p align="center"><strong>Empowering Businesses Worldwide</strong></p>
+<p align="center"><strong>Empowering Businesses, Worldwide</strong></p>
 <p align="center">Official corporate website repository</p>
 
 <p align="center"><a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/"><img src="https://img.shields.io/badge/Website-www.jopetnah.com-blue?style=for-the-badge" alt="Website"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/"><img src="https://img.shields.io/badge/Hosted%20On-GitHub%20Pages-black?style=for-the-badge" alt="GitHub Pages"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/services.html"><img src="https://img.shields.io/badge/Strategic%20Sectors-16-orange?style=for-the-badge" alt="16 Strategic Sectors"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/about.html"><img src="https://img.shields.io/badge/Established-2016-darkgreen?style=for-the-badge" alt="Established 2016"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/contact.html"><img src="https://img.shields.io/badge/Headquarters-Kampala%2C%20Uganda-lightgrey?style=for-the-badge" alt="Headquarters"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-darkred?style=for-the-badge" alt="License"></a></p>
@@ -41,6 +41,7 @@
 - [Local Development](#local-development)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
+- [Media](#media)
 - [Connect With Us](#connect-with-us)
 - [License](#license)
 
@@ -367,6 +368,29 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to report issues or submit chan
 
 ---
 
+## Media
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="https://img.shields.io/badge/📸_Photography-Coming_Soon-0E86D4?style=for-the-badge" alt="Photography Coming Soon"><br><br>
+<strong>Photography</strong><br>
+<sub>We're sourcing professional, properly licensed photography to showcase our work across all 16 sectors.</sub>
+</td>
+<td align="center" width="50%">
+<img src="https://img.shields.io/badge/🎥_Video-Coming_Soon-E0151B?style=for-the-badge" alt="Video Coming Soon"><br><br>
+<strong>Video</strong><br>
+<sub>Video content highlighting our projects and impact is in production.</sub>
+</td>
+</tr>
+</table>
+
+<p align="center">
+In the meantime, follow us on <a href="#connect-with-us">social media</a> for the latest updates, or visit our <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/news.html">News page</a>.
+</p>
+
+---
+
 ## Connect With Us
 
 **Headquarters:** Mutungo–Luzira, P.O. Box 124614, Kampala GPO, Uganda
@@ -392,6 +416,6 @@ This repository and its contents are the proprietary property of Jopetnah Intern
 ---
 
 <p align="center">
-  <strong>Empowering Businesses Worldwide</strong><br>
+  <strong>Empowering Businesses, Worldwide</strong><br>
   Established 2016 • Kampala, Uganda
 </p>
