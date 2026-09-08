@@ -45,7 +45,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: true
-          args: >-
+          args: |
             --verbose
             --no-progress
             --config .lychee.toml
