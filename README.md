@@ -6,8 +6,7 @@
 <p align="center"><strong>Empowering Businesses Worldwide</strong></p>
 <p align="center">Official corporate website repository</p>
 
-<p align="center"><a 
-href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/"><img src="https://img.shields.io/badge/Website-www.jopetnah.com-blue?style=for-the-  badge" alt="Website"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/"><img src="https://img.shields.io/badge/Hosted%20On-GitHub%20Pages-black?style=for-the-badge" alt="GitHub Pages"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/services.html"><img src="https://img.shields.io/badge/Strategic%20Sectors-16-orange?style=for-the-badge" alt="16 Strategic Sectors"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/about.html"><img src="https://img.shields.io/badge/Established-2016-darkgreen?style=for-the-badge" alt="Established 2016"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/contact.html"><img src="https://img.shields.io/badge/Headquarters-Kampala%2C%20Uganda-lightgrey?style=for-the-badge" alt="Headquarters"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-darkred?style=for-the-badge" alt="License"></a></p>
+<p align="center"><a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/"><img src="https://img.shields.io/badge/Website-www.jopetnah.com-blue?style=for-the-badge" alt="Website"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/"><img src="https://img.shields.io/badge/Hosted%20On-GitHub%20Pages-black?style=for-the-badge" alt="GitHub Pages"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/services.html"><img src="https://img.shields.io/badge/Strategic%20Sectors-16-orange?style=for-the-badge" alt="16 Strategic Sectors"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/about.html"><img src="https://img.shields.io/badge/Established-2016-darkgreen?style=for-the-badge" alt="Established 2016"></a> <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/contact.html"><img src="https://img.shields.io/badge/Headquarters-Kampala%2C%20Uganda-lightgrey?style=for-the-badge" alt="Headquarters"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-darkred?style=for-the-badge" alt="License"></a></p>
 
 ---
 
@@ -278,24 +277,24 @@ This reflects what is actually in this repository as of the last update — not 
 ```
 jopetnah-corporate-site/
 │
-├── index.html               Home
+├── index.html              Home
 ├── about.html               About Us
 ├── services.html            Our 16 Sectors (accordion)
 ├── sustainability.html      ESG / Governance / HSE / CSR
 ├── contact.html             Contact form + office locations
-├── careers.html             Coming soon (CV submission CTA)
-├── news.html                Coming soon (social links CTA)
-├── projects.html            Coming soon (portfolio placeholder)
-├── privacy.html             Privacy Policy
-├── terms.html               Terms of Service
-├── 404.html                 Custom error page
-├── sectors.html             Redirect → services.html (SEO alias, noindex)
-├── industries.html          Redirect → services.html (SEO alias, noindex)
+├── careers.html              Coming soon (CV submission CTA)
+├── news.html                 Coming soon (social links CTA)
+├── projects.html              Coming soon (portfolio placeholder)
+├── privacy.html               Privacy Policy
+├── terms.html                  Terms of Service
+├── 404.html                     Custom error page
+├── sectors.html                Redirect → services.html (SEO alias, noindex)
+├── industries.html             Redirect → services.html (SEO alias, noindex)
 │
 ├── css/
-│   └── style.css            Single shared stylesheet
+│   └── style.css             Single shared stylesheet
 ├── js/
-│   └── script.js            Mobile nav toggle + services accordion
+│   └── script.js              Mobile nav toggle + services accordion
 ├── assets/
 │   ├── icon.png                Logo mark
 │   ├── icon-192.png            Manifest icon
@@ -396,4 +395,3 @@ This repository and its contents are the proprietary property of Jopetnah Intern
   <strong>Empowering Businesses Worldwide</strong><br>
   Established 2016 • Kampala, Uganda
 </p>
-[README.md](https://github.com/user-attachments/files/30475336/README.md)
