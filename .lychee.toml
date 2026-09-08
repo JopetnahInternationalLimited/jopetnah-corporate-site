@@ -8,15 +8,13 @@ max_concurrency = 8
 timeout = 20
 max_retries = 2
 
-# Mail links are excluded by default.
-# Set to true only if you want mailto: links to be checked.
 include_mail = false
 
 exclude = [
-  # Custom domain – remove this line once www.jopetnah.com is live and returns 200
+  # Custom domain – remove once www.jopetnah.com is live and returns 200
   '^https?://(www\.)?jopetnah\.com',
 
-  # X / Twitter almost always returns 403 to CI runners
+  # X / Twitter returns 403 to CI runners
   '^https://x\.com',
   '^https://twitter\.com',
 ]
