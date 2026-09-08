@@ -41,9 +41,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check internal and external links
+      - name: Check internal and external links (HTML + Markdown)
         uses: lycheeverse/lychee-action@v2
         with:
+          # ---------------------------------------------------------------
+          # fail: true  → job turns red on broken links (recommended for PRs)
+          # fail: false → report-only mode (useful while cleaning up links)
+          # ---------------------------------------------------------------
+          fail: true
+
+          # jobSummary: true is the default – results appear in the Actions UI
           args: >-
             --verbose
             --no-progress
@@ -52,9 +59,8 @@ jobs:
             --timeout 20
             --max-retries 2
             --accept 200,204,301,302,307,308
+            --config .lychee.toml
             './**/*.html'
-          # Optional but recommended:
-          # fail: true          # already the default
-          # jobSummary: true    # already the default
+            './**/*.md'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
