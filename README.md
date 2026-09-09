@@ -1,14 +1,16 @@
-# Jopetnah International Limited
+<p align="center">
+  <img src="assets/icon.png" alt="Jopetnah International Limited Logo" width="160">
+</p>
 
-### Empowering Businesses with Practical Solutions
+<h1 align="center">Jopetnah International Limited</h1>
 
-**Official Corporate Website Repository**
+<h3 align="center">Empowering Businesses with Practical Solutions</h3>
 
-[![Website](https://img.shields.io/badge/Website-GitHub%20Pages-0A66C2?style=flat-square)](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/)
-[![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-222222?style=flat-square&logo=github)](https://pages.github.com/)
-[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=flat-square)](LICENSE)
+<p align="center"><strong>Official Corporate Website Repository</strong></p>
 
-> **One Vision. Many Solutions. Global Impact.**
+<p align="center"><a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/"><img src="https://img.shields.io/badge/Website-GitHub%20Pages-0A66C2?style=flat-square" alt="Website"></a> <a href="https://pages.github.com/"><img src="https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-222222?style=flat-square&logo=github" alt="GitHub Pages"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=flat-square" alt="License"></a></p>
+
+<p align="center"><strong>One Vision. Many Solutions. Global Impact.</strong></p>
 
 ---
 
