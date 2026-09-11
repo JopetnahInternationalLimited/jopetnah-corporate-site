@@ -16,38 +16,10 @@
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Jopetnah International Limited">
-  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Contact Us | Jopetnah International Limited">
   <meta property="og:description" content="Contact Jopetnah International Limited. We welcome enquiries about strategic advisory, capacity building, recruitment facilitation and coordinated professional services.">
   <meta property="og:url" content="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/contact.html">
   <meta property="og:image" content="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/assets/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contact Us | Jopetnah International Limited">
-  <meta name="twitter:description" content="Contact Jopetnah International Limited. We welcome enquiries about strategic advisory, capacity building, recruitment facilitation and coordinated professional services.">
-  <meta name="twitter:image" content="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/assets/og-image.png">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Jopetnah International Limited",
-    "url": "https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/",
-    "logo": "https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/assets/icon-512.png",
-    "foundingDate": "2016",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area",
-      "addressLocality": "Kampala",
-      "addressCountry": "UG",
-      "postalCode": "1003"
-    },
-    "email": "jopetnah.intl.ltd@gmail.com",
-    "telephone": "+256-414-598031"
-  }
-  </script>
 </head>
 <body>
 
@@ -108,7 +80,7 @@
           </div>
           <div>
             <div class="label">Business Point</div>
-            <div class="val">UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area, P.O. Box 124614, Kampala GPO, Uganda, East Africa — Zip Code 1003</div>
+            <div class="val">UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area, P.O. Box 124614, Kampala GPO, Uganda</div>
           </div>
         </div>
 
@@ -135,6 +107,18 @@
             <div class="val"><a href="mailto:jopetnah.intl.ltd@gmail.com">jopetnah.intl.ltd@gmail.com</a></div>
           </div>
         </div>
+
+        <div class="item">
+          <div class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E86D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div>
+            <div class="label">Office Hours</div>
+            <div class="val">Monday – Friday: 8:00 AM – 5:00 PM (EAT)<br>Saturday & Sunday: Closed</div>
+          </div>
+        </div>
       </div>
 
       <p style="font-size:12.5px; color:var(--lgray); margin-top:16px;">
@@ -155,27 +139,40 @@
       </div>
     </div>
 
-    <!-- Right Column: Form -->
+    <!-- Right Column: Formspree Form -->
     <div>
-      <form action="mailto:jopetnah.intl.ltd@gmail.com" method="post" enctype="text/plain">
+      <form action="https://formspree.io/f/xbgjwqkr" method="POST">
         <div class="form-field">
           <label for="name">Full name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required>
         </div>
+
         <div class="form-field">
           <label for="email">Email address</label>
           <input type="email" id="email" name="email" placeholder="you@company.com" required>
         </div>
+
         <div class="form-field">
           <label for="org">Organisation (optional)</label>
           <input type="text" id="org" name="organisation" placeholder="Company or institution">
         </div>
+
         <div class="form-field">
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="6" placeholder="Tell us about your enquiry or project..." required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Enquiry</button>
+
+        <!-- Honeypot spam protection -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <!-- Optional: custom subject -->
+        <input type="hidden" name="_subject" value="New enquiry from Jopetnah website">
+
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+          Send Enquiry
+        </button>
       </form>
+
       <p style="font-size:13px; color:var(--gray); margin-top:14px; line-height:1.55;">
         Your information will be used only to respond to your enquiry and communicate with you about the matter you have raised.
       </p>
@@ -183,7 +180,31 @@
   </div>
 </section>
 
-<!-- Presence -->
+<!-- Google Map -->
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Find Us</span>
+      <h2>Business Point Location</h2>
+    </div>
+    <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.757!2d32.582!3d0.313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMTgnNDYuOCJOIDMywrAzNCc1NS4yIkU!5e0!3m2!1sen!2sug!4v1690000000000!5m2!1sen!2sug"
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <p style="margin-top:12px; font-size:14px; color:var(--gray);">
+      UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area, Kampala, Uganda
+    </p>
+  </div>
+</section>
+
+<!-- Presence Section -->
 <section style="background:var(--paper);">
   <div class="wrap">
     <div class="section-head">
@@ -195,13 +216,6 @@
     </p>
 
     <div style="margin-top:24px;">
-      <div class="label" style="font-family:var(--font-display); font-weight:600; font-size:13px; color:var(--navy); text-transform:uppercase; letter-spacing:0.5px;">Our Approach</div>
-      <p style="color:var(--gray); margin-top:6px; max-width:70ch;">
-        We focus first on delivering reliable services from our Ugandan base while carefully developing partnerships and opportunities beyond it.
-      </p>
-    </div>
-
-    <div style="margin-top:20px;">
       <div class="label" style="font-family:var(--font-display); font-weight:600; font-size:13px; color:var(--navy); text-transform:uppercase; letter-spacing:0.5px;">Domestic Network</div>
       <p style="color:var(--gray); margin-top:6px;">
         9 branch locations across Uganda: Kampala (Head Office), Jinja, Mbarara, Gulu, Mbale, Arua, Fort Portal, Hoima, and Adjumani.
@@ -217,17 +231,14 @@
   </div>
 </section>
 
-<!-- Explore -->
+<!-- Explore + Final CTA -->
 <section class="tight">
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">Explore Jopetnah</span>
       <h2>Continue Exploring Our Organisation</h2>
     </div>
-    <p style="color:var(--gray); max-width:70ch; margin-bottom:20px;">
-      These pages can help you understand who we are, what we do, and how we approach responsible professional engagement.
-    </p>
-    <div class="cta-row" style="flex-wrap:wrap; gap:12px;">
+    <div class="cta-row" style="flex-wrap:wrap; gap:12px; margin-bottom:40px;">
       <a class="btn btn-outline" href="about.html">About Us</a>
       <a class="btn btn-outline" href="services.html">Our Services</a>
       <a class="btn btn-outline" href="sectors.html">Our Sectors</a>
@@ -235,15 +246,10 @@
       <a class="btn btn-outline" href="transparency.html">Transparency</a>
       <a class="btn btn-outline" href="governance.html">Governance</a>
     </div>
-  </div>
-</section>
 
-<!-- Final CTA -->
-<section>
-  <div class="wrap">
     <div class="cta-band">
       <h2>We look forward to hearing from you.</h2>
-      <p>Whether you need strategic advisory support, capacity-building programmes, recruitment facilitation, coordinated multi-service delivery, or another form of professional assistance, we are ready to listen.</p>
+      <p>Whether you need strategic advisory support, capacity-building programmes, recruitment facilitation, or coordinated multi-service delivery, we are ready to listen.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="mailto:jopetnah.intl.ltd@gmail.com">Email Us Directly</a>
       </div>
