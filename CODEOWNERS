@@ -13,15 +13,15 @@
 
 # Default: these owners are requested for review on ANY change in the repo,
 # unless a more specific rule below overrides it for a given path.
-*   @REPLACE_WITH_GITHUB_USERNAME
+*   @JopetnahInternationalLimited/jopetnah-corporate-site
 
 # Optional, more granular examples -- uncomment and edit if useful later.
 # Different people can own different parts of the repo, e.g. if a
 # copywriter should review content changes but not touch site code:
 #
-# /*.html            @REPLACE_WITH_GITHUB_USERNAME
-# /css/               @REPLACE_WITH_GITHUB_USERNAME
-# /js/                @REPLACE_WITH_GITHUB_USERNAME
-# /docs/              @REPLACE_WITH_GITHUB_USERNAME
-# /.github/           @REPLACE_WITH_GITHUB_USERNAME
-# README.md           @REPLACE_WITH_GITHUB_USERNAME
+# /*.html             @JopetnahInternationalLimited/jopetnah-corporate-site
+# /css/               @JopetnahInternationalLimited/jopetnah-corporate-site
+# /js/                @JopetnahInternationalLimited/jopetnah-corporate-site
+# /docs/              @JopetnahInternationalLimited/jopetnah-corporate-site
+# /.github/           @JopetnahInternationalLimited/jopetnah-corporate-site
+# README.md           @JopetnahInternationalLimited/jopetnah-corporate-site
