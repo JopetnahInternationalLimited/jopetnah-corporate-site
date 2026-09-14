@@ -1,1 +1,45 @@
+# CODEOWNERS - Jopetnah International Limited
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
+# ============================================================
+# Default owners (applies to everything unless overridden)
+# ============================================================
+*                                       @JopetnahInternationalLimited
+
+# ============================================================
+# High-impact / sensitive files
+# ============================================================
+
+# Repository configuration & security
+.github/                                @JopetnahInternationalLimited
+CODEOWNERS                              @JopetnahInternationalLimited
+SECURITY.md                             @JopetnahInternationalLimited
+LICENSE                                 @JopetnahInternationalLimited
+
+# Core website pages
+index.html                              @JopetnahInternationalLimited
+about.html                              @JopetnahInternationalLimited
+contact.html                            @JopetnahInternationalLimited
+services.html                           @JopetnahInternationalLimited
+industries.html                         @JopetnahInternationalLimited
+sectors.html                            @JopetnahInternationalLimited
+
+# Legal & compliance pages
+privacy.html                            @JopetnahInternationalLimited
+terms.html                              @JopetnahInternationalLimited
+code-of-ethics.html                     @JopetnahInternationalLimited
+anti-corruption.html                    @JopetnahInternationalLimited
+governance.html                         @JopetnahInternationalLimited
+whistleblowing.html                     @JopetnahInternationalLimited
+transparency.html                       @JopetnahInternationalLimited
+
+# Documentation
+docs/                                   @JopetnahInternationalLimited
+README.md                               @JopetnahInternationalLimited
+CONTRIBUTING.md                         @JopetnahInternationalLimited
+CODE_OF_CONDUCT.md                      @JopetnahInternationalLimited
+
+# Assets & styling
+css/                                    @JopetnahInternationalLimited
+js/                                     @JopetnahInternationalLimited
+assets/                                 @JopetnahInternationalLimited
