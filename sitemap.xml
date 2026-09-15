@@ -1,129 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- =========================
-       CORE CORPORATE PAGES
-       ========================= -->
-
-  <!-- Homepage — canonical -->
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/about.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Services — primary commercial / capability page -->
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/services.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-
-  <!-- Legacy redirects to services -->
-  <url>
-    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/industries.html</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/sectors.html</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/sustainability.html</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/contact.html</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-
-  <!-- =========================
-       CORPORATE / INSTITUTIONAL
-       ========================= -->
-
-  <url>
-    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/projects.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/impact.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/projects.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/governance.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/transparency.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
-
-  <!-- =========================
-       ENGAGEMENT / OPPORTUNITIES
-       ========================= -->
+  <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/contact.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/careers.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/news.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
-
-  <!-- =========================
-       LEGAL
-       ========================= -->
-
+  <!-- Governance & policies (repo root) -->
   <url>
-    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/anti-corruption.html</loc>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/code-of-ethics.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/whistleblowing.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/procurement.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/conflict-of-interest.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/risk-management.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/hse.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Aliases (optional; drop if noindex-only) -->
+  <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/industries.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/sectors.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
 
+  <!-- Legal -->
+  <url>
+    <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/terms.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
