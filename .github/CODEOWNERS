@@ -6,7 +6,7 @@
 # ============================================================
 # Applies to all files unless a more specific rule is added.
 
-*    @JopetnahInternationalLimited/maintainers
+*    @JopetnahInternationalLimited
 
 
 # ============================================================
@@ -14,35 +14,35 @@
 # ============================================================
 
 # Repository configuration & security
-.github/        @JopetnahInternationalLimited/maintainers
-SECURITY.md     @JopetnahInternationalLimited/maintainers
-LICENSE         @JopetnahInternationalLimited/maintainers
-CODEOWNERS      @JopetnahInternationalLimited/maintainers
+.github/        @JopetnahInternationalLimited
+SECURITY.md     @JopetnahInternationalLimited
+LICENSE         @JopetnahInternationalLimited
+CODEOWNERS      @JopetnahInternationalLimited
 
 # Core website
-index.html      @JopetnahInternationalLimited/maintainers
-about.html      @JopetnahInternationalLimited/maintainers
-contact.html    @JopetnahInternationalLimited/maintainers
-services.html   @JopetnahInternationalLimited/maintainers
-industries.html @JopetnahInternationalLimited/maintainers
-sectors.html    @JopetnahInternationalLimited/maintainers
+index.html      @JopetnahInternationalLimited
+about.html      @JopetnahInternationalLimited
+contact.html    @JopetnahInternationalLimited
+services.html   @JopetnahInternationalLimited
+industries.html @JopetnahInternationalLimited
+sectors.html    @JopetnahInternationalLimited
 
 # Legal & compliance
-privacy.html            @JopetnahInternationalLimited/maintainers
-terms.html              @JopetnahInternationalLimited/maintainers
-code-of-ethics.html     @JopetnahInternationalLimited/maintainers
-anti-corruption.html    @JopetnahInternationalLimited/maintainers
-governance.html         @JopetnahInternationalLimited/maintainers
-whistleblowing.html     @JopetnahInternationalLimited/maintainers
-transparency.html       @JopetnahInternationalLimited/maintainers
+privacy.html            @JopetnahInternationalLimited
+terms.html              @JopetnahInternationalLimited
+code-of-ethics.html     @JopetnahInternationalLimited
+anti-corruption.html    @JopetnahInternationalLimited
+governance.html         @JopetnahInternationalLimited
+whistleblowing.html     @JopetnahInternationalLimited
+transparency.html       @JopetnahInternationalLimited
 
 # Documentation
-docs/                   @JopetnahInternationalLimited/maintainers
-README.md               @JopetnahInternationalLimited/maintainers
-CONTRIBUTING.md         @JopetnahInternationalLimited/maintainers
-CODE_OF_CONDUCT.md      @JopetnahInternationalLimited/maintainers
+docs/                   @JopetnahInternationalLimited
+README.md               @JopetnahInternationalLimited
+CONTRIBUTING.md         @JopetnahInternationalLimited
+CODE_OF_CONDUCT.md      @JopetnahInternationalLimited
 
 # Website assets and code
-css/                    @JopetnahInternationalLimited/maintainers
-js/                     @JopetnahInternationalLimited/maintainers
-assets/                 @JopetnahInternationalLimited/maintainers
+css/                    @JopetnahInternationalLimited
+js/                     @JopetnahInternationalLimited
+assets/                 @JopetnahInternationalLimited
