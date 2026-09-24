@@ -1,0 +1,45 @@
+/* ============================================================
+   Append to the END of css/style.css
+   Untested in a browser: check on a phone and at ~900px / ~1000px widths.
+   ============================================================ */
+
+/* 1. Six nav items + CTA need more room than the old 860px breakpoint gives.
+      Switch to the mobile menu earlier and tighten spacing just above it. */
+@media (max-width: 1100px) {
+  .nav-links { gap: 20px; }
+  .nav-links a { font-size: 13.5px; }
+}
+@media (max-width: 1020px) {
+  .nav-links { position: fixed; top: 64px; left: 0; right: 0; background: var(--white);
+    flex-direction: column; align-items: flex-start; padding: 18px 28px 24px;
+    border-bottom: 1px solid var(--hairline); gap: 16px;
+    transform: translateY(-8px); opacity: 0; pointer-events: none; transition: all .18s ease; }
+  .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  .nav-toggle { display: block; background: none; border: none; cursor: pointer; }
+  .nav-toggle svg { display: block; }
+}
+
+/* 2. Small phones: brand + CTA + toggle do not fit on one row. */
+@media (max-width: 600px) {
+  .nav { padding: 12px 18px; }
+  .brand span { font-size: 13px; }
+  .nav-cta { display: none; }   /* the CTA is inside the page and the menu */
+}
+
+/* 3. Keyboard focus styles (only form fields had one) */
+a:focus-visible, button:focus-visible, .btn:focus-visible,
+.nav-links a:focus-visible, .social-row a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* 4. Respect reduced-motion for smooth scrolling and hover movement */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn-primary:hover, .pillar:hover { transform: none; }
+  .nav-links, .accordion-panel { transition: none; }
+}
+
+/* 5. Anchored sections should clear the sticky header when jumped to */
+[id] { scroll-margin-top: 80px; }
