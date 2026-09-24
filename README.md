@@ -8,9 +8,7 @@
 
 <p align="center"><strong>Official Corporate Website Repository</strong></p>
 
-<p align="center"><a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/"><img src="https://img.shields.io/badge/Website-GitHub%20Pages-0A66C2?style=flat-square" alt="Website"></a> <a href="https://pages.github.com/"><img src="https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-222222?style=flat-square&logo=github" alt="GitHub Pages"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=flat-square" alt="License"></a></p>
-
-<p align="center"><strong>One Vision. Many Solutions. Global Impact.</strong></p>
+<p align="center"><a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/"><img src="https://img.shields.io/badge/Website-GitHub%20Pages-0A66C2?style=flat-square" alt="Website"></a> <a href="https://pages.github.com/"><img src="https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-222222?style=flat-square&logo=github" alt="GitHub Pages"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/Licence-All%20Rights%20Reserved-red?style=flat-square" alt="Licence"></a></p>
 
 ---
 
@@ -26,6 +24,7 @@
 - [Core Values](#core-values)
 - [Strategic Objectives](#strategic-objectives)
 - [Our 16 Strategic Sectors](#our-16-strategic-sectors)
+- [Regulated Activities](#regulated-activities)
 - [Who We Serve](#who-we-serve)
 - [Why Partner With Us](#why-partner-with-us)
 - [Our Track Record & Impact](#our-track-record--impact)
@@ -55,19 +54,15 @@
 - [Connect With Us](#connect-with-us)
 - [Corporate Opportunities](#corporate-opportunities)
 - [Legal & Regulatory Information](#legal--regulatory-information)
-- [License & Intellectual Property](#license--intellectual-property)
+- [Licence & Intellectual Property](#licence--intellectual-property)
 
 ---
 
 # Executive Summary
 
-**Jopetnah International Limited** is a diversified international business organization with a social-impact orientation, headquartered in **Kampala, Uganda**, and established in **2016**.
+**Jopetnah International Limited** is a Kampala-based multi-sector services company established in 2016. Working across 16 strategic sectors, we bring complementary capabilities together so that businesses, institutions, development partners and investors can access coordinated support through one relationship, while remaining transparent about what we deliver directly and where specialist partners are appropriate.
 
-Jopetnah operates across **16 strategic sectors**, bringing together complementary capabilities in business advisory, research, technology, infrastructure, healthcare, agriculture, energy, education, tourism, logistics, international employment, marketing, natural resources, events, FMCG, and related professional services.
-
-Our integrated model is designed to help businesses, institutions, governments, development organizations, investors, and communities access complementary expertise through one trusted partner.
-
-We seek to create value by connecting:
+We seek to create practical value by connecting:
 
 - Strategy with execution
 - Technology with transformation
@@ -75,11 +70,9 @@ We seek to create value by connecting:
 - Infrastructure with sustainable development
 - Talent with opportunity
 - Agriculture with value-chain development
-- Energy with economic growth
-- Enterprise development with inclusive opportunity
 - Local expertise with international perspectives
 
-> **Our ambition is not simply to operate across multiple sectors, but to connect those capabilities in ways that create meaningful and sustainable value.**
+> **Think globally. Understand locally. Integrate intelligently. Execute responsibly.**
 
 ---
 
@@ -90,27 +83,26 @@ We seek to create value by connecting:
 | **Legal Name** | Jopetnah International Limited |
 | **Established** | 2016 |
 | **Headquarters** | Kampala, Uganda |
-| **Uganda Branch Network** | 9 locations |
+| **Uganda Locations** | 9 (including the Kampala head office) |
 | **Strategic Sectors** | 16 |
-| **International Business Network** | 30+ countries* |
+| **International Business Network** | 30+ countries and territories* |
 | **Primary Market** | Uganda / East Africa |
-| **International Reach** | Africa, Middle East, Asia-Pacific, Europe & Americas |
 | **Live Website** | [GitHub Pages](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/) *(custom domain pending — see [Custom Domain](#custom-domain))* |
 | **Corporate Tagline** | Empowering Businesses with Practical Solutions |
 
-\*The 30+ country figure reflects Jopetnah's broader international business network, including relationships, engagements, partnerships, market connections, clients, suppliers, and/or other commercial interactions. It should not be interpreted as representing 30+ offices, permanent establishments, or completed projects. The underlying methodology and country-level records are maintained internally and subject to periodic verification.
+\*The 30+ figure reflects Jopetnah's broader international business network: relationships, engagements, partnerships, market connections, clients, suppliers and other commercial interactions. It does not represent 30+ offices, permanent establishments or completed projects. Country-level records are maintained internally and subject to periodic verification.
 
 ---
 
 # About Jopetnah
 
-Jopetnah International Limited was established in 2016 with a vision of building an organization capable of responding to increasingly interconnected business, economic, technological, and social challenges.
+Jopetnah International Limited was established in Kampala in 2016, with an initial focus on consultancy and capacity development. Over time it has broadened its service offering in response to client needs and emerging opportunities.
 
-Our approach combines multidisciplinary expertise with strategic partnerships, technology, research, responsible leadership, and practical execution.
+Rather than operating as a collection of unrelated services, Jopetnah connects complementary capabilities around the needs of each engagement. This helps clients reduce the complexity of managing multiple separate providers.
 
-Rather than treating industries as isolated markets, Jopetnah seeks to identify opportunities where capabilities can intersect to produce stronger outcomes.
+Where specialised expertise, resources, licensing or geographic reach is required beyond our direct capabilities, we work with appropriate professional partners and collaborators, and we are clear about the scope of our own role.
 
-This integrated approach enables us to support organizations with:
+Our work supports organisations with:
 
 - Strategic decision-making
 - Business development
@@ -118,126 +110,75 @@ This integrated approach enables us to support organizations with:
 - Digital transformation
 - Infrastructure development
 - Human capital development
-- International market access
+- Market access and international connections
 - Supply-chain and logistics support
 - Sustainable development initiatives
 
-Our operating philosophy is grounded in **integrity, excellence, innovation, collaboration, sustainability, and responsible execution**.
+Our operating philosophy is grounded in **integrity, excellence, client focus, collaboration, innovation, responsibility, professionalism and safety**.
 
 ---
 
 # Our Story
 
-Jopetnah's journey has evolved from a consultancy-driven enterprise into a diversified international business organization with capabilities spanning multiple industries and geographical markets.
+Jopetnah was founded in Kampala as a consultancy and capacity-development business. It has since developed capabilities across multiple sectors while building relationships with professionals, businesses, institutions, suppliers, collaborators and strategic partners in Uganda and beyond.
 
-The organization continues to develop its capabilities around a central principle:
+Our approach remains deliberately practical:
 
-> **Build capabilities that solve real problems and create sustainable value.**
+> **Understand the need → bring together the right capabilities → work with appropriate partners where necessary → focus on responsible delivery.**
 
-This principle guides our expansion into new sectors, the development of strategic partnerships, investment in people and technology, and our approach to long-term stakeholder relationships.
-
-As Jopetnah grows, we remain committed to strengthening the systems, expertise, partnerships, and evidence required to support responsible international growth.
+Growth is guided not by the number of sectors or markets we list, but by the quality, relevance and sustainability of the solutions we provide.
 
 ---
 
 # The Jopetnah Difference
 
-Our differentiation is not simply the breadth of our sector portfolio.
+Our value lies not simply in the number of sectors in which we operate, but in how we bring complementary capabilities together to address real needs.
 
-It is our ability to **connect capabilities across sectors and coordinate them around real-world needs**.
+### Practical Solutions
 
-### Integrated Solutions
+We focus on solutions that can be understood, implemented, measured and improved.
 
-We connect strategy, technical expertise, implementation, and support to simplify complex engagements.
+### Integrated Capability
 
-### Multidisciplinary Capability
+Our multidisciplinary structure allows complementary services and expertise to be coordinated around a common objective.
 
-Our 16-sector model allows complementary expertise to be brought together where challenges cross traditional industry boundaries.
+### Client-Centred Approach
+
+We seek to understand actual client needs rather than applying one-size-fits-all solutions.
 
 ### Local Understanding
 
-Our roots in Uganda and East Africa provide contextual understanding of local markets, institutions, communities, and operating environments.
+Our Ugandan foundation gives us practical understanding of local business, institutional and operating environments.
 
 ### International Perspective
 
-Our international network creates opportunities to connect local capabilities with global knowledge, markets, expertise, and partnerships.
+Our wider network helps connect local opportunities with international knowledge, markets, expertise and partnerships where appropriate.
 
-### Innovation
+### Responsible Delivery
 
-We embrace research, technology, digital transformation, and new business models to improve how value is created and delivered.
-
-### Responsible Growth
-
-We seek to balance commercial performance with responsible environmental, social, and governance considerations.
-
-### Long-Term Relationships
-
-We prioritize trusted relationships, collaboration, accountability, and sustainable value creation over purely transactional engagements.
-
-> **Think globally. Understand locally. Integrate intelligently. Execute responsibly.**
+We emphasise integrity, accountability, professionalism, quality, compliance, sustainability and responsible execution.
 
 ---
 
 # Strategic Focus Areas
 
-While Jopetnah operates across 16 strategic sectors, our broader growth strategy is organized around interconnected areas of focus.
+Our 16 sectors are organised into four broad pillars, giving clients a simpler way to understand the portfolio while preserving the flexibility to combine services around a specific need.
 
-## 1. Business & Financial Solutions
+## 1. Business & Advisory Solutions
 
-Supporting organizations through:
+Strategic Consultancy & Advisory · Research & Development · Training & Capacity Building · International Employment Bureau · Marketing & Advertising · Technology & Digital Solutions
 
-- Strategic consultancy
-- Business advisory
-- Commercial and financial advisory
-- Research and market intelligence
-- Institutional development
-- Training and capability building
+## 2. Infrastructure & Resources Support
 
-## 2. Infrastructure & Resources
+Engineering & Construction · Transport & Logistics · Petroleum, Oil, Gas & Renewable Energy · Agricultural Development & Agribusiness · Natural Resources & Mining
 
-Supporting responsible physical and resource development through:
+## 3. Social & Human Development
 
-- Engineering
-- Construction
-- Energy
-- Agriculture
-- Natural resources
-- Mining
-- Logistics
+Healthcare & Pharmaceuticals · Educational Services · Tourism & Hospitality
 
-## 3. Technology & Digital Transformation
+## 4. Trade & Events
 
-Helping organizations improve performance through:
-
-- Digital solutions
-- Business automation
-- Digital transformation
-- Data-driven decision-making
-- Technology consulting
-- Digital communications
-
-## 4. Social & Human Development
-
-Creating opportunities through:
-
-- Healthcare
-- Education
-- Employment
-- Skills development
-- Community development
-- Inclusive economic participation
-
-## 5. International Trade & Enterprise Development
-
-Connecting businesses and opportunities through:
-
-- International trade
-- Procurement
-- Marketing
-- Logistics
-- Tourism
-- Cross-border business development
-- Strategic partnerships
+FMCG & General Merchandise · Events & Recreation Management
 
 ---
 
@@ -245,11 +186,11 @@ Connecting businesses and opportunities through:
 
 ## Vision
 
-> **To be a globally respected leader in integrated business solutions, recognized for empowering businesses, strengthening institutions, fostering innovation, and advancing sustainable development across Africa and the international marketplace.**
+> **To be a trusted Ugandan partner for practical, integrated business and development solutions that create measurable value for our clients and the communities we serve.**
 
 ## Mission
 
-> **To empower businesses, governments, development partners, institutions, and communities by delivering innovative, sustainable, and results-driven solutions across diverse industries. We achieve this by combining strategic thinking, technical excellence, responsible leadership, and collaborative partnerships that create lasting value while contributing to inclusive economic growth and sustainable development.**
+> **To deliver professional, results-oriented services that help organisations improve operations, build capacity and pursue sustainable growth, through integrity, collaboration, innovation and continuous improvement.**
 
 ---
 
@@ -257,65 +198,53 @@ Connecting businesses and opportunities through:
 
 | Value | Our Commitment |
 |---|---|
-| **Integrity** | We uphold honesty, transparency, accountability, and ethical conduct. |
-| **Excellence** | We pursue quality, professionalism, continuous improvement, and disciplined execution. |
-| **Innovation** | We embrace research, creativity, technology, and forward-thinking solutions. |
-| **Customer Focus** | We place clients and stakeholders at the center of our decision-making. |
-| **Collaboration** | We believe strong partnerships and multidisciplinary teamwork produce better outcomes. |
-| **Sustainability** | We consider economic, environmental, and social sustainability in our decisions. |
-| **Professionalism** | We operate with competence, reliability, respect, and accountability. |
-| **Safety** | We prioritize the health, safety, and well-being of our people, clients, partners, and communities. |
+| **Integrity** | We operate with honesty, transparency, accountability and ethical conduct. |
+| **Excellence** | We pursue high professional standards, quality service delivery and continuous improvement. |
+| **Client Focus** | We tailor solutions to real needs, practical circumstances and measurable outcomes. |
+| **Collaboration** | We believe strong partnerships and multidisciplinary teamwork produce better results. |
+| **Innovation** | We encourage research, creativity, technology, learning and new approaches to solving problems. |
+| **Responsibility** | We consider the economic, social, environmental and institutional implications of our work. |
+| **Professionalism** | We value competence, reliability, respect, communication and disciplined execution. |
+| **Safety** | We seek to protect the health, safety and well-being of our people, clients, partners and communities. |
 
 ---
 
 # Strategic Objectives
 
-Our strategic objectives include:
-
-1. **Business Growth** — Expand market presence through innovation, diversification, quality service delivery, and strategic partnerships.
-2. **Innovation & Digital Transformation** — Integrate research, technology, data, and digital solutions across our operations and engagements.
-3. **Operational Excellence** — Strengthen systems, processes, governance, resource utilization, quality assurance, and organizational performance.
-4. **Sustainable Development** — Promote responsible practices that create positive economic, environmental, and social outcomes.
-5. **Human Capital Development** — Develop talent through continuous learning, technical training, leadership development, and professional growth.
-6. **Strategic Partnerships** — Build meaningful relationships with governments, businesses, development organizations, academic institutions, investors, and other stakeholders.
-7. **International Growth** — Expand responsible cross-border business relationships while maintaining strong local capabilities.
-8. **Corporate Leadership** — Establish Jopetnah as a trusted, respected, and responsible international business organization.
+1. **Business Growth** — Expand capabilities and market presence through quality service delivery, innovation, diversification and strategic relationships.
+2. **Innovation & Digital Transformation** — Use research, technology, data and digital solutions to improve organisational performance and service delivery.
+3. **Operational Excellence** — Strengthen systems, processes, governance, quality management, risk management and resource utilisation.
+4. **Sustainable Development** — Promote responsible approaches that consider economic, environmental and social outcomes.
+5. **Human Capital Development** — Invest in people through training, professional development, technical capability, leadership and continuous learning.
+6. **Strategic Partnerships** — Develop meaningful relationships with businesses, governments, development organisations, institutions, investors, professionals and other stakeholders.
+7. **International Growth** — Expand responsible cross-border business relationships, market connections and strategic partnerships while strengthening local capabilities.
+8. **Corporate Leadership** — Build Jopetnah into a trusted, respected, responsible and professionally governed business organisation.
 
 ---
 
 # Our 16 Strategic Sectors
 
-Jopetnah's sector portfolio is designed to provide complementary capabilities while maintaining a common focus on sustainable value creation.
+Each sector can be delivered independently or combined according to client needs. Full details, including complete core-service lists, are on the [live Services page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/services.html). Some sectors involve regulated activities; see [Regulated Activities](#regulated-activities).
 
 ## 01. Strategic Consultancy & Advisory
-
-Helping organizations make informed decisions through:
 
 - Strategy development
 - Business advisory
 - Commercial and financial advisory
 - Governance and risk support
-- Organizational transformation
+- Organisational development
 - Market intelligence
 
----
-
 ## 02. Research & Development
-
-Driving innovation and evidence-based decision-making through:
 
 - Applied research
 - Market research
 - Feasibility studies
 - Industry analysis
 - Product and service development
-- Innovation programs
+- Innovation programmes
 
----
-
-## 03. Training & Capability Building
-
-Strengthening individuals and organizations through:
+## 03. Training & Capacity Building
 
 - Professional training
 - Technical training
@@ -324,11 +253,7 @@ Strengthening individuals and organizations through:
 - Institutional capacity building
 - Entrepreneurship and digital skills
 
----
-
 ## 04. International Employment Bureau
-
-Connecting talent and employers through:
 
 - International recruitment
 - Workforce solutions
@@ -337,13 +262,7 @@ Connecting talent and employers through:
 - Employer support
 - Workforce mobility
 
-> Employment and recruitment activities are undertaken subject to applicable laws, regulations, licensing requirements, and ethical recruitment standards.
-
----
-
 ## 05. Marketing & Advertising
-
-Helping organizations communicate, position, and grow through:
 
 - Brand strategy
 - Digital marketing
@@ -352,11 +271,7 @@ Helping organizations communicate, position, and grow through:
 - Public relations
 - Creative campaigns
 
----
-
 ## 06. Technology & Digital Solutions
-
-Supporting digital transformation through:
 
 - Website and digital platform development
 - Technology consulting
@@ -365,11 +280,7 @@ Supporting digital transformation through:
 - Data-driven solutions
 - Digital communications
 
----
-
 ## 07. Engineering & Construction
-
-Supporting infrastructure and built-environment development through:
 
 - Engineering consultancy
 - Construction
@@ -378,11 +289,7 @@ Supporting infrastructure and built-environment development through:
 - Structural solutions
 - Property development
 
----
-
 ## 08. Tourism & Hospitality
-
-Supporting travel, tourism, and hospitality through:
 
 - Tourism development
 - Travel services
@@ -391,11 +298,7 @@ Supporting travel, tourism, and hospitality through:
 - Tourism consultancy
 - Travel management
 
----
-
 ## 09. Transport & Logistics
-
-Connecting businesses and markets through:
 
 - Logistics
 - Transportation
@@ -404,11 +307,7 @@ Connecting businesses and markets through:
 - Procurement logistics
 - Distribution
 
----
-
 ## 10. Healthcare & Pharmaceuticals
-
-Supporting healthcare delivery through:
 
 - Healthcare consultancy
 - Pharmaceutical distribution
@@ -417,13 +316,7 @@ Supporting healthcare delivery through:
 - Healthcare projects
 - Health-sector capacity building
 
-> Activities involving regulated healthcare or pharmaceutical products are undertaken subject to applicable regulatory requirements.
-
----
-
 ## 11. FMCG & General Merchandise
-
-Supporting procurement, trade, and distribution through:
 
 - Fast-moving consumer goods
 - General merchandise
@@ -432,24 +325,16 @@ Supporting procurement, trade, and distribution through:
 - Institutional supplies
 - Wholesale and commercial trading
 
----
-
 ## 12. Events & Recreation Management
-
-Creating meaningful experiences through:
 
 - Corporate events
 - Conferences
 - Workshops
 - Exhibitions
-- Recreation programs
+- Recreation programmes
 - Event planning and stakeholder engagement
 
----
-
 ## 13. Educational Services
-
-Supporting learning and institutional development through:
 
 - Education consultancy
 - Institutional development
@@ -458,11 +343,7 @@ Supporting learning and institutional development through:
 - Skills development
 - Workforce preparation
 
----
-
 ## 14. Petroleum, Oil, Gas & Renewable Energy
-
-Supporting responsible energy development through:
 
 - Energy consultancy
 - Petroleum-sector support
@@ -471,11 +352,7 @@ Supporting responsible energy development through:
 - Energy efficiency
 - Energy project support
 
----
-
 ## 15. Agricultural Development & Agribusiness
-
-Supporting agricultural transformation through:
 
 - Agribusiness development
 - Agricultural consultancy
@@ -484,11 +361,7 @@ Supporting agricultural transformation through:
 - Market access
 - Sustainable agriculture
 
----
-
 ## 16. Natural Resources & Mining
-
-Supporting responsible resource development through:
 
 - Mining consultancy
 - Resource development
@@ -497,9 +370,13 @@ Supporting responsible resource development through:
 - Sustainable resource management
 - Responsible resource-development practices
 
-> Resource-related activities are subject to applicable laws, licensing requirements, environmental standards, and responsible business practices.
+---
 
-*Full details on each sector, including complete Core Services lists, are available on the [live Services page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/services.html).*
+# Regulated Activities
+
+Some of our sectors involve regulated activities, including recruitment, pharmaceuticals, petroleum products, mining, customs clearance and financial services. Where licensing, certification or specialist capacity is required, we deliver through appropriately licensed partners or under the relevant authorisations, and we state clearly who is delivering what.
+
+The breadth of our sector portfolio does not imply that every service is delivered directly by Jopetnah in every market. Verified licences and registrations are listed under [Quality, Risk & Compliance](#quality-risk--compliance) once confirmed.
 
 ---
 
@@ -507,32 +384,24 @@ Supporting responsible resource development through:
 
 Jopetnah works with and supports a broad range of stakeholders, including:
 
+- Businesses and entrepreneurs, from startups and SMEs to established companies
+- Corporates and institutions
+- Development partners and NGOs
+- Investors and project sponsors
 - Governments and public institutions
-- Development partners
-- International organizations
-- NGOs and civil society organizations
-- Corporations
-- SMEs
-- Startups and entrepreneurs
-- Investors
-- Educational institutions
-- Healthcare organizations
-- Agricultural enterprises
-- Communities
+- Educational institutions and healthcare organisations
+- Agricultural enterprises and communities
 - Individual clients
-- Strategic business partners
 
-Our multidisciplinary model enables us to adapt our approach to the scale, complexity, and objectives of different engagements.
+Our multidisciplinary model lets us adapt our approach to the scale, complexity and objectives of each engagement.
 
 ---
 
 # Why Partner With Us
 
-Organizations partner with Jopetnah for the combination of **breadth, integration, local understanding, international connectivity, and responsible execution**.
+### One Relationship
 
-### One Strategic Partner
-
-Access complementary capabilities without having to coordinate multiple unrelated service providers.
+Access complementary capabilities without coordinating multiple unrelated service providers.
 
 ### Cross-Sector Perspective
 
@@ -540,40 +409,33 @@ Draw on expertise across industries where challenges and opportunities overlap.
 
 ### Local & International Connectivity
 
-Combine East African market understanding with international business relationships and perspectives.
+Combine East African market understanding with international business relationships.
+
+### Clear Scope and Realistic Expectations
+
+We define what is included, what is expected and how delivery will be coordinated, and we bring in qualified partners where specialist or regulated capacity is required.
 
 ### Flexible Engagement
 
-Structure collaboration around consultancy, project delivery, partnerships, training, technology, trade, or other appropriate models.
-
-### Innovation & Adaptability
-
-Explore emerging technologies, new markets, research, and innovative approaches to solving complex challenges.
+Structure collaboration around consultancy, project delivery, partnerships, training, technology, trade or other appropriate models.
 
 ### Responsible Execution
 
-Operate with emphasis on integrity, accountability, compliance, quality, safety, and sustainability.
+Operate with an emphasis on integrity, accountability, compliance, quality, safety and sustainability.
 
 ---
 
 # Our Track Record & Impact
 
-Jopetnah is committed to measuring its growth not only by the services it offers, but by the **value and outcomes it creates**.
+Jopetnah measures its growth by the value and outcomes it creates, not only by the services it offers. As our evidence base develops, selected indicators will progressively cover:
 
-As the organization continues to develop its evidence base, selected indicators will progressively capture:
-
-- Businesses and organizations supported
+- Businesses and organisations supported
 - Jobs and livelihoods supported
 - People trained
 - Communities reached
 - Projects delivered
-- Technology solutions deployed
-- Agricultural value chains strengthened
 - Partnerships established
-- Investments facilitated
-- Environmental outcomes
-- Social outcomes
-- Economic value created
+- Environmental, social and economic outcomes
 
 ### Impact Measurement Framework
 
@@ -581,363 +443,158 @@ As the organization continues to develop its evidence base, selected indicators 
 |---|---:|
 | Established | **2016** |
 | Strategic Sectors | **16** |
-| Uganda Branches | **9** |
-| International Business Network | **30+ countries*** |
-| Employees / Associates | **[TO BE COMPLETED]** |
-| Clients / Organizations Served | **[TO BE COMPLETED]** |
-| Projects / Engagements Delivered | **[TO BE COMPLETED]** |
-| Countries with Completed Engagements | **[TO BE COMPLETED]** |
-| Strategic Partnerships | **[TO BE COMPLETED]** |
-| Beneficiaries / People Reached | **[TO BE COMPLETED]** |
+| Uganda Locations | **9** *(verification pending)* |
+| International Business Network | **30+ countries and territories*** *(verification pending)* |
+| Employees / Associates | Not yet published |
+| Clients / Organisations Served | Not yet published |
+| Projects / Engagements Delivered | Not yet published |
+| Countries with Completed Engagements | Not yet published |
+| Strategic Partnerships | Not yet published |
+| Beneficiaries / People Reached | Not yet published |
 
-Detailed project references, partnership listings, and impact metrics are maintained internally and published selectively with appropriate authorization.
+Detailed project references, partnership listings and impact metrics are maintained internally and published selectively with appropriate authorisation.
 
 ---
 
 # Selected Projects & Case Studies
 
-Jopetnah's project portfolio will progressively document representative engagements across our strategic sectors. New case studies should be authored using the [case study template](docs/case-study-template.md) and added under `docs/case-studies/` once real, verified project data is available.
+One anonymised case study is currently published on the [Our Work page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/projects.html): a capacity-building programme for agricultural cooperatives in Eastern Uganda (2024–2025). The client name and figures are withheld for confidentiality.
 
-## Project 01 — [PROJECT TITLE]
+Further case studies will be added as they are documented and approved for publication. New case studies should be authored using the [case study template](docs/case-study-template.md) and added under `docs/case-studies/` once real, verified project data is available.
 
-**Sector:** `[Sector]`
-**Location:** `[Country / City]`
-**Client / Partner:** `[Name or Confidential]`
-**Period:** `[Year / Period]`
+> **Case Study Policy:** Client information, project values, photographs, logos, outcomes and other sensitive information are published only where verified and authorised.
 
-### Challenge
+<!--
+Template blocks removed from public view. Restore only with verified data.
 
-`[Brief description of the client's or project's challenge.]`
-
-### Our Role
-
-`[Describe Jopetnah's role, responsibilities, and contribution.]`
-
-### Solution
-
-`[Describe the solution delivered.]`
-
-### Results
-
-- `[Verified outcome]`
-- `[Verified outcome]`
-- `[Verified outcome]`
-
-### Impact
-
-`[Measurable economic, social, environmental, institutional, or operational impact.]`
-
----
-
-## Project 02 — [PROJECT TITLE]
-
-**Sector:** `[Sector]`
-**Location:** `[Country / City]`
-**Client / Partner:** `[Name or Confidential]`
-**Period:** `[Year / Period]`
-
-### Challenge
-
-`[Project challenge.]`
-
-### Our Role
-
-`[Jopetnah's role.]`
-
-### Solution
-
-`[Solution delivered.]`
-
-### Results
-
-- `[Verified result]`
-- `[Verified result]`
-
----
-
-## Project 03 — [PROJECT TITLE]
-
-**Sector:** `[Sector]`
-**Location:** `[Country / City]`
-**Client / Partner:** `[Name or Confidential]`
-**Period:** `[Year / Period]`
-
-### Challenge
-
-`[Project challenge.]`
-
-### Our Role
-
-`[Jopetnah's role.]`
-
-### Solution
-
-`[Solution delivered.]`
-
-### Results
-
-- `[Verified result]`
-- `[Verified result]`
-
----
-
-> **Case Study Policy:** Detailed project references, client information, project values, photographs, logos, outcomes, and other sensitive information are published only where appropriately verified and authorized.
+## Project 0X — [PROJECT TITLE]
+**Sector:** [Sector]  |  **Location:** [Country / City]  |  **Client / Partner:** [Name or Confidential]  |  **Period:** [Year / Period]
+### Challenge / Our Role / Solution / Results / Impact
+-->
 
 ---
 
 # Partnerships & Institutional Relationships
 
-Jopetnah recognizes that sustainable growth and meaningful impact are strengthened through collaboration.
-
-Our partnership ecosystem may include:
+Sustainable growth and meaningful impact are strengthened through collaboration. Our partnership ecosystem may include:
 
 - Government institutions
-- Development organizations
-- International organizations
+- Development organisations
+- International organisations
 - NGOs and civil society
 - Financial institutions
 - Academic institutions
 - Technology companies
-- Private-sector organizations
+- Private-sector organisations
 - Investors
 - Professional networks
-- Community organizations
+- Community organisations
 
-## Strategic Partner 01 — [PARTNER / INSTITUTION NAME]
+Named partnerships will be listed here once verified and authorised. Detailed partnership listings are maintained internally.
 
-**Relationship:** `[Nature of relationship]`
-**Period:** `[Year – Present]`
-**Scope:** `[Brief description]`
+> Partner names, logos, project references and institutional affiliations are published only where appropriate permission has been obtained.
 
-## Strategic Partner 02 — [PARTNER / INSTITUTION NAME]
+<!--
+Partner listing template removed from public view.
 
-**Relationship:** `[Nature of relationship]`
-**Period:** `[Year – Present]`
-**Scope:** `[Brief description]`
-
-## Strategic Partner 03 — [PARTNER / INSTITUTION NAME]
-
-**Relationship:** `[Nature of relationship]`
-**Period:** `[Year – Present]`
-**Scope:** `[Brief description]`
-
-Detailed partnership listings are maintained internally and published selectively with appropriate authorization.
-
-> Partner names, logos, project references, and institutional affiliations should only be published where appropriate permission has been obtained.
+## Strategic Partner 0X — [PARTNER / INSTITUTION NAME]
+Relationship: [ ]  |  Period: [ ]  |  Scope: [ ]
+-->
 
 ---
 
 # Leadership & Governance
 
-Jopetnah is committed to governance practices that promote:
+Jopetnah operates under a governance structure focused on accountability, professional standards, responsible decision-making, ethical conduct and sustainable growth.
 
-- Accountability
-- Transparency
-- Ethical conduct
-- Responsible decision-making
-- Operational excellence
-- Risk management
-- Stakeholder value
-- Sustainable growth
+Our leadership framework comprises:
 
-## Board of Directors
-
-### [NAME — CHAIRPERSON]
-
-**Position:** `[Position]`
-
-**Professional Profile:**
-`[Insert approved professional biography.]`
-
-### [NAME — DIRECTOR]
-
-**Position:** `[Position]`
-
-**Professional Profile:**
-`[Insert approved professional biography.]`
-
----
-
-## Executive Leadership
-
-### Okello Carlos Torach
-
-**Managing Director**
-
-`[Insert approved executive biography covering professional experience, qualifications, leadership responsibilities, and strategic vision.]`
-
-### [NAME]
-
-**Director — Human Resources & Public Relations**
-
-`[Insert approved professional biography.]`
-
-### [NAME]
-
-**Company Secretary**
-
-`[Insert approved professional biography.]`
-
-### Departmental & Technical Leadership
-
-Jopetnah's wider organizational structure may include:
-
+- Board of Directors
+- Managing Director
+- Director of Human Resources & Public Relations
+- Company Secretary
 - Departmental Heads
 - Technical Specialists
-- Project Managers
-- Professional Associates
 - Project Teams
-- Administrative and Operational Teams
 
-Leadership biographies and professional credentials should be added progressively following internal review and approval.
+**Managing Director:** Okello Carlos Torach
+
+Additional leadership profiles and biographies will be published following internal review and authorisation.
+
+<!--
+Biography templates removed from public view.
+
+### [NAME — CHAIRPERSON] / [NAME — DIRECTOR]
+Position: [ ]  |  Professional Profile: [approved biography]
+
+### Okello Carlos Torach — Managing Director
+[approved executive biography]
+
+### [NAME] — Director, Human Resources & Public Relations
+### [NAME] — Company Secretary
+-->
 
 ---
 
 # Global Presence
 
-Jopetnah's international footprint combines its Ugandan foundation with an expanding network of business relationships, engagements, partnerships, suppliers, clients, and market connections.
+Jopetnah is rooted in Uganda, with an expanding network of international relationships, engagements, partnerships, suppliers, clients, collaborators and market connections.
 
-## Uganda Branch Network
+## Uganda Network
 
-Jopetnah's Uganda network currently includes:
+Headquartered in Kampala, with nine locations across Uganda:
 
 1. **Kampala** — Head Office
-2. **Jinja**
-3. **Mbarara**
-4. **Gulu**
-5. **Mbale**
-6. **Arua**
-7. **Fort Portal**
-8. **Hoima**
-9. **Adjumani**
-
-### Uganda Coverage
-
-`[Insert map or link to office-location page when available.]`
-
----
+2. Jinja
+3. Mbarara
+4. Gulu
+5. Mbale
+6. Arua
+7. Fort Portal
+8. Hoima
+9. Adjumani
 
 ## International Business Network
 
-Jopetnah's international business network spans multiple geographical regions and includes relationships and market connections across **30+ countries**.
+Our international network spans multiple regions and includes relationships and market connections across **30+ countries and territories**.
 
-### Africa
+**Africa:** Uganda, Kenya, Tanzania, Rwanda, South Sudan, Democratic Republic of Congo, Ethiopia, Somalia, Nigeria, South Africa, Egypt
 
-- Uganda
-- Kenya
-- Tanzania
-- Rwanda
-- South Sudan
-- Democratic Republic of Congo
-- Ethiopia
-- Somalia
-- Nigeria
-- South Africa
-- Egypt
+**Middle East:** United Arab Emirates, Saudi Arabia, Israel
 
-### Middle East
+**Asia-Pacific:** China, India, Japan, Singapore, Hong Kong, Vietnam, South Korea, Australia
 
-- United Arab Emirates
-- Saudi Arabia
-- Israel
+**Europe:** United Kingdom, Netherlands, Germany, Italy, Croatia, Greece, Hungary, Türkiye, Russia
 
-### Asia-Pacific
+**Americas:** United States, Canada, Brazil
 
-- China
-- India
-- Japan
-- Singapore
-- Hong Kong
-- Vietnam
-- South Korea
-- Australia
-
-### Europe
-
-- United Kingdom
-- Netherlands
-- Germany
-- Italy
-- Croatia
-- Greece
-- Hungary
-- Türkiye
-- Russia
-
-### Americas
-
-- United States
-- Canada
-- Brazil
-
-> **International Network Definition:** The international network represents Jopetnah's broader relationships, engagements, partnerships, market connections, clients, suppliers, and/or other commercial interactions. It should not automatically be interpreted as representing offices, subsidiaries, permanent establishments, or completed projects in every listed country. Country-level information is maintained internally and subject to periodic verification.
+> **International Network Definition:** The international network represents Jopetnah's broader relationships, engagements, partnerships, market connections, clients, suppliers and other commercial interactions. It should not be interpreted as representing offices, subsidiaries, permanent establishments or completed projects in every listed country. Country-level information is maintained internally and subject to periodic verification.
 
 ---
 
 # Sustainability, ESG & Responsible Business
 
-Sustainability is integrated into how Jopetnah approaches business development, project delivery, partnerships, and long-term growth.
-
-Our sustainability framework is informed by internationally recognized **Environmental, Social and Governance (ESG)** principles and the **United Nations Sustainable Development Goals (SDGs)**.
+Sustainability is integrated into how Jopetnah approaches business development, project delivery, partnerships and long-term growth. Our framework is informed by internationally recognised **Environmental, Social and Governance (ESG)** principles and the **United Nations Sustainable Development Goals (SDGs)**.
 
 ## Environmental Responsibility
 
-Our areas of interest include:
-
-- Renewable energy
-- Climate-smart agriculture
-- Resource efficiency
-- Responsible waste management
-- Environmental awareness
-- Sustainable infrastructure
-- Responsible natural-resource development
+Areas of interest include renewable energy, climate-smart agriculture, resource efficiency, responsible waste management, sustainable infrastructure and responsible natural-resource development.
 
 ## Social Impact
 
-Our social priorities include:
-
-- Employment creation
-- Skills development
-- Youth empowerment
-- Women's economic empowerment
-- Education
-- Healthcare
-- Entrepreneurship
-- Inclusive economic participation
-- Community development
+Priorities include employment creation, skills development, youth empowerment, women's economic participation, education, healthcare, entrepreneurship and inclusive economic participation.
 
 ## Governance & Ethics
 
-We promote:
-
-- Transparency
-- Accountability
-- Ethical conduct
-- Regulatory compliance
-- Responsible leadership
-- Risk management
-- Stakeholder engagement
+We promote transparency, accountability, ethical conduct, regulatory compliance, responsible leadership, risk management and stakeholder engagement.
 
 ## Health, Safety & Environment
 
-Our approach emphasizes:
-
-- Workplace safety
-- Risk assessment
-- Emergency preparedness
-- Environmental responsibility
-- Safe project execution
-- Employee and community well-being
+Our approach emphasises workplace safety, risk assessment, emergency preparedness, environmental responsibility, safe project execution and employee and community well-being.
 
 ## Diversity, Equity & Inclusion
 
-We support:
-
-- Equal opportunity
-- Merit-based advancement
-- Inclusive leadership
-- Respectful workplaces
-- Non-discrimination
+We support equal opportunity, merit-based advancement, inclusive leadership, respectful workplaces and non-discrimination.
 
 ## SDG Alignment
 
@@ -948,69 +605,38 @@ Our activities may contribute to relevant SDGs, including:
 - **SDG 5** — Gender Equality
 - **SDG 8** — Decent Work & Economic Growth
 - **SDG 9** — Industry, Innovation & Infrastructure
-- **SDG 10** — Reduced Inequalities
 - **SDG 12** — Responsible Consumption & Production
 - **SDG 13** — Climate Action
 - **SDG 17** — Partnerships for the Goals
 
-> SDG references indicate areas of strategic alignment and should not be interpreted as formal UN accreditation, certification, or endorsement.
+> SDG references indicate areas of strategic alignment and should not be interpreted as formal UN accreditation, certification or endorsement.
 
-*Full detail is available on the [live Sustainability page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/sustainability.html).*
+*Full detail is on the [live Sustainability page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/sustainability.html).*
 
 ---
 
 # Quality, Risk & Compliance
 
-Jopetnah is committed to responsible and professional business practices.
+Our quality and risk framework is intended to support clear project planning, defined responsibilities, quality control, risk identification and mitigation, regulatory compliance, data protection, cybersecurity awareness, business continuity, health and safety, stakeholder communication and continuous improvement.
 
-Our quality and risk framework is intended to support:
+## Registrations, Licences & Certifications
 
-- Clear project planning
-- Defined responsibilities
-- Quality control
-- Risk identification
-- Risk mitigation
-- Regulatory compliance
-- Data protection
-- Cybersecurity
-- Business continuity
-- Health and safety
-- Stakeholder communication
-- Continuous improvement
+Applicable sector-specific registrations, licences, certifications and authorisations will be listed here once verified and confirmed as currently valid. Corporate registration details are shown under [Corporate Information](#corporate-information).
 
-## Compliance Framework
+<!--
+Placeholder lists removed from public view.
 
-Applicable registrations, licenses, certifications, and sector-specific authorizations:
-
-- `[TO BE COMPLETED]`
-- `[TO BE COMPLETED]`
-- `[TO BE COMPLETED]`
-
-## Certifications
-
-- `[Certification — Issuing Body — Year]`
-- `[Certification — Issuing Body — Year]`
-
-> Only verified and currently valid registrations, licenses, certifications, and authorizations should be published.
+Compliance Framework: [licence / registration — issuing authority — reference — validity]
+Certifications: [Certification — Issuing Body — Year]
+-->
 
 ---
 
 # Innovation & Digital Transformation
 
-Technology is an enabling capability across Jopetnah's business model.
+Technology is an enabling capability across Jopetnah's business model. Our digital priorities include digital transformation, business automation, data-driven decision-making, digital communications, technology-enabled service delivery, cybersecurity awareness and digital skills development.
 
-Our digital priorities include:
-
-- Digital transformation
-- Business automation
-- Data-driven decision-making
-- Digital communications
-- Digital platforms
-- Technology-enabled service delivery
-- Cybersecurity awareness
-- Digital skills development
-
-The corporate website itself is built around a lightweight architecture using **HTML, CSS, and JavaScript**, supporting straightforward maintenance, performance, and deployment through GitHub Pages.
+The corporate website itself is a lightweight static site built with **HTML, CSS and JavaScript** and deployed through GitHub Pages.
 
 ---
 
@@ -1027,7 +653,6 @@ The corporate website itself is built around a lightweight architecture using **
 | **Intended Primary Domain** | www.jopetnah.com *(pending DNS connection — see [Custom Domain](#custom-domain))* |
 | **Corporate Email** | jopetnah.intl.ltd@gmail.com |
 | **Primary Market** | Uganda / East Africa |
-| **International Reach** | Africa, Middle East, Asia-Pacific, Europe & Americas |
 
 ## Headquarters
 
@@ -1061,30 +686,13 @@ Zip Code: 1003
 
 ## Intended Primary Domain (pending)
 
-🌐 **www.jopetnah.com** — DNS connection in progress; not yet resolving. The GitHub Pages URL above is the current, working, official address until this is complete. See [Custom Domain](#custom-domain) for setup status.
+🌐 **www.jopetnah.com** — DNS connection in progress and not yet resolving. The GitHub Pages URL above is the current, working, official address until this is complete. See [Custom Domain](#custom-domain).
 
 ---
 
 # Media
 
-<table>
-<tr>
-<td align="center" width="50%">
-<img src="https://img.shields.io/badge/📸_Photography-Coming_Soon-0E86D4?style=for-the-badge" alt="Photography Coming Soon"><br><br>
-<strong>Photography</strong><br>
-<sub>We're sourcing professional, properly licensed photography to showcase our work across all 16 sectors.</sub>
-</td>
-<td align="center" width="50%">
-<img src="https://img.shields.io/badge/🎥_Video-Coming_Soon-E0151B?style=for-the-badge" alt="Video Coming Soon"><br><br>
-<strong>Video</strong><br>
-<sub>Video content highlighting our projects and impact is in production.</sub>
-</td>
-</tr>
-</table>
-
-<p align="center">
-In the meantime, follow us on <a href="#connect-with-us">social media</a> for the latest updates, or visit our <a href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/news.html">News page</a>.
-</p>
+Professionally produced, properly licensed photography and video for our projects will be added as they become available. In the meantime, follow us on [social media](#connect-with-us) or visit the [News page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/news.html).
 
 ---
 
@@ -1092,25 +700,13 @@ In the meantime, follow us on <a href="#connect-with-us">social media</a> for th
 
 This repository contains the source code and supporting documentation for the official corporate website and digital presence of **Jopetnah International Limited**.
 
-The website is intentionally maintained as a lightweight static site rather than a framework-heavy application.
-
-The architecture prioritizes:
-
-- Simplicity
-- Reliability
-- Performance
-- Accessibility
-- Maintainability
-- SEO
-- Security
-- Easy deployment
-- Transparent version control
+The website is intentionally maintained as a lightweight static site rather than a framework-heavy application. The architecture prioritises simplicity, reliability, performance, accessibility, maintainability, SEO, security, easy deployment and transparent version control.
 
 ---
 
 # Repository Structure
 
-The repository is organized around the website's current pages, assets, documentation, and deployment configuration. This reflects what is actually in the repository — not an aspirational or planned structure.
+The repository is organised around the website's current pages, assets, documentation and deployment configuration.
 
 ```text
 jopetnah-corporate-site/
@@ -1167,43 +763,47 @@ jopetnah-corporate-site/
         └── quality-checks.yml
 ```
 
+---
+
 # Technology Stack
 
-The corporate website is intentionally built as a lightweight static site — no framework, no build tools, no external dependencies beyond web fonts.
+The corporate website is a lightweight static site with no framework and no build tools.
 
 - **HTML5 / CSS3 / vanilla JavaScript (ES6)**
-- **Fonts:** Poppins (headings/navigation) and Lora (body text), served via Google Fonts CDN
+- **Fonts:** Poppins (headings and navigation) and Lora (body text), served via the Google Fonts CDN
+- **Contact form:** processed by [Formspree](https://formspree.io), a third-party form service
 - **Hosting:** GitHub Pages, auto-deployed from the `main` branch on every push
-- **Metadata:** Open Graph, Twitter Cards, and Schema.org `Organization` JSON-LD on every page for discoverability and rich social sharing
-- **No database, no backend, no user accounts** — content is maintained directly in versioned HTML
+- **Metadata:** Open Graph, Twitter Card and canonical tags for discoverability and social sharing (rollout to every page is tracked in the [Roadmap](#roadmap))
+- **No database, no backend of our own, no user accounts** — content is maintained directly in versioned HTML
 
-Architecture rationale, including why this project deliberately avoids a build pipeline at its current size, is documented in [`docs/development-guide.md`](docs/development-guide.md).
+Architecture rationale, including why the project deliberately avoids a build pipeline at its current size, is documented in [`docs/development-guide.md`](docs/development-guide.md).
 
 ---
 
 # Quality Assurance & Automated Checks
 
-A GitHub Actions workflow (`.github/workflows/quality-checks.yml`) runs automatically on every push, pull request, and weekly on a schedule, performing:
+A GitHub Actions workflow (`.github/workflows/quality-checks.yml`) runs on every push, on pull requests and weekly on a schedule, performing:
 
 - **HTML validation** across all pages
 - **Broken-link checks**, both internal and external
 
-This is intended to catch structural or link-rot issues before they reach the live site, rather than relying solely on manual review.
+Notes for maintainers:
+
+- Social platforms such as LinkedIn, Facebook, X, Instagram and TikTok often block automated requests and can trigger false link-check failures. Consider excluding them from the external check.
+- GitHub disables scheduled workflows in public repositories after 60 days without repository activity, so the weekly run may need to be re-enabled after a quiet period.
 
 ---
 
 # Local Development
 
-No build step is required to preview or edit the site:
+No build step is required to preview or edit the site. Serving it locally is recommended, as it avoids relative-path quirks:
 
 ```bash
-# Quick view
-open index.html
-
-# Or serve it (recommended — avoids relative-path quirks)
 python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
+
+Alternatively, open `index.html` directly in a browser (double-click it, or use `open` on macOS, `start` on Windows or `xdg-open` on Linux).
 
 ---
 
@@ -1211,7 +811,7 @@ python3 -m http.server 8000
 
 The site deploys automatically via **GitHub Pages** on every push to `main`. There is no separate build or manual publish step.
 
-Full deployment steps, including custom domain configuration and known troubleshooting notes from this repository's history, are documented in [`docs/deployment-guide.md`](docs/deployment-guide.md).
+Full deployment steps, including custom domain configuration and troubleshooting notes, are in [`docs/deployment-guide.md`](docs/deployment-guide.md).
 
 ---
 
@@ -1219,31 +819,31 @@ Full deployment steps, including custom domain configuration and known troublesh
 
 **Status: connection in progress, not yet live.**
 
-`www.jopetnah.com` is the intended primary domain for this site. As of the current state of this repository, DNS has not yet been configured to point at GitHub Pages, and the domain does not yet resolve to the live site.
+`www.jopetnah.com` is the intended primary domain. DNS has not yet been configured to point at GitHub Pages, and the domain does not yet resolve to the live site.
 
-Until DNS configuration is complete and verified, the working, official address is the GitHub Pages URL:
+Until DNS configuration is complete and verified, the working, official address is:
 
 🔗 **https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/**
 
-Required steps to complete this connection (CNAME record, A records, HTTPS enforcement) are documented in [`docs/deployment-guide.md`](docs/deployment-guide.md). This section should be updated once the domain is confirmed live.
+Required steps (a `CNAME` file, DNS records and HTTPS enforcement) are documented in [`docs/deployment-guide.md`](docs/deployment-guide.md). Update this section once the domain is confirmed live.
 
 ---
 
 # Security
 
-Security concerns affecting this website or repository should be reported responsibly rather than through a public issue. See [`SECURITY.md`](SECURITY.md) for the reporting process and scope.
+Report security concerns responsibly rather than through a public issue. See [`SECURITY.md`](SECURITY.md) for the reporting process and scope.
 
-This repository contains a static marketing website with no backend, database, or authentication system — the realistic security scope is limited to client-side vulnerabilities, accidental exposure of sensitive information in commits, and DNS/domain configuration integrity.
+This repository contains a static marketing website with no backend, database or authentication system of its own. The realistic security scope is limited to client-side vulnerabilities, accidental exposure of sensitive information in commits, third-party service configuration (such as the contact form) and DNS/domain integrity.
 
 ---
 
 # Data Protection & Privacy
 
-Personal information submitted through the website's Contact form (name, email, organisation, message) is used solely to respond to inquiries and is not sold, rented, or shared with third parties.
+Personal information submitted through the Contact form (name, email, organisation, message) is used to respond to enquiries and is not sold or rented. The form is processed by Formspree, a third-party service, so submissions are transmitted to Formspree's servers.
 
-Full detail is available on the [live Privacy Policy page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html).
+Full detail is on the [live Privacy Policy page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html).
 
-> The Privacy Policy is a general-purpose document and has not been reviewed by legal counsel. Formal legal review is recommended before it is relied upon as a binding compliance document, particularly with respect to applicable data protection law.
+> The Privacy Policy has not yet been reviewed by legal counsel. Formal legal review is recommended before it is relied on as a binding compliance document, particularly with respect to Uganda's Data Protection and Privacy Act.
 
 ---
 
@@ -1251,7 +851,7 @@ Full detail is available on the [live Privacy Policy page](https://jopetnahinter
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to report issues or propose changes, and [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) for community standards.
 
-Content changes (company information, service descriptions, branding) should generally originate from Jopetnah International Limited directly. Technical contributions — bug fixes, accessibility improvements, broken-link reports, performance suggestions — are welcome via the normal pull request process.
+Content changes (company information, service descriptions, branding) should generally originate from Jopetnah International Limited directly. Technical contributions — bug fixes, accessibility improvements, broken-link reports and performance suggestions — are welcome via the normal pull request process.
 
 Review requirements are defined in [`.github/CODEOWNERS`](.github/CODEOWNERS).
 
@@ -1259,7 +859,13 @@ Review requirements are defined in [`.github/CODEOWNERS`](.github/CODEOWNERS).
 
 # Brand Guidelines
 
-Logo usage, color palette, typography, voice and tone, and reusable component patterns are documented in [`docs/brand-guidelines.md`](docs/brand-guidelines.md) — the reference point for anyone creating new marketing materials, web pages, or documents for Jopetnah International Limited.
+Logo usage, colour palette, typography, voice and tone, and reusable component patterns are documented in [`docs/brand-guidelines.md`](docs/brand-guidelines.md). Use it as the reference for anyone creating new marketing materials, web pages or documents for Jopetnah International Limited.
+
+The approved company descriptor and tagline are:
+
+> **Jopetnah International Limited is a Kampala-based multi-sector services company, established in 2016, providing practical, integrated solutions across 16 strategic sectors.**
+>
+> **Empowering Businesses with Practical Solutions.**
 
 ---
 
@@ -1268,28 +874,32 @@ Logo usage, color palette, typography, voice and tone, and reusable component pa
 Priorities currently under active development or planning:
 
 - [ ] Complete custom domain (`www.jopetnah.com`) connection and DNS verification
+- [ ] Apply the approved company descriptor, tagline, pillars and sector names to every page and footer (Contact, Services and Sustainability first)
+- [ ] Add Privacy Policy and Terms links to every page footer, especially the Contact page
+- [ ] Add canonical, Open Graph and Twitter Card tags to every page
+- [ ] Update the Privacy Policy to disclose Google Fonts alongside Formspree
+- [ ] Verify and document the Uganda location count and international network records
+- [ ] Confirm and publish applicable licences, certifications and regulatory registrations
+- [ ] Publish further verified case studies using [`docs/case-study-template.md`](docs/case-study-template.md)
+- [ ] Finalise and publish approved leadership biographies
 - [ ] Source properly licensed photography and video content (see [Media](#media))
-- [ ] Populate verified figures in [Our Track Record & Impact](#our-track-record--impact)
-- [ ] Publish first verified case study under [Selected Projects & Case Studies](#selected-projects--case-studies), using [`docs/case-study-template.md`](docs/case-study-template.md)
-- [ ] Confirm and publish applicable certifications, licenses, and regulatory registrations
-- [ ] Finalize and publish approved leadership biographies
 
-This roadmap intentionally excludes speculative or unconfirmed future features. Items are added here only once genuinely planned.
+This roadmap intentionally excludes speculative or unconfirmed future features. Items are added only once genuinely planned.
 
 ---
 
 # Corporate Evidence Policy
 
-Jopetnah International Limited is committed to ensuring that public-facing claims — statistics, project outcomes, partnerships, certifications, and leadership credentials — are backed by verifiable information before publication.
+Jopetnah International Limited is committed to ensuring that public-facing claims — statistics, project outcomes, partnerships, certifications and leadership credentials — are backed by verifiable information before publication.
 
-Where verified information is not yet available, this repository uses explicit `[TO BE COMPLETED]` placeholders rather than estimated, aspirational, or unverified figures. This applies in particular to:
+Where verified information is not yet available, this repository states that plainly (for example, "Not yet published" or "verification pending") rather than using estimated, aspirational or unverified figures. This applies in particular to:
 
 - Quantitative impact metrics (see [Our Track Record & Impact](#our-track-record--impact))
 - Named client and partner references (see [Partnerships & Institutional Relationships](#partnerships--institutional-relationships))
 - Case study outcomes (see [Selected Projects & Case Studies](#selected-projects--case-studies))
-- Certifications and regulatory registrations (see [Quality, Risk & Compliance](#quality-risk--compliance))
+- Licences, certifications and regulatory registrations (see [Quality, Risk & Compliance](#quality-risk--compliance))
 
-Contributors and internal reviewers should not replace a `[TO BE COMPLETED]` placeholder with a figure or claim unless it can be substantiated by a verifiable source.
+Contributors and internal reviewers should not add a figure or claim unless it can be substantiated by a verifiable source.
 
 ---
 
@@ -1311,7 +921,7 @@ Contributors and internal reviewers should not replace a `[TO BE COMPLETED]` pla
 
 # Corporate Opportunities
 
-Jopetnah International Limited welcomes inquiries related to:
+Jopetnah International Limited welcomes enquiries related to:
 
 - Business partnerships and strategic alliances
 - Joint ventures
@@ -1320,10 +930,10 @@ Jopetnah International Limited welcomes inquiries related to:
 - Technology partnerships
 - Supplier relationships
 - Institutional collaboration
-- Investment inquiries
+- Investment enquiries
 - International business opportunities
 
-Inquiries should be directed to [jopetnah.intl.ltd@gmail.com](mailto:jopetnah.intl.ltd@gmail.com) or via the [Contact page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/contact.html).
+Enquiries should be directed to [jopetnah.intl.ltd@gmail.com](mailto:jopetnah.intl.ltd@gmail.com) or via the [Contact page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/contact.html).
 
 > This section describes areas of openness to engagement and does not constitute a solicitation of investment or an offer of securities.
 
@@ -1339,17 +949,17 @@ Inquiries should be directed to [jopetnah.intl.ltd@gmail.com](mailto:jopetnah.in
 | **Jurisdiction** | Republic of Uganda |
 | **Headquarters** | Mutungo–Luzira, P.O. Box 124614, Kampala GPO, Uganda |
 
-Applicable sector-specific licenses, regulatory registrations, and certifications are listed in [Quality, Risk & Compliance](#quality-risk--compliance) where verified and current.
+Applicable sector-specific licences, regulatory registrations and certifications are listed in [Quality, Risk & Compliance](#quality-risk--compliance) where verified and current.
 
 ---
 
-# License & Intellectual Property
+# Licence & Intellectual Property
 
-Copyright © 2026 Jopetnah International Limited. All Rights Reserved.
+Copyright © 2016–2026 Jopetnah International Limited. All Rights Reserved.
 
-This repository and its contents — including source code, text, graphics, logos, and design elements — are the proprietary property of Jopetnah International Limited (Company Registration No. 80010001250674, TIN 1018486351). No part of this repository may be reproduced, distributed, modified, or used to create derivative works without prior written permission, except as expressly permitted by applicable law.
+This repository and its contents — including source code, text, graphics, logos and design elements — are the proprietary property of Jopetnah International Limited (Company Registration No. 80010001250674, TIN 1018486351). No part of this repository may be reproduced, distributed, modified or used to create derivative works without prior written permission, except as expressly permitted by applicable law.
 
-This is not an open-source license. Public visibility of this repository is provided for transparency and demonstration purposes only. See [`LICENSE`](LICENSE) for full terms.
+This is not an open-source licence. Public visibility of this repository is provided for transparency and demonstration purposes only. See [`LICENSE`](LICENSE) for full terms.
 
 ---
 
