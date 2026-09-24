@@ -519,7 +519,7 @@ Our leadership framework comprises:
 
 **Managing Director:** Okello Carlos Torach
 
-Additional leadership profiles and biographies will be published following internal review and authorisation.
+Additional leadership profiles and biographies will be published following internal review and authorisation. See the [Governance](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/governance.html) and [Transparency](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/transparency.html) pages for the current status of governance policies.
 
 <!--
 Biography templates removed from public view.
@@ -715,16 +715,28 @@ jopetnah-corporate-site/
 ├── about.html
 ├── services.html
 ├── sustainability.html
+├── impact.html
 ├── contact.html
 ├── careers.html
 ├── news.html
 ├── projects.html
+│
+├── governance.html
+├── transparency.html
+├── code-of-ethics.html
+├── anti-corruption.html
+├── whistleblowing.html
+├── conflict-of-interest.html
+├── procurement.html
+├── hse.html
+├── risk-management.html
+│
 ├── privacy.html
 ├── terms.html
 ├── 404.html
 │
-├── sectors.html          Redirect → services.html (SEO alias, noindex)
-├── industries.html       Redirect → services.html (SEO alias, noindex)
+├── sectors.html          Redirect → services.html (excluded from sitemap)
+├── industries.html       Redirect → services.html (excluded from sitemap)
 │
 ├── css/
 │   └── style.css
@@ -744,6 +756,7 @@ jopetnah-corporate-site/
 ├── robots.txt
 ├── sitemap.xml
 ├── .gitignore
+├── .lychee.toml
 │
 ├── README.md
 ├── LICENSE
@@ -772,8 +785,10 @@ The corporate website is a lightweight static site with no framework and no buil
 - **HTML5 / CSS3 / vanilla JavaScript (ES6)**
 - **Fonts:** Poppins (headings and navigation) and Lora (body text), served via the Google Fonts CDN
 - **Contact form:** processed by [Formspree](https://formspree.io), a third-party form service
+- **Map:** an embedded Google Map on the Contact page
 - **Hosting:** GitHub Pages, auto-deployed from the `main` branch on every push
 - **Metadata:** Open Graph, Twitter Card and canonical tags for discoverability and social sharing (rollout to every page is tracked in the [Roadmap](#roadmap))
+- **Third-party services in use:** GitHub Pages (hosting), Google Fonts, Google Maps and Formspree — all disclosed in the [Privacy Policy](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html)
 - **No database, no backend of our own, no user accounts** — content is maintained directly in versioned HTML
 
 Architecture rationale, including why the project deliberately avoids a build pipeline at its current size, is documented in [`docs/development-guide.md`](docs/development-guide.md).
@@ -789,7 +804,7 @@ A GitHub Actions workflow (`.github/workflows/quality-checks.yml`) runs on every
 
 Notes for maintainers:
 
-- Social platforms such as LinkedIn, Facebook, X, Instagram and TikTok often block automated requests and can trigger false link-check failures. Consider excluding them from the external check.
+- Link-checker settings live in `.lychee.toml`. Social platforms (LinkedIn, Facebook, X, Instagram, TikTok, YouTube), the Formspree endpoint, Google Maps and the site's own GitHub Pages URL are excluded, because they block bots or return errors for healthy links.
 - GitHub disables scheduled workflows in public repositories after 60 days without repository activity, so the weekly run may need to be re-enabled after a quiet period.
 
 ---
@@ -839,11 +854,11 @@ This repository contains a static marketing website with no backend, database or
 
 # Data Protection & Privacy
 
-Personal information submitted through the Contact form (name, email, organisation, message) is used to respond to enquiries and is not sold or rented. The form is processed by Formspree, a third-party service, so submissions are transmitted to Formspree's servers.
+Personal information submitted through the Contact form (name, email, organisation, message), or sent to us by email, is used to respond to enquiries and is not sold or rented. The form is processed by Formspree, a third-party service, so submissions are transmitted to Formspree's servers. We run no analytics or advertising trackers, but GitHub Pages (hosting), Google Fonts and the embedded Google Map may receive technical data such as visitors' IP addresses.
 
 Full detail is on the [live Privacy Policy page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html).
 
-> The Privacy Policy has not yet been reviewed by legal counsel. Formal legal review is recommended before it is relied on as a binding compliance document, particularly with respect to Uganda's Data Protection and Privacy Act.
+> The Privacy Policy and Terms of Service have not yet been reviewed by legal counsel. Formal legal review is recommended before it is relied on as a binding compliance document, particularly with respect to Uganda's Data Protection and Privacy Act.
 
 ---
 
@@ -873,13 +888,11 @@ The approved company descriptor and tagline are:
 
 Priorities currently under active development or planning:
 
-- [ ] Complete custom domain (`www.jopetnah.com`) connection and DNS verification
-- [ ] Apply the approved company descriptor, tagline, pillars and sector names to every page and footer (Contact, Services and Sustainability first)
-- [ ] Add Privacy Policy and Terms links to every page footer, especially the Contact page
-- [ ] Add canonical, Open Graph and Twitter Card tags to every page
-- [ ] Update the Privacy Policy to disclose Google Fonts alongside Formspree
-- [ ] Verify and document the Uganda location count and international network records
+- [ ] Complete custom domain (`www.jopetnah.com`) connection and DNS verification; update canonical, Open Graph, JSON-LD and sitemap URLs at the same time
 - [ ] Confirm and publish applicable licences, certifications and regulatory registrations
+- [ ] Verify and document the Uganda location count and international network records
+- [ ] Have the Privacy Policy and Terms of Service reviewed by legal counsel, then remove the review notices
+- [ ] Finalise and publish the governance policies listed on the [Transparency page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/transparency.html), and keep their status labels consistent across the site
 - [ ] Publish further verified case studies using [`docs/case-study-template.md`](docs/case-study-template.md)
 - [ ] Finalise and publish approved leadership biographies
 - [ ] Source properly licensed photography and video content (see [Media](#media))
