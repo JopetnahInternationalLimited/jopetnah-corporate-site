@@ -519,7 +519,7 @@ Our leadership framework comprises:
 
 **Managing Director:** Okello Carlos Torach
 
-Additional leadership profiles and biographies will be published following internal review and authorisation. See the [Governance](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/governance.html) and [Transparency](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/transparency.html) pages for the current status of governance policies.
+Additional leadership profiles and biographies will be published following internal review and authorisation. The Company's eight core governance policies are published — see [Quality, Risk & Compliance](#quality-risk--compliance) for the list, or the [Governance](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/governance.html) and [Transparency](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/transparency.html) pages directly.
 
 <!--
 Biography templates removed from public view.
@@ -618,6 +618,21 @@ Our activities may contribute to relevant SDGs, including:
 # Quality, Risk & Compliance
 
 Our quality and risk framework is intended to support clear project planning, defined responsibilities, quality control, risk identification and mitigation, regulatory compliance, data protection, cybersecurity awareness, business continuity, health and safety, stakeholder communication and continuous improvement.
+
+## Governance Policies
+
+Our core governance policies are published on the [Transparency](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/transparency.html) and [Governance](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/governance.html) pages:
+
+- [Code of Ethics & Business Conduct](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/code-of-ethics.html)
+- [Anti-Corruption & Anti-Bribery Policy](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/anti-corruption.html)
+- [Whistleblowing / Speak-Up Policy](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/whistleblowing.html)
+- [Conflict of Interest Policy](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/conflict-of-interest.html)
+- [Procurement Policy & Supplier Conduct Expectations](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/procurement.html)
+- [Health, Safety & Environment (HSE) Policy](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/hse.html)
+- [Risk Management Outline](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/risk-management.html)
+- [Data Protection & Privacy Policy](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html)
+
+A further set of supporting guidelines (environmental responsibility, resource efficiency, DEI, CSR and others) is still being finalised; their status is tracked on the [Transparency page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/transparency.html).
 
 ## Registrations, Licences & Certifications
 
@@ -891,8 +906,8 @@ Priorities currently under active development or planning:
 - [ ] Complete custom domain (`www.jopetnah.com`) connection and DNS verification; update canonical, Open Graph, JSON-LD and sitemap URLs at the same time
 - [ ] Confirm and publish applicable licences, certifications and regulatory registrations
 - [ ] Verify and document the Uganda location count and international network records
-- [ ] Have the Privacy Policy and Terms of Service reviewed by legal counsel, then remove the review notices
-- [ ] Finalise and publish the governance policies listed on the [Transparency page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/transparency.html), and keep their status labels consistent across the site
+- [ ] Have the Privacy Policy, Terms of Service and the eight published governance policies reviewed by legal counsel, then remove the review notices where they still appear
+- [ ] Finalise and publish the remaining supporting guidelines listed on the [Transparency page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/transparency.html) (environmental responsibility, resource efficiency, DEI, CSR and others)
 - [ ] Publish further verified case studies using [`docs/case-study-template.md`](docs/case-study-template.md)
 - [ ] Finalise and publish approved leadership biographies
 - [ ] Source properly licensed photography and video content (see [Media](#media))
