@@ -1,112 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Jopetnah International Limited XML sitemap. sectors.html and industries.html are redirects and are intentionally excluded. -->
+  <!-- Jopetnah International Limited XML sitemap.
+       sectors.html and industries.html are redirects and are intentionally excluded.
+       404.html is excluded (noindex). -->
 
   <!-- Home -->
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/index.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <!-- Primary corporate pages -->
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/about.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/services.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/contact.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <!-- Responsible business -->
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/sustainability.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/impact.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <!-- Portfolio, news and careers -->
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/projects.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/news.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/careers.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <!-- Governance and compliance -->
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/governance.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/transparency.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/code-of-ethics.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/anti-corruption.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/whistleblowing.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/conflict-of-interest.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/procurement.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/hse.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/risk-management.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <!-- Legal -->
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
   <url>
     <loc>https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/terms.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
   </url>
 
 </urlset>

@@ -1,19 +1,12 @@
-# =============================================
+# ============================================
 # robots.txt for Jopetnah International Limited
-# =============================================
+# ============================================
+# Everything on this public site is meant to be indexed. Pages not yet
+# ready for search results (e.g. 404.html) carry their own noindex tag
+# instead of being blocked here, since Disallow prevents crawling
+# altogether and can hide a page's noindex tag from search engines.
 
 User-agent: *
 Allow: /
 
-# Disallow sensitive folders (even if they don't exist yet)
-Disallow: /assets/documents/private/
-Disallow: /policies/drafts/
-Disallow: /reports/internal/
-Disallow: /admin/
-Disallow: /login/
-Disallow: /test/
-
-Crawl-delay: 1
-
-# Sitemap
 Sitemap: https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/sitemap.xml
