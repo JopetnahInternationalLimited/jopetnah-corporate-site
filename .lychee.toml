@@ -1,1 +1,16 @@
+timeout = 20
+max_retries = 2
+retry_wait_time = 4
+max_concurrency = 8
 
+exclude = [
+  '^https://www\.facebook\.com/',
+  '^https://www\.linkedin\.com/',
+  '^https://x\.com/',
+  '^https://www\.instagram\.com/',
+  '^https://www\.tiktok\.com/',
+  '^https://www\.youtube\.com/',
+  '^https://formspree\.io/',
+  '^https://www\.google\.com/maps/',
+  '^https://jopetnahinternationallimited\.github\.io/',
+]
