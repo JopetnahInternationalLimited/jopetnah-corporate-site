@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Validate all HTML files
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
@@ -44,7 +44,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Check internal and external links (HTML + Markdown)
         uses: lycheeverse/lychee-action@v2
