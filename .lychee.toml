@@ -5,7 +5,8 @@ timeout = 20
 max_retries = 2
 retry_wait_time = 4
 max_concurrency = 8
-exclude_mail = true
+# mailto: links are skipped by default (include_mail defaults to false),
+# so no setting is needed here.
 
 # Social platforms and form endpoints routinely block bots and return 403/999 or
 # reject non-POST requests, which would fail the build on healthy links.
