@@ -31,6 +31,11 @@ jobs:
         with:
           root: .
           css: false
+          # Google site-verification files (e.g. google<token>.html) are not
+          # meant to be valid HTML5 documents -- Google requires the exact
+          # bare content it generates, with no <!DOCTYPE>, <head> or <title>.
+          # Excluding them here prevents a false validator failure.
+          blacklist: 'google*.html'
 
   link-check:
     name: Check for broken links
