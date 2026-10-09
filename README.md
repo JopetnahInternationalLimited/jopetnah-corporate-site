@@ -166,7 +166,7 @@ Our 16 sectors are organised into four broad pillars, giving clients a simpler w
 
 ## 1. Business & Advisory Solutions
 
-Strategic Consultancy & Advisory · Research & Development · Training & Capacity Building · International Employment Bureau · Marketing & Advertising · Technology & Digital Solutions
+Strategic Consultancy & Advisory · Research & Development · Training & Capability Building · International Employment Bureau · Marketing & Advertising · Technology & Digital Solutions
 
 ## 2. Infrastructure & Resources Support
 
@@ -174,7 +174,7 @@ Engineering & Construction · Transport & Logistics · Petroleum, Oil, Gas & Ren
 
 ## 3. Social & Human Development
 
-Healthcare & Pharmaceuticals · Educational Services · Tourism & Hospitality
+Tourism & Hospitality · Healthcare & Pharmaceuticals · Educational Services
 
 ## 4. Trade & Events
 
@@ -224,151 +224,243 @@ FMCG & General Merchandise · Events & Recreation Management
 
 # Our 16 Strategic Sectors
 
-Each sector can be delivered independently or combined according to client needs. Full details, including complete core-service lists, are on the [live Services page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/services.html). Some sectors involve regulated activities; see [Regulated Activities](#regulated-activities).
+Each sector can be delivered independently or combined according to client needs. The lists below provide a concise, plain-language summary of the principal core services associated with each sector. The [live Services page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/services.html) provides the fuller service descriptions, client needs and delivery notes. Some sectors involve regulated activities; see [Regulated Activities](#regulated-activities).
+
+### Pillar 01 — Business & Advisory Solutions
 
 ## 01. Strategic Consultancy & Advisory
 
-- Strategy development
-- Business advisory
-- Commercial and financial advisory
-- Governance and risk support
-- Organisational development
-- Market intelligence
+**Core services**
+- Business strategy and corporate planning
+- Business plans and feasibility support
+- Market-entry and investment advisory
+- Financial and commercial advisory
+- Governance and organisational development
+- Risk management
+- Business transformation
+- Procurement and sourcing advisory
+- Tender and contract support
+- Working-capital and invoice-factoring support
+- Business representation, agency and partnership facilitation
 
 ## 02. Research & Development
 
-- Applied research
+**Core services**
 - Market research
 - Feasibility studies
-- Industry analysis
-- Product and service development
-- Innovation programmes
+- Business and investment research
+- Sector and industry research
+- Policy and institutional research
+- Data collection and analysis
+- Customer and market assessments
+- Opportunity identification
+- Product and service development support
+- Innovation and improvement studies
 
-## 03. Training & Capacity Building
+## 03. Training & Capability Building
 
-- Professional training
-- Technical training
-- Leadership development
-- Workforce development
+**Core services**
+- Corporate training
+- Leadership and management development
+- Technical and vocational skills
+- Entrepreneurship and business skills
+- Workplace safety and HSE
+- Compliance awareness
+- Staff orientation
 - Institutional capacity building
-- Entrepreneurship and digital skills
+- Workshops and seminars
+- Training materials and facilitation
 
 ## 04. International Employment Bureau
 
-- International recruitment
-- Workforce solutions
-- Talent sourcing
-- Candidate preparation
-- Employer support
-- Workforce mobility
+**Core services**
+- Local and international recruitment
+- Vacancy sourcing
+- Candidate sourcing and screening
+- CV and document review
+- Shortlisting
+- Interview coordination
+- Employer recruitment support
+- Placement
+- Pre-departure orientation
+- Employment-process coordination
+- Visa-process guidance within applicable legal frameworks
 
 ## 05. Marketing & Advertising
 
-- Brand strategy
-- Digital marketing
-- Advertising
+**Core services**
+- Marketing strategy
+- Brand positioning
 - Corporate communications
-- Public relations
-- Creative campaigns
+- Digital marketing
+- Campaign planning and execution
+- Social media
+- Promotional campaigns
+- Market activation
+- Outdoor and indoor advertising
+- Signage and sign-post solutions
+- Advertising displays, frames and screens
+- Promotional and visibility materials
 
 ## 06. Technology & Digital Solutions
 
-- Website and digital platform development
-- Technology consulting
-- Business automation
-- Digital transformation
-- Data-driven solutions
-- Digital communications
+**Core services**
+- Digital strategy
+- Website and online presence
+- Business systems advisory
+- Workflow and process digitisation
+- Automation guidance
+- Digital communication tools
+- Technology sourcing and implementation
+- Basic systems support
+- Digital content and business information management
+
+### Pillar 02 — Infrastructure & Resources Support
 
 ## 07. Engineering & Construction
 
-- Engineering consultancy
-- Construction
-- Project management
-- Infrastructure planning
-- Structural solutions
-- Property development
+**Core services**
+- Building and construction contracting support
+- Construction project coordination
+- Building-material sourcing and supply
+- Construction tools and equipment
+- Heavy plant and machinery sourcing
+- Infrastructure project support
+- Plumbing-related support
+- Building maintenance
+- Architectural and quantity-surveying facilitation
+- Valuation and building-technology consultancy coordination
+
+### Pillar 03 — Social & Human Development
 
 ## 08. Tourism & Hospitality
 
-- Tourism development
-- Travel services
-- Hospitality solutions
-- Destination marketing
-- Tourism consultancy
-- Travel management
+**Core services**
+- Travel agency support
+- Tour operations
+- Tourism packages
+- Destination facilitation
+- Hotel and accommodation support
+- Restaurant and café services
+- Holiday and leisure accommodation
+- Apartment and guest accommodation
+- Taxi and car-hire coordination
+- Hospitality supplier coordination
 
 ## 09. Transport & Logistics
 
-- Logistics
-- Transportation
-- Freight coordination
-- Supply-chain support
-- Procurement logistics
+**Core services**
+- Passenger transport coordination
+- Goods transportation
+- Haulage
+- Vehicle and car hire
+- Logistics coordination
 - Distribution
+- Clearing and forwarding support
+- Shipping coordination
+- Warehousing
+- Route planning
+- Cargo documentation and delivery coordination
 
 ## 10. Healthcare & Pharmaceuticals
 
-- Healthcare consultancy
-- Pharmaceutical distribution
-- Medical supplies
-- Medical equipment
-- Healthcare projects
-- Health-sector capacity building
+**Core services**
+- Pharmaceutical sourcing and supply
+- Healthcare product sourcing
+- Medical, medicinal and sanitary goods
+- Personal-care and hygiene products
+- Health-sector programme support
+- Health-related capacity building
+- Institutional health supplies
+- Supplier and distribution coordination
+
+### Pillar 04 — Trade & Events
 
 ## 11. FMCG & General Merchandise
 
-- Fast-moving consumer goods
+**Core services**
+- Import and export
+- Product sourcing
+- Wholesale
+- Retail
 - General merchandise
-- Procurement
-- Distribution
-- Institutional supplies
-- Wholesale and commercial trading
+- Furniture
+- Clothing and apparel
+- Household goods
+- Electrical appliances and tools
+- Crockery and kitchen equipment
+- Plastics and plastic products
+- Food and beverages
+- Agricultural produce
+- Cosmetics and toiletries
+- Institutional and contract supplies
 
 ## 12. Events & Recreation Management
 
-- Corporate events
-- Conferences
-- Workshops
-- Exhibitions
-- Recreation programmes
-- Event planning and stakeholder engagement
+**Core services**
+- Event planning and management
+- Wedding planning
+- Conference and workshop coordination
+- Venue coordination
+- Outside catering
+- Tent hire
+- PA systems
+- Discography and DJ services
+- Cake baking
+- Decoration
+- Entertainment and recreation support
+- Supplier coordination
 
 ## 13. Educational Services
 
-- Education consultancy
+**Core services**
+- Education programme support
+- Vocational and practical skills training
+- Learning and training facilitation
 - Institutional development
-- Training
-- Vocational development
-- Skills development
-- Workforce preparation
+- Curriculum and content support
+- Workshops and seminars
+- Education-sector research
+- Training materials and learning resources
 
 ## 14. Petroleum, Oil, Gas & Renewable Energy
 
-- Energy consultancy
-- Petroleum-sector support
-- Oil and gas services
-- Renewable energy solutions
-- Energy efficiency
-- Energy project support
+**Core services**
+- Petroleum product sourcing and supply
+- Fuel distribution support
+- Energy-sector procurement
+- Petroleum logistics
+- Energy opportunity assessment
+- Renewable-energy project support
+- Supplier and partner coordination
+- Responsible-practice and compliance support
 
 ## 15. Agricultural Development & Agribusiness
 
-- Agribusiness development
-- Agricultural consultancy
+**Core services**
+- Agricultural produce sourcing and trading
+- Agribusiness advisory
+- Market-access support
+- Agricultural supply and distribution
+- Cotton-related business support
+- Ginning and processing facilitation
+- Oilseed and agricultural processing support
+- Storage and logistics
+- Agricultural inputs and equipment sourcing
 - Value-chain development
-- Modern farming solutions
-- Market access
-- Sustainable agriculture
 
 ## 16. Natural Resources & Mining
 
-- Mining consultancy
-- Resource development
-- Exploration support
-- Technical consultancy
-- Sustainable resource management
-- Responsible resource-development practices
+**Core services**
+- Mining opportunity assessment
+- Mineral and metals sourcing
+- Mineral trading support
+- Exploration and project facilitation
+- Processing and value-addition coordination
+- Mining equipment and supply support
+- Stakeholder and partner coordination
+- Regulatory and responsible-practice considerations
+
 
 ---
 
