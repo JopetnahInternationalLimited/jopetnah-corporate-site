@@ -10,13 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (toggle && links) {
+    if (!toggle.hasAttribute('aria-controls')) {
+      toggle.setAttribute('aria-controls', 'primary-navigation');
+    }
+    setOpen(false);
     toggle.addEventListener('click', function () {
       setOpen(!links.classList.contains('open'));
     });
     links.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () { setOpen(false); });
     });
-    // Escape closes the menu and returns focus to the toggle
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && links.classList.contains('open')) {
         setOpen(false);
