@@ -11,20 +11,36 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/news-articles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jopetnah International Limited">
+  <meta property="og:locale" content="en_GB">
   <meta property="og:title" content="News &amp; Insights | Jopetnah International Limited">
   <meta property="og:description" content="Perspectives on practical business solutions, responsible innovation and opportunities connecting organisations, markets and communities.">
   <meta property="og:url" content="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/news.html">
+  <meta property="og:image" content="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="News &amp; Insights | Jopetnah International Limited">
   <meta name="twitter:description" content="Perspectives on practical business solutions, responsible innovation and opportunities connecting organisations, markets and communities.">
+  <meta name="twitter:image" content="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/assets/og-image.png">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "News & Insights | Jopetnah International Limited",
     "url": "https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/news.html",
-    "description": "News, perspectives and business insights from Jopetnah International Limited."
+    "description": "News, perspectives and business insights from Jopetnah International Limited.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Jopetnah International Limited",
+      "url": "https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/"
+    }
   }
   </script>
 </head>
@@ -41,7 +57,7 @@
         <a href="services.html">Services</a>
         <a href="sustainability.html">Sustainability</a>
         <a href="transparency.html">Transparency</a>
-        <a href="news.html" aria-current="page">News</a>
+        <a href="news.html" class="active" aria-current="page">News</a>
         <a href="contact.html">Contact</a>
       </div>
       <div style="display:flex;align-items:center;">
@@ -60,7 +76,7 @@
   <main>
     <section class="hero newsroom-hero">
       <div class="wrap">
-        <span class="eyebrow" style="justify-content:center;display:flex;">News &amp; Insights</span>
+        <span class="eyebrow newsroom-eyebrow">News &amp; Insights</span>
         <h1>Ideas, Perspectives &amp; Developments</h1>
         <p class="lede">Read thought leadership, market perspectives and practical updates from Jopetnah International Limited across strategy, sustainability, digital transformation and business growth.</p>
       </div>
@@ -69,32 +85,40 @@
     <section class="tight newsroom-section">
       <div class="wrap">
         <div class="news-grid" aria-label="Latest news and insights">
+
           <article class="news-card">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Digital technology being used in a modern workspace" loading="lazy">
-            <div class="news-card-content">
-              <span class="category">Digital Transformation</span>
-              <h3><a href="news-digital-transformation.html">Digital transformation works best when strategy is practical</a></h3>
-              <p>Operational clarity, better data and disciplined execution can help organisations move from ambition to measurable progress.</p>
-            </div>
+            <a href="news-digital-transformation.html" class="news-card-link">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Digital technology being used in a modern workspace" loading="lazy" width="1000" height="667">
+              <div class="news-card-content">
+                <span class="category">Digital Transformation</span>
+                <h3>Driving digital transformation through practical, responsible technology adoption</h3>
+                <p>Why effective digital change needs strategic alignment, governance and a clear focus on business outcomes—not tools alone.</p>
+              </div>
+            </a>
           </article>
 
           <article class="news-card">
-            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Agricultural fields and crops" loading="lazy">
-            <div class="news-card-content">
-              <span class="category">Agriculture &amp; Value Chains</span>
-              <h3><a href="news-agricultural-value-chains.html">Agricultural value chains need stronger coordination to create resilient growth</a></h3>
-              <p>Linking production, processing and market access is essential to building more resilient, inclusive supply systems.</p>
-            </div>
+            <a href="news-agricultural-value-chains.html" class="news-card-link">
+              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Agricultural fields and crops" loading="lazy" width="1000" height="667">
+              <div class="news-card-content">
+                <span class="category">Agriculture &amp; Value Chains</span>
+                <h3>Strengthening agricultural value chains for market readiness and resilient growth</h3>
+                <p>Linking production, quality, processing and market access to build more resilient and inclusive supply systems.</p>
+              </div>
+            </a>
           </article>
 
           <article class="news-card">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Business professionals collaborating around a table" loading="lazy">
-            <div class="news-card-content">
-              <span class="category">Strategic Advisory</span>
-              <h3><a href="news-brand-strategy.html">Stronger decision-making starts with a clearer operating model</a></h3>
-              <p>Practical governance and execution frameworks help leaders reduce friction and create momentum.</p>
-            </div>
+            <a href="news-brand-strategy.html" class="news-card-link">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Business professionals collaborating around a table" loading="lazy" width="1000" height="667">
+              <div class="news-card-content">
+                <span class="category">Marketing &amp; Brand Strategy</span>
+                <h3>Building stronger brands through integrated marketing and corporate communications</h3>
+                <p>Clear brand identity, consistent messaging and coordinated engagement help organisations communicate value and grow sustainably.</p>
+              </div>
+            </a>
           </article>
+
         </div>
 
         <p class="newsroom-note">For company announcements and business enquiries, <a href="contact.html">contact Jopetnah International Limited</a> or email <a href="mailto:jopetnah.intl.ltd@gmail.com">jopetnah.intl.ltd@gmail.com</a>.</p>
@@ -110,8 +134,20 @@
             <img src="assets/icon.png" alt="Jopetnah International Limited logo">
             <span>JOPETNAH INTERNATIONAL LIMITED</span>
           </div>
-          <p><strong>Empowering Businesses with Practical Solutions</strong></p>
+          <p>
+            <strong>Empowering Businesses with Practical Solutions.</strong>
+            Jopetnah International Limited is a Kampala-based multi-sector services company providing practical, integrated solutions across 16 strategic sectors.
+          </p>
+          <p style="margin-top:10px; font-size:12.5px;">
+            <a href="https://www.facebook.com/profile.php?id=100063008632130">Facebook</a> &middot;
+            <a href="https://www.linkedin.com/company/jopetnah-international-limited">LinkedIn</a> &middot;
+            <a href="https://www.youtube.com/@JopetnahInternationalLimited">YouTube</a> &middot;
+            <a href="https://x.com/Jopetnah_LTD">X</a> &middot;
+            <a href="https://www.instagram.com/jopetnah.intl.ltd">Instagram</a> &middot;
+            <a href="https://www.tiktok.com/@Jopetnah.internat">TikTok</a>
+          </p>
         </div>
+
         <div>
           <h5>Company</h5>
           <ul>
@@ -119,8 +155,11 @@
             <li><a href="services.html">Our Services</a></li>
             <li><a href="projects.html">Our Work</a></li>
             <li><a href="careers.html">Careers</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
+
         <div>
           <h5>Responsible Business</h5>
           <ul>
@@ -128,21 +167,31 @@
             <li><a href="impact.html">Impact &amp; Outcomes</a></li>
             <li><a href="governance.html">Governance</a></li>
             <li><a href="transparency.html">Transparency</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
           </ul>
         </div>
+
         <div>
           <h5>Contact</h5>
           <ul>
             <li>UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area, P.O. Box 124614, Kampala GPO, Uganda, East Africa — Postal Code 1003</li>
             <li>+256 414 598 031</li>
+            <li>+256 782 520 058</li>
+            <li>+256 753 520 058</li>
             <li><a href="mailto:jopetnah.intl.ltd@gmail.com">jopetnah.intl.ltd@gmail.com</a></li>
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
-        &copy; 2026 Jopetnah International Limited. All rights reserved. &nbsp;|&nbsp; Company Reg. No.: 80010001250674 &nbsp;&bull;&nbsp; TIN: 1018486351 &nbsp;|&nbsp;
-        <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
-        <a href="terms.html">Terms of Service</a>
+        &copy; 2026 Jopetnah International Limited. All rights reserved.
+        &nbsp;|&nbsp; Company Reg. No.: 80010001250674
+        &nbsp;&bull;&nbsp; TIN: 1018486351
+        &nbsp;|&nbsp;
+        <a href="privacy.html" style="color:#9599A1;">Privacy Policy</a>
+        &nbsp;&bull;&nbsp;
+        <a href="terms.html" style="color:#9599A1;">Terms of Service</a>
       </div>
     </div>
   </footer>
