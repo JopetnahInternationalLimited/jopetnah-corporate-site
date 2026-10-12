@@ -13,4 +13,6 @@ exclude = [
   '^https://formspree\.io/',
   '^https://www\.google\.com/maps/',
   '^https://jopetnahinternationallimited\.github\.io/',
+  '^https://images\.unsplash\.com/',
+  '^https://images\.pexels\.com/',
 ]
