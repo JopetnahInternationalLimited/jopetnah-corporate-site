@@ -1,0 +1,17 @@
+/* TEAM */
+Company: Jopetnah International Limited
+Site: https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/
+Location: Kampala, Uganda
+Contact: jopetnah.intl.ltd@gmail.com
+
+/* THANKS */
+Thanks to everyone who contributed feedback during the site's development.
+
+/* SITE */
+Standards: HTML5, CSS3, ES6 JavaScript
+Components: No framework, no build step -- static HTML/CSS/JS
+Fonts: Poppins, Lora (Google Fonts)
+Hosting: GitHub Pages
+Last update: 2026/07/26
+Language: English
+Doctype: HTML5

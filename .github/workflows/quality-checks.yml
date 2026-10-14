@@ -1,0 +1,60 @@
+name: Site Quality Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * 1' # Monday 06:00 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  html-validate:
+    name: Validate HTML
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Validate all HTML files
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        with:
+          root: .
+          css: false
+          # Google site-verification files (e.g. google<token>.html) are not
+          # meant to be valid HTML5 documents -- Google requires the exact
+          # bare content it generates, with no <!DOCTYPE>, <head> or <title>.
+          # Excluding them here prevents a false validator failure.
+          blacklist: 'google*.html'
+
+  link-check:
+    name: Check for broken links
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Check internal and external links (HTML + Markdown)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          args: |
+            --verbose
+            --no-progress
+            --config .lychee.toml
+            './**/*.html'
+            './**/*.md'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
