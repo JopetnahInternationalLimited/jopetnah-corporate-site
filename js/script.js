@@ -65,4 +65,69 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     } catch (err) { /* ignore invalid selectors */ }
   }
+
+  // Theme toggle (light/dark). The actual theme is set before paint by a
+  // small inline script in <head> (reads localStorage, falls back to the
+  // OS preference) so there's no flash of the wrong theme on load — this
+  // just wires up the button to flip it afterwards.
+  var themeBtn = document.querySelector('.theme-toggle');
+  if (themeBtn) {
+    var root = document.documentElement;
+    function describeTheme(theme) {
+      themeBtn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      themeBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+    }
+    describeTheme(root.getAttribute('data-theme') || 'light');
+    themeBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      describeTheme(next);
+      try { localStorage.setItem('jil-theme', next); } catch (err) { /* private browsing etc. */ }
+    });
+  }
+
+  // Animated stat counters (home page "Jopetnah at a glance" band).
+  // Falls back to the real static numbers already in the HTML if JS
+  // doesn't run, and skips the animation outright for reduced-motion.
+  var counters = document.querySelectorAll('.stats-band .counter');
+  if (counters.length) {
+    var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var band = document.querySelector('.stats-band');
+
+    function runCounters() {
+      counters.forEach(function (el) {
+        var target = parseInt(el.getAttribute('data-target'), 10);
+        if (isNaN(target)) return;
+        var duration = 900;
+        var startTime = null;
+        function step(ts) {
+          if (!startTime) startTime = ts;
+          var progress = Math.min((ts - startTime) / duration, 1);
+          el.textContent = Math.floor(progress * target);
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            el.textContent = target;
+          }
+        }
+        el.textContent = '0';
+        requestAnimationFrame(step);
+      });
+    }
+
+    if (!prefersReducedMotion && band && 'IntersectionObserver' in window) {
+      var counterObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            runCounters();
+            counterObserver.disconnect();
+          }
+        });
+      }, { threshold: 0.4 });
+      counterObserver.observe(band);
+    }
+    // If reduced motion is preferred, or there's no IntersectionObserver
+    // support, the real numbers already in the HTML are left exactly as
+    // they are -- nothing further to do.
+  }
 });
