@@ -1,10 +1,29 @@
 /* ============================================================
-   Append to the END of css/style.css
-   Untested in a browser: check on a phone and at ~900px / ~1000px widths.
+   JIL Website Enhancements — reconciled patch
+   Append to the END of css/style.css.
+   Supersedes the two earlier, overlapping drafts:
+     - css/style-additions.css (already committed, never linked)
+     - enhancements-review-01.css (uploaded review package)
+   Both targeted the same nav/focus-visible/reduced-motion/scroll-margin
+   ground; this file keeps the best version of each rule exactly once.
+   Does not replace existing page content, JavaScript, or forms.
+   Untested in a live browser — check on a phone and at ~900px/~1000px
+   widths before merging into the live stylesheet.
    ============================================================ */
 
-/* 1. Six nav items + CTA need more room than the old 860px breakpoint gives.
-      Switch to the mobile menu earlier and tighten spacing just above it. */
+:root {
+  --jil-focus: #075f9a;
+  --jil-blue-deep: #075f9a;
+  --jil-surface: #f4f8fc;
+  --jil-border-strong: #c9d6e2;
+  --jil-shadow-soft: 0 12px 34px rgba(27, 30, 35, 0.07);
+  --jil-shadow-hover: 0 18px 42px rgba(14, 134, 212, 0.13);
+}
+
+/* ---- Navigation: breakpoints (from the orphaned style-additions.css) ---- */
+
+/* Six nav items + CTA need more room than the old 860px breakpoint gives.
+   Switch to the mobile menu earlier and tighten spacing just above it. */
 @media (max-width: 1100px) {
   .nav-links { gap: 20px; }
   .nav-links a { font-size: 13.5px; }
@@ -18,28 +37,234 @@
   .nav-toggle { display: block; background: none; border: none; cursor: pointer; }
   .nav-toggle svg { display: block; }
 }
+@media (max-width: 860px) {
+  .nav-links {
+    max-height: calc(100dvh - 64px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
 
-/* 2. Small phones: brand + CTA + toggle do not fit on one row. */
+/* Small phones: brand + CTA + toggle do not fit on one row. */
 @media (max-width: 600px) {
   .nav { padding: 12px 18px; }
   .brand span { font-size: 13px; }
   .nav-cta { display: none; }   /* the CTA is inside the page and the menu */
 }
 
-/* 3. Keyboard focus styles (only form fields had one) */
-a:focus-visible, button:focus-visible, .btn:focus-visible,
-.nav-links a:focus-visible, .social-row a:focus-visible {
-  outline: 2px solid var(--blue);
+.site-header {
+  box-shadow: 0 3px 18px rgba(27, 30, 35, 0.035);
+}
+.nav-links a {
+  transition: color .18s ease;
+}
+
+/* ---- Accessibility: keyboard focus ---- */
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--jil-focus);
   outline-offset: 3px;
   border-radius: 3px;
 }
-
-/* 4. Respect reduced-motion for smooth scrolling and hover movement */
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .btn-primary:hover, .pillar:hover { transform: none; }
-  .nav-links, .accordion-panel { transition: none; }
+.nav-toggle:focus-visible,
+.btn:focus-visible {
+  outline-offset: 4px;
+}
+.nav-links a:focus-visible {
+  border-radius: 3px;
 }
 
-/* 5. Anchored sections should clear the sticky header when jumped to */
-[id] { scroll-margin-top: 80px; }
+/* Shared skip link; becomes visible when focused. HTML markup
+   (<a class="skip-link" href="#main-content">Skip to main content</a>
+   as the first element inside <body>, and id="main-content" on the
+   primary content container) has already been added page-by-page
+   alongside this stylesheet — this rule only supplies the look. */
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1000;
+  transform: translateY(-160%);
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #fff;
+  background: var(--jil-blue-deep);
+  font: 600 14px/1.3 var(--font-display);
+  box-shadow: var(--jil-shadow-soft);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* ---- Typography / surface polish ---- */
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  color: #fff;
+  background: var(--jil-blue-deep);
+}
+section .section-head p,
+.page-header .lede,
+.hero .lede {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+.wrap {
+  width: 100%;
+}
+
+/* ---- Anchored sections should clear the sticky header when jumped to ---- */
+section:not(.stats-band):not(.cta-band) {
+  scroll-margin-top: 88px;
+}
+#main-content {
+  scroll-margin-top: 88px;
+}
+
+/* ---- Cards: improve perceived quality without changing information design ---- */
+.pillar,
+.value-card,
+.accordion-item,
+.leadership-grid .role,
+.div-chip {
+  box-shadow: 0 1px 0 rgba(27, 30, 35, 0.025);
+  transition:
+    border-color .18s ease,
+    box-shadow .18s ease,
+    transform .18s ease,
+    background-color .18s ease;
+}
+.pillar:hover,
+.value-card:hover,
+.leadership-grid .role:hover {
+  box-shadow: var(--jil-shadow-hover);
+}
+.div-chip {
+  background: linear-gradient(145deg, #fff, #f8fbfe);
+}
+.div-chip:hover,
+.div-chip:focus-visible {
+  border-color: var(--blue);
+  background: var(--blue-tint);
+}
+.accordion-item:focus-within {
+  border-color: var(--blue);
+}
+.accordion-trigger:focus-visible {
+  outline-offset: -4px;
+}
+
+/* ---- Stronger page openings, retaining the current blue/red brand palette ---- */
+.hero {
+  background:
+    radial-gradient(ellipse at 92% 10%, rgba(14, 134, 212, .085), transparent 35%),
+    radial-gradient(ellipse at 5% 90%, rgba(224, 21, 27, .045), transparent 28%),
+    linear-gradient(180deg, var(--paper) 0%, var(--white) 100%);
+}
+.page-header {
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(14, 134, 212, .075), transparent 38%),
+    linear-gradient(180deg, var(--paper), var(--white));
+}
+.hero h1 {
+  max-width: 17ch;
+  line-height: 1.12;
+}
+.page-header h1 {
+  line-height: 1.12;
+}
+.btn {
+  min-height: 44px;
+  justify-content: center;
+}
+.btn-primary {
+  box-shadow: 0 5px 16px rgba(14, 134, 212, .12);
+}
+.btn-primary:hover {
+  box-shadow: 0 8px 22px rgba(14, 134, 212, .2);
+}
+
+/* ---- Contact fields: clearer boundaries and high-visibility focus ---- */
+.form-field input,
+.form-field textarea,
+.form-field select {
+  border-color: var(--jil-border-strong);
+  transition: border-color .16s ease, box-shadow .16s ease, background .16s ease;
+}
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  border-color: var(--jil-focus);
+  box-shadow: 0 0 0 3px rgba(14, 134, 212, .12);
+  outline: none;
+}
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #666d76;
+  opacity: 1;
+}
+
+/* Article cards may use either .news-card or existing .article-card naming.
+   These rules are deliberately limited to those common card classes. */
+.news-card,
+.article-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(27, 30, 35, .055);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.news-card:hover,
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--jil-shadow-hover);
+}
+.news-card img,
+.article-card img {
+  object-fit: cover;
+}
+.news-card a:focus-visible,
+.article-card a:focus-visible {
+  outline-offset: -4px;
+}
+
+/* ---- Footer: dark feature band; improve legibility of small copy/links ---- */
+.site-footer p {
+  color: #b8bec8;
+}
+.site-footer a {
+  text-underline-offset: 3px;
+}
+.site-footer a:focus-visible {
+  outline-color: #8fd0ff;
+}
+
+/* ---- Respect reduced-motion for all animation/transition/smooth-scroll ---- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- Small-screen refinements ---- */
+@media (max-width: 600px) {
+  .wrap { padding-left: 20px; padding-right: 20px; }
+  section { padding-top: 52px; padding-bottom: 52px; }
+  section.tight { padding-top: 38px; padding-bottom: 38px; }
+  .hero { padding-top: 56px; padding-bottom: 48px; }
+  .hero h1 { font-size: clamp(30px, 8vw, 38px); }
+  .page-header { padding-top: 48px; padding-bottom: 32px; }
+  .page-header h1 { font-size: clamp(28px, 7vw, 34px); }
+  .cta-band { padding: 34px 20px; }
+  .cta-band h2 { font-size: 23px; }
+}
