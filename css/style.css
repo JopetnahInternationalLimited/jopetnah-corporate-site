@@ -366,3 +366,393 @@ section.tight { padding: 48px 0; }
 .stat-strip { display:flex; flex-wrap:wrap; gap:28px; margin-top:8px; }
 .stat-strip .item { font-size:13.5px; color:var(--gray); }
 .stat-strip .item b { display:block; font-family:var(--font-display); font-weight:700; font-size:22px; color:var(--navy); }
+/* ============================================================
+   JIL Website Enhancements — reconciled patch
+   Append to the END of css/style.css.
+   Supersedes the two earlier, overlapping drafts:
+     - css/style-additions.css (already committed, never linked)
+     - enhancements-review-01.css (uploaded review package)
+   Both targeted the same nav/focus-visible/reduced-motion/scroll-margin
+   ground; this file keeps the best version of each rule exactly once.
+   Does not replace existing page content, JavaScript, or forms.
+   Untested in a live browser — check on a phone and at ~900px/~1000px
+   widths before merging into the live stylesheet.
+   ============================================================ */
+
+:root {
+  --jil-focus: #075f9a;
+  --jil-blue-deep: #075f9a;
+  --jil-surface: #f4f8fc;
+  --jil-border-strong: #c9d6e2;
+  --jil-shadow-soft: 0 12px 34px rgba(27, 30, 35, 0.07);
+  --jil-shadow-hover: 0 18px 42px rgba(14, 134, 212, 0.13);
+}
+
+/* ---- Navigation: breakpoints (from the orphaned style-additions.css) ---- */
+
+/* Six nav items + CTA need more room than the old 860px breakpoint gives.
+   Switch to the mobile menu earlier and tighten spacing just above it. */
+@media (max-width: 1100px) {
+  .nav-links { gap: 20px; }
+  .nav-links a { font-size: 13.5px; }
+}
+@media (max-width: 1020px) {
+  .nav-links { position: fixed; top: 64px; left: 0; right: 0; background: var(--white);
+    flex-direction: column; align-items: flex-start; padding: 18px 28px 24px;
+    border-bottom: 1px solid var(--hairline); gap: 16px;
+    transform: translateY(-8px); opacity: 0; pointer-events: none; transition: all .18s ease; }
+  .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  .nav-toggle { display: block; background: none; border: none; cursor: pointer; }
+  .nav-toggle svg { display: block; }
+}
+@media (max-width: 860px) {
+  .nav-links {
+    max-height: calc(100dvh - 64px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+
+/* Small phones: brand + CTA + toggle do not fit on one row. */
+@media (max-width: 600px) {
+  .nav { padding: 12px 18px; }
+  .brand span { font-size: 13px; }
+  .nav-cta { display: none; }   /* the CTA is inside the page and the menu */
+}
+
+.site-header {
+  box-shadow: 0 3px 18px rgba(27, 30, 35, 0.035);
+}
+.nav-links a {
+  transition: color .18s ease;
+}
+
+/* ---- Accessibility: keyboard focus ---- */
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--jil-focus);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+.nav-toggle:focus-visible,
+.btn:focus-visible {
+  outline-offset: 4px;
+}
+.nav-links a:focus-visible {
+  border-radius: 3px;
+}
+
+/* Shared skip link; becomes visible when focused. HTML markup
+   (<a class="skip-link" href="#main-content">Skip to main content</a>
+   as the first element inside <body>, and id="main-content" on the
+   primary content container) has already been added page-by-page
+   alongside this stylesheet — this rule only supplies the look. */
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1000;
+  transform: translateY(-160%);
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #fff;
+  background: var(--jil-blue-deep);
+  font: 600 14px/1.3 var(--font-display);
+  box-shadow: var(--jil-shadow-soft);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* ---- Typography / surface polish ---- */
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  color: #fff;
+  background: var(--jil-blue-deep);
+}
+section .section-head p,
+.page-header .lede,
+.hero .lede {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+.wrap {
+  width: 100%;
+}
+
+/* ---- Anchored sections should clear the sticky header when jumped to ---- */
+section:not(.stats-band):not(.cta-band) {
+  scroll-margin-top: 88px;
+}
+#main-content {
+  scroll-margin-top: 88px;
+}
+
+/* ---- Cards: improve perceived quality without changing information design ---- */
+.pillar,
+.value-card,
+.accordion-item,
+.leadership-grid .role,
+.div-chip {
+  box-shadow: 0 1px 0 rgba(27, 30, 35, 0.025);
+  transition:
+    border-color .18s ease,
+    box-shadow .18s ease,
+    transform .18s ease,
+    background-color .18s ease;
+}
+.pillar:hover,
+.value-card:hover,
+.leadership-grid .role:hover {
+  box-shadow: var(--jil-shadow-hover);
+}
+.div-chip {
+  background: linear-gradient(145deg, #fff, #f8fbfe);
+}
+.div-chip:hover,
+.div-chip:focus-visible {
+  border-color: var(--blue);
+  background: var(--blue-tint);
+}
+.accordion-item:focus-within {
+  border-color: var(--blue);
+}
+.accordion-trigger:focus-visible {
+  outline-offset: -4px;
+}
+
+/* ---- Stronger page openings, retaining the current blue/red brand palette ---- */
+.hero {
+  background:
+    radial-gradient(ellipse at 92% 10%, rgba(14, 134, 212, .085), transparent 35%),
+    radial-gradient(ellipse at 5% 90%, rgba(224, 21, 27, .045), transparent 28%),
+    linear-gradient(180deg, var(--paper) 0%, var(--white) 100%);
+}
+.page-header {
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(14, 134, 212, .075), transparent 38%),
+    linear-gradient(180deg, var(--paper), var(--white));
+}
+.hero h1 {
+  max-width: 17ch;
+  line-height: 1.12;
+}
+.page-header h1 {
+  line-height: 1.12;
+}
+.btn {
+  min-height: 44px;
+  justify-content: center;
+}
+.btn-primary {
+  box-shadow: 0 5px 16px rgba(14, 134, 212, .12);
+}
+.btn-primary:hover {
+  box-shadow: 0 8px 22px rgba(14, 134, 212, .2);
+}
+
+/* ---- Contact fields: clearer boundaries and high-visibility focus ---- */
+.form-field input,
+.form-field textarea,
+.form-field select {
+  border-color: var(--jil-border-strong);
+  transition: border-color .16s ease, box-shadow .16s ease, background .16s ease;
+}
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  border-color: var(--jil-focus);
+  box-shadow: 0 0 0 3px rgba(14, 134, 212, .12);
+  outline: none;
+}
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #666d76;
+  opacity: 1;
+}
+
+/* Article cards may use either .news-card or existing .article-card naming.
+   These rules are deliberately limited to those common card classes. */
+.news-card,
+.article-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(27, 30, 35, .055);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.news-card:hover,
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--jil-shadow-hover);
+}
+.news-card img,
+.article-card img {
+  object-fit: cover;
+}
+.news-card a:focus-visible,
+.article-card a:focus-visible {
+  outline-offset: -4px;
+}
+
+/* ---- Footer: dark feature band; improve legibility of small copy/links ---- */
+.site-footer p {
+  color: #b8bec8;
+}
+.site-footer a {
+  text-underline-offset: 3px;
+}
+.site-footer a:focus-visible {
+  outline-color: #8fd0ff;
+}
+
+/* ---- Respect reduced-motion for all animation/transition/smooth-scroll ---- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- Accessibility: colour-contrast fixes ----
+   Computed against the real tokens in css/style.css using the WCAG 2.1
+   relative-luminance formula. Two tokens, as used in several places on
+   bright backgrounds, fall short of the AA 4.5:1 minimum for text:
+     --lgray (#8A8D93) on white/paper   → 3.2–3.3:1  (needs 4.5:1)
+     --blue  (#0E86D4) on white/tint    → 3.9:1      (needs 4.5:1)
+   --lgray is overridden directly below, since every current use of it
+   is muted secondary text. --blue is left untouched everywhere (it's
+   still correct for backgrounds, borders, hover rings and icons, which
+   only need 3:1) and a second, darker token is introduced for the
+   specific places --blue is used as small/body text color. */
+:root {
+  --lgray: #6B6E76; /* was #8A8D93 (3.2–3.3:1 on white/paper) — now 4.9–5.1:1 */
+  --blue-text: #0A5F94; /* AA-passing stand-in for var(--blue) as text (6.1–6.8:1) */
+}
+.eyebrow,
+.btn-outline:hover,
+.div-chip .n,
+.accordion-trigger .n,
+.accordion-item.open .accordion-trigger .title,
+.accordion-panel-inner .term,
+.pillar-tag,
+.related a,
+.social-row a:hover {
+  color: var(--blue-text);
+}
+
+/* Related-articles list (news pages): plain links, no bullets, matching
+   the spacing of the existing "Related services" paragraph beside it. */
+.related-articles ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ---- Theme toggle (light/dark) ----
+   Token-based: the site's CSS already routes nearly every colour through
+   custom properties (--navy, --white, --paper, --hairline, --gray,
+   --lgray, --blue-tint, --red-tint), so a dark theme is mostly a second
+   set of values for those same tokens, scoped under [data-theme="dark"].
+   A handful of places don't use the tokens -- a couple of sections that
+   are *always* a dark navy regardless of page theme (the stats band,
+   the footer), and a few literal colours -- those get explicit
+   exceptions below so they don't flip when the tokens do.
+   Every colour pair here was checked against the real WCAG formula, the
+   same way the light-theme contrast fixes earlier in this file were. */
+:root[data-theme="dark"] {
+  --navy: #EDEFF2;       /* body + heading text (was the near-black text colour) */
+  --white: #121418;      /* card / page "white" surface */
+  --paper: #1A1D22;      /* secondary "paper" surface */
+  --hairline: #343941;   /* borders/dividers -- kept just as subtle, relatively, as the light theme's */
+  --gray: #A9ADB5;       /* secondary body text -- 8.2:1 on the dark surface */
+  --lgray: #888D96;      /* muted text -- 5.1-5.5:1 */
+  --blue-tint: #13232F;  /* tinted panel background (vm-box) */
+  --red-tint: #2A1517;   /* tinted panel background (vm-box, red variant) */
+  --blue-text: #5FB6EF;  /* the AA-passing stand-in for --blue-as-text, re-tuned for a dark surface (8.3:1) */
+}
+
+/* Components that are already a fixed dark navy and don't need to change
+   with the theme -- pin them back to their original value, since --navy
+   itself just became a light colour (for body text) above. */
+:root[data-theme="dark"] .stats-band,
+:root[data-theme="dark"] .site-footer {
+  background: #1B1E23;
+}
+/* The CTA band's primary button is deliberately always a plain white
+   button (for contrast against the red/blue gradient) -- keep it that
+   way in both themes rather than letting it follow --white/--navy. */
+:root[data-theme="dark"] .cta-band .btn-primary {
+  background: #FFFFFF;
+  color: #1B1E23;
+}
+/* Sticky header background is a literal rgba(255,255,255,...) in the
+   base stylesheet, not a token, so it needs its own dark equivalent. */
+:root[data-theme="dark"] .site-header {
+  background: rgba(18, 20, 24, 0.85);
+}
+/* vm-box labels sit on the tinted panels above -- their original colours
+   (#0A5F94 / #B10E13) were tuned for a light tint and fail on the dark
+   one, so they get a brighter variant specifically for dark mode. */
+:root[data-theme="dark"] .vm-box .label { color: var(--blue-text); }
+:root[data-theme="dark"] .vm-box.red .label { color: #FF8A8F; }
+
+/* Smooth, optional transition between themes (reduced-motion users get
+   the instant-switch rule from the reduced-motion block further down,
+   which forces all transition durations to ~0). */
+body, .site-header, .glass, .value-card, .pillar, .accordion-item,
+.vm-box, .chip-list span, .tag-cloud span {
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+
+/* The nav toggle icon's stroke was hard-coded to the light-mode navy in
+   the page HTML; the HTML now sets stroke="currentColor" instead, and
+   this gives that currentColor a value that flips with the theme. */
+.nav-toggle { color: var(--navy); }
+
+/* Theme toggle button itself: same visual weight as the existing
+   .nav-toggle icon button, always visible (not just below the mobile
+   breakpoint), swaps which of its two icons is shown via [data-theme]. */
+.theme-toggle {
+  width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--hairline);
+  background: none; display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--navy); margin-right: 8px; flex-shrink: 0;
+}
+.theme-toggle:hover { border-color: var(--blue); color: var(--blue); }
+.theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
+
+/* Date-range pill on the Projects page (was an inline-styled one-off;
+   now a reusable class so it can follow the theme too). */
+.date-pill {
+  background: #e8f4fc; color: #0E86D4; padding: 5px 14px; border-radius: 20px;
+  font-size: 13px; font-weight: 500;
+}
+:root[data-theme="dark"] .date-pill { background: #13232F; color: #5FB6EF; }
+
+/* ---- Small-screen refinements ---- */
+@media (max-width: 600px) {
+  .wrap { padding-left: 20px; padding-right: 20px; }
+  section { padding-top: 52px; padding-bottom: 52px; }
+  section.tight { padding-top: 38px; padding-bottom: 38px; }
+  .hero { padding-top: 56px; padding-bottom: 48px; }
+  .hero h1 { font-size: clamp(30px, 8vw, 38px); }
+  .page-header { padding-top: 48px; padding-bottom: 32px; }
+  .page-header h1 { font-size: clamp(28px, 7vw, 34px); }
+  .cta-band { padding: 34px 20px; }
+  .cta-band h2 { font-size: 23px; }
+}
