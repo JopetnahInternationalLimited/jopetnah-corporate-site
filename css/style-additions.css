@@ -256,6 +256,126 @@ section:not(.stats-band):not(.cta-band) {
   }
 }
 
+/* ---- Accessibility: colour-contrast fixes ----
+   Computed against the real tokens in css/style.css using the WCAG 2.1
+   relative-luminance formula. Two tokens, as used in several places on
+   bright backgrounds, fall short of the AA 4.5:1 minimum for text:
+     --lgray (#8A8D93) on white/paper   → 3.2–3.3:1  (needs 4.5:1)
+     --blue  (#0E86D4) on white/tint    → 3.9:1      (needs 4.5:1)
+   --lgray is overridden directly below, since every current use of it
+   is muted secondary text. --blue is left untouched everywhere (it's
+   still correct for backgrounds, borders, hover rings and icons, which
+   only need 3:1) and a second, darker token is introduced for the
+   specific places --blue is used as small/body text color. */
+:root {
+  --lgray: #6B6E76; /* was #8A8D93 (3.2–3.3:1 on white/paper) — now 4.9–5.1:1 */
+  --blue-text: #0A5F94; /* AA-passing stand-in for var(--blue) as text (6.1–6.8:1) */
+}
+.eyebrow,
+.btn-outline:hover,
+.div-chip .n,
+.accordion-trigger .n,
+.accordion-item.open .accordion-trigger .title,
+.accordion-panel-inner .term,
+.pillar-tag,
+.related a,
+.social-row a:hover {
+  color: var(--blue-text);
+}
+
+/* Related-articles list (news pages): plain links, no bullets, matching
+   the spacing of the existing "Related services" paragraph beside it. */
+.related-articles ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ---- Theme toggle (light/dark) ----
+   Token-based: the site's CSS already routes nearly every colour through
+   custom properties (--navy, --white, --paper, --hairline, --gray,
+   --lgray, --blue-tint, --red-tint), so a dark theme is mostly a second
+   set of values for those same tokens, scoped under [data-theme="dark"].
+   A handful of places don't use the tokens -- a couple of sections that
+   are *always* a dark navy regardless of page theme (the stats band,
+   the footer), and a few literal colours -- those get explicit
+   exceptions below so they don't flip when the tokens do.
+   Every colour pair here was checked against the real WCAG formula, the
+   same way the light-theme contrast fixes earlier in this file were. */
+:root[data-theme="dark"] {
+  --navy: #EDEFF2;       /* body + heading text (was the near-black text colour) */
+  --white: #121418;      /* card / page "white" surface */
+  --paper: #1A1D22;      /* secondary "paper" surface */
+  --hairline: #343941;   /* borders/dividers -- kept just as subtle, relatively, as the light theme's */
+  --gray: #A9ADB5;       /* secondary body text -- 8.2:1 on the dark surface */
+  --lgray: #888D96;      /* muted text -- 5.1-5.5:1 */
+  --blue-tint: #13232F;  /* tinted panel background (vm-box) */
+  --red-tint: #2A1517;   /* tinted panel background (vm-box, red variant) */
+  --blue-text: #5FB6EF;  /* the AA-passing stand-in for --blue-as-text, re-tuned for a dark surface (8.3:1) */
+}
+
+/* Components that are already a fixed dark navy and don't need to change
+   with the theme -- pin them back to their original value, since --navy
+   itself just became a light colour (for body text) above. */
+:root[data-theme="dark"] .stats-band,
+:root[data-theme="dark"] .site-footer {
+  background: #1B1E23;
+}
+/* The CTA band's primary button is deliberately always a plain white
+   button (for contrast against the red/blue gradient) -- keep it that
+   way in both themes rather than letting it follow --white/--navy. */
+:root[data-theme="dark"] .cta-band .btn-primary {
+  background: #FFFFFF;
+  color: #1B1E23;
+}
+/* Sticky header background is a literal rgba(255,255,255,...) in the
+   base stylesheet, not a token, so it needs its own dark equivalent. */
+:root[data-theme="dark"] .site-header {
+  background: rgba(18, 20, 24, 0.85);
+}
+/* vm-box labels sit on the tinted panels above -- their original colours
+   (#0A5F94 / #B10E13) were tuned for a light tint and fail on the dark
+   one, so they get a brighter variant specifically for dark mode. */
+:root[data-theme="dark"] .vm-box .label { color: var(--blue-text); }
+:root[data-theme="dark"] .vm-box.red .label { color: #FF8A8F; }
+
+/* Smooth, optional transition between themes (reduced-motion users get
+   the instant-switch rule from the reduced-motion block further down,
+   which forces all transition durations to ~0). */
+body, .site-header, .glass, .value-card, .pillar, .accordion-item,
+.vm-box, .chip-list span, .tag-cloud span {
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+
+/* The nav toggle icon's stroke was hard-coded to the light-mode navy in
+   the page HTML; the HTML now sets stroke="currentColor" instead, and
+   this gives that currentColor a value that flips with the theme. */
+.nav-toggle { color: var(--navy); }
+
+/* Theme toggle button itself: same visual weight as the existing
+   .nav-toggle icon button, always visible (not just below the mobile
+   breakpoint), swaps which of its two icons is shown via [data-theme]. */
+.theme-toggle {
+  width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--hairline);
+  background: none; display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--navy); margin-right: 8px; flex-shrink: 0;
+}
+.theme-toggle:hover { border-color: var(--blue); color: var(--blue); }
+.theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
+
+/* Date-range pill on the Projects page (was an inline-styled one-off;
+   now a reusable class so it can follow the theme too). */
+.date-pill {
+  background: #e8f4fc; color: #0E86D4; padding: 5px 14px; border-radius: 20px;
+  font-size: 13px; font-weight: 500;
+}
+:root[data-theme="dark"] .date-pill { background: #13232F; color: #5FB6EF; }
+
 /* ---- Small-screen refinements ---- */
 @media (max-width: 600px) {
   .wrap { padding-left: 20px; padding-right: 20px; }
