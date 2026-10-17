@@ -756,3 +756,58 @@ body, .site-header, .glass, .value-card, .pillar, .accordion-item,
   .cta-band { padding: 34px 20px; }
   .cta-band h2 { font-size: 23px; }
 }
+
+/* ---- 16-sector homepage grid v2: grouped by pillar, iconed, elevated ----
+   Replaces the previous flat .div-grid/.div-chip layout with the same
+   grouping already named in the "Four Strategic Pillars" section just
+   above it on the homepage, plus a small icon per sector so the grid
+   reads by shape, not just 16 near-identical text rows. Token-based
+   throughout, so it works in dark mode with nothing extra. The old
+   .div-grid/.div-chip rules above are left in place but now unused on
+   this page -- harmless, but safe to remove later if you want. */
+.sector-groups { display: flex; flex-direction: column; gap: 28px; }
+.sector-group-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px; }
+.sector-group-head .pillar-n {
+  font-family: var(--font-display); font-size: 11px; font-weight: 700;
+  letter-spacing: 1.4px; text-transform: uppercase; color: var(--blue-text, var(--blue));
+}
+.sector-group-head .pillar-name { font-family: var(--font-display); font-size: 14px; font-weight: 600; color: var(--navy); }
+.sector-group-head .rule { flex: 1; height: 1px; background: var(--hairline); }
+.sector-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+@media (max-width: 900px) { .sector-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .sector-grid { grid-template-columns: 1fr; } }
+.sector-chip {
+  padding: 14px; border: 1px solid var(--hairline); border-radius: 10px; background: var(--white);
+  display: flex; align-items: center; gap: 12px; text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.sector-chip:hover, .sector-chip:focus-visible {
+  transform: translateY(-2px); box-shadow: 0 10px 24px rgba(14, 134, 212, .14); border-color: var(--blue);
+}
+.sector-chip .icon-wrap {
+  flex: 0 0 auto; width: 38px; height: 38px; border-radius: 9px; background: var(--blue-tint);
+  display: flex; align-items: center; justify-content: center; color: var(--blue-text, var(--blue));
+}
+.sector-chip .sector-n { display: block; font-family: var(--font-display); font-size: 10.5px; font-weight: 700; color: var(--lgray); }
+.sector-chip .sector-name { font-family: var(--font-display); font-size: 13px; font-weight: 500; color: var(--navy); line-height: 1.3; }
+
+/* ---- Services accordion: fix the sub/title collision, restyle the row ----
+   .accordion-trigger .t .sub and .title were both plain inline <span>s,
+   so "margin-top: 3px" on .sub was a no-op (inline elements ignore
+   vertical margin) and the long italic breadcrumb ran straight into the
+   bold title with no line break. Markup was updated to drop that
+   breadcrumb (it duplicated the number badge and the title text) and
+   replace it with just the pillar name, as a small pill -- reusing
+   .pillar-tag's existing look rather than inventing a new component. */
+.accordion-trigger .t { display: flex; flex-direction: column; gap: 4px; }
+.accordion-trigger .badge {
+  flex: 0 0 auto; width: 34px; height: 34px; border-radius: 9px; background: var(--blue-tint);
+  color: var(--blue-text, var(--blue)); font-weight: 700; font-size: 13px; font-family: var(--font-display);
+  display: flex; align-items: center; justify-content: center;
+}
+.accordion-trigger .pill {
+  display: inline-block; width: fit-content; font-family: var(--font-display); font-weight: 600;
+  font-size: 11px; letter-spacing: .3px; color: var(--blue-text, var(--blue)); background: var(--blue-tint);
+  padding: 3px 10px; border-radius: 12px;
+}
+.accordion-item:hover { border-color: var(--blue); box-shadow: 0 6px 18px rgba(14, 134, 212, .1); }
