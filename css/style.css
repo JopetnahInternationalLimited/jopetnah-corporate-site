@@ -935,3 +935,77 @@ body, .site-header, .glass, .value-card, .pillar, .accordion-item,
   .qc-main span { display: none; }
   .qc-main { width: 46px; height: 46px; justify-content: center; padding: 0; border-radius: 50%; }
 }
+/* ---- Round 10/11: MD leadership feature (homepage teaser + full bio
+   on about.html). Round 11 swapped the initials monogram for the real
+   headshot -- .exec-avatar now crops an <img> into a circle instead of
+   centering text. ---- */
+
+.exec-feature {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+.exec-avatar {
+  flex: 0 0 auto;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--blue-tint);
+  overflow: hidden;
+}
+.exec-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.exec-avatar-lg {
+  width: 140px;
+  height: 140px;
+}
+.exec-body { flex: 1; min-width: 0; }
+.exec-body h3 {
+  margin: 0 0 4px;
+  font-size: 19px;
+}
+.exec-body .exec-title {
+  color: var(--blue-text, var(--blue));
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13.5px;
+  margin-bottom: 14px;
+}
+.exec-body p { color: var(--gray); margin: 0 0 12px; }
+.exec-body h3 { color: var(--navy); }
+
+@media (max-width: 560px) {
+  .exec-feature { flex-direction: column; align-items: center; text-align: center; }
+  .exec-body .pillar-link { justify-content: center; }
+}
+
+.leadership-priorities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 4px;
+}
+.leadership-priorities .priority {
+  padding: 16px;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  background: var(--white);
+}
+.leadership-priorities .priority h4 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--navy);
+  font-family: var(--font-display);
+}
+.leadership-priorities .priority p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--gray);
+}
+@media (max-width: 700px) {
+  .leadership-priorities { grid-template-columns: 1fr; }
+}
