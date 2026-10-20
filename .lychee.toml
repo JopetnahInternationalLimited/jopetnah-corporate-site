@@ -14,5 +14,6 @@ exclude = [
   '^https://www\.google\.com/maps/',
   '^https://jopetnahinternationallimited\.github\.io/',
   '^https://images\.unsplash\.com/',
+  '^https://unsplash\.com/',          # ← add this
   '^https://images\.pexels\.com/',
 ]
