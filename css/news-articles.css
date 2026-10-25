@@ -76,7 +76,7 @@
 }
 
 .news-card-link:hover h3 {
-  color: var(--blue);
+  color: var(--blue-text, var(--blue));
 }
 
 .news-card-link:focus-visible {
@@ -114,7 +114,7 @@
   font-weight: 600;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--blue-text, var(--blue));
   display: block;
   margin-bottom: 8px;
 }
@@ -140,7 +140,7 @@
   font-family: var(--font-display);
   font-size: 13.5px;
   font-weight: 600;
-  color: var(--blue);
+  color: var(--blue-text, var(--blue));
 }
 
 .news-card-link:hover .read-more {
@@ -154,7 +154,7 @@
 }
 
 .news-card a:not(.news-card-link):hover {
-  color: var(--blue);
+  color: var(--blue-text, var(--blue));
 }
 
 .newsroom-note {
@@ -165,7 +165,7 @@
 }
 
 .newsroom-note a {
-  color: var(--blue);
+  color: var(--blue-text, var(--blue));
   font-weight: 600;
   text-decoration: none;
 }
@@ -213,7 +213,7 @@
   font-family: var(--font-display);
   font-size: 14px;
   font-weight: 500;
-  color: var(--blue);
+  color: var(--blue-text, var(--blue));
   text-decoration: none;
   margin-bottom: 32px;
   transition: color .15s ease;
@@ -247,7 +247,7 @@
   font-weight: 600;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--blue-text, var(--blue));
   display: block;
   margin-bottom: 12px;
 }
@@ -322,7 +322,7 @@
 }
 
 .article a {
-  color: var(--blue);
+  color: var(--blue-text, var(--blue));
   text-decoration: none;
   font-weight: 500;
 }
@@ -357,7 +357,7 @@
 }
 
 .related a {
-  color: var(--blue);
+  color: var(--blue-text, var(--blue));
   font-weight: 500;
   text-decoration: none;
 }
@@ -384,7 +384,7 @@
 }
 
 .contact-strip a {
-  color: var(--blue);
+  color: var(--blue-text, var(--blue));
   text-decoration: none;
   font-weight: 500;
 }
@@ -529,3 +529,6 @@
 .jn-insight .jn-insight-label{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#0A5F94;margin-bottom:6px}
 .jn-note{font-size:13px;color:var(--lgray)!important;border-top:1px solid var(--hairline);padding-top:16px;margin-top:34px!important}
 @media (max-width:640px){.jn-hero h1{font-size:27px}.jn-hero .wrap{padding-top:52px;padding-bottom:40px}.jn-hero .standfirst{font-size:16px}}
+
+/* Insight label: the light-theme blue is too dark on the dark-mode panel. */
+:root[data-theme="dark"] .jn-insight .jn-insight-label { color: #5FB6EF; }

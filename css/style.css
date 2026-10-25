@@ -10,7 +10,7 @@
   --red-tint: #FDEAEA;
   --hairline: #E3E5E8;
   --gray: #53555B;
-  --lgray: #8A8D93;
+  --lgray: #5F636A;
   --paper: #FBFBFC;
   --white: #FFFFFF;
 
@@ -303,15 +303,15 @@ section.tight { padding: 48px 0; }
 .site-footer { background: var(--navy); color: #C7CAD1; padding: 50px 0 24px 0; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 30px; }
 .footer-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.footer-brand img { height: 30px; }
+.footer-brand img { height: 30px; width: auto; }
 .footer-brand span { font-family: var(--font-display); font-weight: 700; color: var(--white); font-size: 14.5px; }
 .site-footer p { font-size: 13.5px; color: #9599A1; }
-.site-footer h5 { font-family: var(--font-display); color: var(--white); font-size: 13px; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 14px; }
+.site-footer .footer-heading { font-family: var(--font-display); color: var(--white); font-size: 13px; font-weight: 700; line-height: inherit; letter-spacing: 0.8px; text-transform: uppercase; margin: 1.67em 0 14px; text-wrap: wrap; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin-bottom: 9px; }
 .site-footer a { font-size: 13.8px; color: #C7CAD1; }
 .site-footer a:hover { color: var(--white); }
-.footer-bottom { border-top: 1px solid #33363D; margin-top: 40px; padding-top: 20px; text-align: center; font-size: 12.5px; color: #7A7E86; }
+.footer-bottom { border-top: 1px solid #33363D; margin-top: 40px; padding-top: 20px; text-align: center; font-size: 12.5px; color: #9A9EA6; }
 @media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr 1fr; row-gap: 28px; } }
 
 /* -------------------- Utility -------------------- */
@@ -375,8 +375,8 @@ section.tight { padding: 48px 0; }
    Both targeted the same nav/focus-visible/reduced-motion/scroll-margin
    ground; this file keeps the best version of each rule exactly once.
    Does not replace existing page content, JavaScript, or forms.
-   Untested in a live browser — check on a phone and at ~900px/~1000px
-   widths before merging into the live stylesheet.
+   Checked in headless Chromium at 375, 820 and 1366px (light and dark);
+   not yet checked on physical devices or at ~900px/~1000px.
    ============================================================ */
 
 :root {
@@ -636,7 +636,7 @@ section:not(.stats-band):not(.cta-band) {
    only need 3:1) and a second, darker token is introduced for the
    specific places --blue is used as small/body text color. */
 :root {
-  --lgray: #6B6E76; /* was #8A8D93 (3.2–3.3:1 on white/paper) — now 4.9–5.1:1 */
+  --lgray: #5F636A; /* was #8A8D93 (3.2–3.3:1); now 5.2–6.0:1 on white, paper and the tinted cards */
   --blue-text: #0A5F94; /* AA-passing stand-in for var(--blue) as text (6.1–6.8:1) */
 }
 .eyebrow,
@@ -692,6 +692,23 @@ section:not(.stats-band):not(.cta-band) {
 :root[data-theme="dark"] .site-footer {
   background: #1B1E23;
 }
+/* The footer stays a fixed dark surface in both themes, but its brand name
+   and column headings use var(--white), which becomes near-black in dark
+   mode (1.1:1). Pin them to white. */
+:root[data-theme="dark"] .site-footer .footer-heading,
+:root[data-theme="dark"] .footer-brand span {
+  color: #FFFFFF;
+}
+/* Pillar numbers use brand red, which is 3.8:1 on the dark surface; use the
+   lighter red already used for dark-mode labels. */
+:root[data-theme="dark"] .pillar .num { color: #FF8A8F; }
+/* Stat counters sit on the fixed dark stats band but use var(--white). */
+:root[data-theme="dark"] .stats-band .counter { color: #FFFFFF; }
+/* CTA bands that set background:var(--navy) inline turn pale in dark mode (--navy
+   becomes the light text colour) while their text stays white. Keep them dark. */
+:root[data-theme="dark"] .cta-band[style*="--navy"] { background: #1B1E23 !important; }
+:root[data-theme="dark"] .cta-band[style*="--navy"] h2,
+:root[data-theme="dark"] .cta-band[style*="--navy"] .btn-outline { color: #FFFFFF; }
 /* The CTA band's primary button is deliberately always a plain white
    button (for contrast against the red/blue gradient) -- keep it that
    way in both themes rather than letting it follow --white/--navy. */
@@ -739,7 +756,7 @@ body, .site-header, .glass, .value-card, .pillar, .accordion-item,
 /* Date-range pill on the Projects page (was an inline-styled one-off;
    now a reusable class so it can follow the theme too). */
 .date-pill {
-  background: #e8f4fc; color: #0E86D4; padding: 5px 14px; border-radius: 20px;
+  background: #e8f4fc; color: #0A5F94; padding: 5px 14px; border-radius: 20px;
   font-size: 13px; font-weight: 500;
 }
 :root[data-theme="dark"] .date-pill { background: #13232F; color: #5FB6EF; }
@@ -1009,3 +1026,6 @@ body, .site-header, .glass, .value-card, .pillar, .accordion-item,
 @media (max-width: 700px) {
   .leadership-priorities { grid-template-columns: 1fr; }
 }
+
+/* Caption under photos that are illustrative rather than actual Jopetnah project or team photography. */
+.img-note { font-size: 12.5px; line-height: 1.5; color: var(--gray); margin-top: 8px; }
