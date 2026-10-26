@@ -779,9 +779,9 @@ Zip Code: 1003
 
 ## Telephone
 
-- +256 414 598031
-- +256 782 520058
-- +256 753 520058
+- +256 414 598 031
+- +256 782 520 058
+- +256 753 520 058
 
 ---
 
@@ -1031,7 +1031,7 @@ Contributors and internal reviewers should not add a figure or claim unless it c
 
 **Email:** [jopetnah.intl.ltd@gmail.com](mailto:jopetnah.intl.ltd@gmail.com)
 
-**Telephone:** +256 414 598031 · +256 782 520058 · +256 753 520058
+**Telephone:** +256 414 598 031 · +256 782 520 058 · +256 753 520 058
 
 **Website:** [GitHub Pages](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/) *(www.jopetnah.com pending — see [Custom Domain](#custom-domain))*
 
