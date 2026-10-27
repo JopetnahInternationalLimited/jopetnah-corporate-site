@@ -24,10 +24,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
 
       - name: Validate all HTML files
-        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        uses: Cyb3r-Jak3/html5validator-action@41633d488eb36e18fd1a95ffc83daf1bf22a75bd # v7.2.0
         with:
           root: .
           css: false
@@ -44,10 +44,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
 
       - name: Check internal and external links (HTML + Markdown)
-        uses: lycheeverse/lychee-action@v2
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
         with:
           fail: true
           args: |
@@ -58,3 +58,38 @@ jobs:
             './**/*.md'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  consistency:
+    name: Check sector wording and contact details
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - name: Verify sector and pillar names are in sync
+        run: python3 tools/sync_sectors.py --check
+
+      - name: Verify address, phones, emails and retired wording
+        run: python3 tools/check_contact.py
+
+  accessibility:
+    name: Automated accessibility scan (axe-core)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - name: Set up Node.js (jsdom 30 needs 22.22.2 or later)
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+
+      - name: Install scanner (exact versions)
+        run: npm install --no-save --no-audit --no-fund jsdom@30.1.3 axe-core@4.14.0
+
+      - name: Scan every page
+        run: node tools/axe_check.js
