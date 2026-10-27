@@ -89,6 +89,7 @@ We seek to create practical value by connecting:
 | **Primary Market** | Uganda / East Africa |
 | **Live Website** | [GitHub Pages](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/) *(custom domain pending — see [Custom Domain](#custom-domain))* |
 | **Corporate Tagline** | Empowering Businesses with Practical Solutions |
+| **Brand Line** | Connecting Capabilities. Creating Value. |
 
 \*The 30+ figure reflects Jopetnah's broader international business network: relationships, engagements, partnerships, market connections, clients, suppliers and other commercial interactions. It does not represent 30+ offices, permanent establishments or completed projects. Country-level records are maintained internally and subject to periodic verification.
 
@@ -761,21 +762,13 @@ The corporate website itself is a lightweight static site built with **HTML, CSS
 | **Corporate Email** | jopetnah.intl.ltd@gmail.com |
 | **Primary Market** | Uganda / East Africa |
 
-## Headquarters
+## Headquarters & Business Point
 
-**Mutungo–Luzira**
+**U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area**
 P.O. Box 124614
-Kampala GPO
-Uganda
-
-## Business Point
-
-**UN Rise Road, Plot 3, House No. 3**
-8th Street, Industrial Area
-P.O. Box 124614
+Postal Code 1003
 Kampala GPO
 Uganda, East Africa
-Zip Code: 1003
 
 ## Telephone
 
@@ -1025,9 +1018,7 @@ Contributors and internal reviewers should not add a figure or claim unless it c
 
 # Connect With Us
 
-**Headquarters:** Mutungo–Luzira, P.O. Box 124614, Kampala GPO, Uganda
-
-**Business Point:** UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area, P.O. Box 124614, Kampala GPO, Uganda, East Africa — Zip Code 1003
+**Headquarters & Business Point:** U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area, P.O. Box 124614, Postal Code 1003, Kampala GPO, Uganda, East Africa
 
 **Email:** [jopetnah.intl.ltd@gmail.com](mailto:jopetnah.intl.ltd@gmail.com)
 
@@ -1067,7 +1058,7 @@ Enquiries should be directed to [jopetnah.intl.ltd@gmail.com](mailto:jopetnah.in
 | **Company Registration No.** | 80010001250674 |
 | **TIN** | 1018486351 |
 | **Jurisdiction** | Republic of Uganda |
-| **Headquarters** | Mutungo–Luzira, P.O. Box 124614, Kampala GPO, Uganda |
+| **Headquarters & Business Point** | U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area, P.O. Box 124614, Postal Code 1003, Kampala GPO, Uganda, East Africa |
 
 Applicable sector-specific licences, regulatory registrations and certifications are listed in [Quality, Risk & Compliance](#quality-risk--compliance) where verified and current.
 
@@ -1084,6 +1075,6 @@ This is not an open-source licence. Public visibility of this repository is prov
 ---
 
 <p align="center">
-  <strong>Empowering Businesses with Practical Solutions</strong><br>
+  <strong>Connecting Capabilities. Creating Value.</strong><br>
   Established 2016 • Kampala, Uganda
 </p>

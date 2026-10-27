@@ -1,0 +1,119 @@
+{
+  "_readme": "MASTER RECORD for sector and pillar names. Edit here, then run: python3 tools/sync_sectors.py  (CI runs it with --check). \"name\" is the official short label used everywhere; \"scope\" is the long descriptive wording used on the Services page and in enquiry emails. Do not renumber ids: they are the #sector-NN anchors.",
+  "pillars": [
+    {
+      "n": "01",
+      "name": "Business & Advisory Solutions"
+    },
+    {
+      "n": "02",
+      "name": "Infrastructure & Resources Support"
+    },
+    {
+      "n": "03",
+      "name": "Social & Human Development"
+    },
+    {
+      "n": "04",
+      "name": "Trade & Events"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "01",
+      "pillar": "01",
+      "name": "Strategic Consultancy & Advisory",
+      "scope": "Business Strategy, Advisory & Commercial Support"
+    },
+    {
+      "id": "02",
+      "pillar": "01",
+      "name": "Research & Development",
+      "scope": "Research, Feasibility, Market Intelligence & Innovation"
+    },
+    {
+      "id": "03",
+      "pillar": "01",
+      "name": "Training & Capability Building",
+      "scope": "Training, Skills Development & Institutional Capacity"
+    },
+    {
+      "id": "04",
+      "pillar": "01",
+      "name": "International Employment Bureau",
+      "scope": "Recruitment, Placement & Workforce Facilitation"
+    },
+    {
+      "id": "05",
+      "pillar": "01",
+      "name": "Marketing & Advertising",
+      "scope": "Marketing, Advertising, Branding & Business Promotion"
+    },
+    {
+      "id": "06",
+      "pillar": "01",
+      "name": "Technology & Digital Solutions",
+      "scope": "Digital Enablement, Online Presence & Business Technology"
+    },
+    {
+      "id": "07",
+      "pillar": "02",
+      "name": "Engineering & Construction",
+      "scope": "Construction, Building Materials, Plant & Infrastructure Support"
+    },
+    {
+      "id": "08",
+      "pillar": "03",
+      "name": "Tourism & Hospitality",
+      "scope": "Travel, Tourism, Accommodation & Hospitality Support"
+    },
+    {
+      "id": "09",
+      "pillar": "02",
+      "name": "Transport & Logistics",
+      "scope": "Transport, Haulage, Clearing, Forwarding & Distribution"
+    },
+    {
+      "id": "10",
+      "pillar": "03",
+      "name": "Healthcare & Pharmaceuticals",
+      "scope": "Healthcare Supplies, Pharmaceutical Trade & Health-Sector Support"
+    },
+    {
+      "id": "11",
+      "pillar": "04",
+      "name": "FMCG & General Merchandise",
+      "scope": "Import, Export, Wholesale, Retail, Sourcing & Supply"
+    },
+    {
+      "id": "12",
+      "pillar": "04",
+      "name": "Events & Recreation Management",
+      "scope": "Events, Weddings, Catering, Equipment & Entertainment"
+    },
+    {
+      "id": "13",
+      "pillar": "03",
+      "name": "Educational Services",
+      "scope": "Education, Vocational Skills & Learning Support"
+    },
+    {
+      "id": "14",
+      "pillar": "02",
+      "name": "Petroleum, Oil, Gas & Renewable Energy",
+      "scope": "Energy Supply, Petroleum Products & Energy-Sector Support"
+    },
+    {
+      "id": "15",
+      "pillar": "02",
+      "name": "Agricultural Development & Agribusiness",
+      "scope": "Agricultural Trade, Value Addition, Processing & Market Access"
+    },
+    {
+      "id": "16",
+      "pillar": "02",
+      "name": "Natural Resources & Mining",
+      "scope": "Minerals, Metals, Mining Support & Resource Facilitation"
+    }
+  ]
+}

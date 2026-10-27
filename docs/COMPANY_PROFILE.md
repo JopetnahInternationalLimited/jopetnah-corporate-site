@@ -2,9 +2,9 @@
 
 ## Corporate Profile
 
-### Empowering Businesses Worldwide
+### Empowering Businesses with Practical Solutions
 
-*A Diversified International Conglomerate & Social Enterprise*
+*A Kampala-Based Multi-Sector Services Company & Social Enterprise*
 
 ---
 
@@ -34,7 +34,7 @@ https://github.com/JopetnahInternationalLimited/jopetnah-corporate-site
 
 ---
 
-> **Empowering Businesses Worldwide through Integrated Solutions, Global Reach, Innovation, and Sustainable Impact.**
+> **Empowering Businesses with Practical Solutions.**
 
 ---
 
@@ -63,7 +63,7 @@ https://github.com/JopetnahInternationalLimited/jopetnah-corporate-site
 
 # Executive Summary
 
-Jopetnah International Limited is a diversified international conglomerate and social enterprise committed to delivering integrated, innovative, and sustainable solutions that create measurable value for businesses, governments, development partners, institutions, and communities.
+Jopetnah International Limited is a Kampala-based multi-sector services company and social enterprise committed to delivering integrated, innovative, and sustainable solutions that create measurable value for businesses, governments, development partners, institutions, and communities.
 
 Founded in 2016 and headquartered in Kampala, Uganda, the company has grown into a multidisciplinary organization operating across sixteen strategic sectors. Our integrated business model enables clients to access a broad portfolio of professional services through one trusted corporate partner, simplifying project delivery while promoting efficiency, innovation, and long-term value creation.
 

@@ -129,3 +129,39 @@ This plain-HTML approach stops being the right choice if any of the following ha
 - Content needs to come from a CMS or database rather than hand-written HTML
 
 At that point, migrating to a static site generator (e.g., Eleventy, Astro, or Jekyll — the last of which GitHub Pages supports natively) would be worth the added complexity. Not needed today.
+
+## Sector and pillar names: one master record
+
+The 16 sector names, their long "scope" wording, and the four pillar names live in **one place**: `tools/sectors.json`. They appear on the homepage, Services, About, Impact, Sustainability and the contact-form dropdown, and those pages must never be edited by hand for this wording.
+
+To change a name:
+
+1. Edit `tools/sectors.json` (`name` = official short label; `scope` = long descriptive wording used on the Services page and in enquiry emails). Do not change `id` values: they are the `#sector-NN` anchors that other pages link to. Sector numbers are deliberately **not shown to visitors**; pages list sectors grouped under their pillar, and the number survives only as an invisible key (`id="sector-NN"`, `data-sector="NN"` or a link anchor) that the script uses to find each entry.
+2. Run `python3 tools/sync_sectors.py` (Python 3, no packages needed). It rewrites only the controlled text and lists what changed.
+3. Review `git diff`, commit the JSON and the regenerated pages together.
+
+`python3 tools/sync_sectors.py --check` changes nothing and exits with an error if any page has drifted; the **Site Quality Checks** workflow runs it on every push and pull request. It also verifies that sectors sit under the right pillar on the homepage and Sustainability pages (moving a sector between pillars is a structural edit: change `pillar` in the JSON, then move that sector's block under the right pillar heading on the homepage, Services, About, Impact and Sustainability pages by hand; the check lists any page that disagrees).
+
+Not covered by the script: the README and company-profile documents, and free-text mentions of a sector inside articles and policy pages.
+
+Note: GitHub Pages publishes everything in the repository, so `tools/sectors.json` is publicly reachable. It contains only wording that is already public on the site.
+
+## Automated checks (run on every push and pull request)
+
+| Check | Command | What it guards |
+|---|---|---|
+| HTML validity | Nu validator via the workflow | Broken or invalid markup |
+| Broken links | lychee via the workflow | Dead internal and external links |
+| Sector wording | `python3 tools/sync_sectors.py --check` | Sector and pillar names identical on every page |
+| Contact details | `python3 tools/check_contact.py` | One address, one phone format, one email, no retired wording (master: `tools/contact.json`) |
+| Accessibility | `npm install --no-save jsdom@30.1.3 axe-core@4.14.0` then `node tools/axe_check.js` | axe-core violations on every page |
+
+Limits worth knowing: the accessibility scan runs in a simulated DOM, so **colour contrast is not assessed** and a pass is not a WCAG conformance claim; the validator's bundled CSS checker is outdated, so CSS is excluded and modern properties are not flagged; the contact-page map iframe uses the valid `loading="lazy"` attribute, which some older validator builds report incorrectly.
+
+## Conventions kept on purpose
+
+- The homepage canonical URL is the directory form (`.../jopetnah-corporate-site/`); internal "Home" links use `./`.
+- Homepage `<title>` is tuned to fit search results (about 580px); the Open Graph and Twitter titles carry the full legal name.
+- Brand line "Connecting Capabilities. Creating Value." is for the homepage headline and the About closing heading; the slogan "Empowering Businesses with Practical Solutions" is the footer sign-off on every page. Use each once per page.
+- Images should be self-hosted (see `tools/localise_images.py`); avoid new hot-links to third-party hosts.
+

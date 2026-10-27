@@ -44,14 +44,15 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Jopetnah International Limited",
-  "url": "https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/index.html",
+  "url": "https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/",
   "logo": "https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/assets/icon-512.png",
   "foundingDate": "2016",
   "slogan": "Empowering Businesses with Practical Solutions",
   "description": "A Kampala-based multi-sector services company providing practical, integrated solutions across 16 strategic sectors.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area",
+    "streetAddress": "U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area",
+    "postOfficeBoxNumber": "124614",
     "addressLocality": "Kampala",
     "addressCountry": "UG",
     "postalCode": "1003"
@@ -76,13 +77,13 @@
 
 <header class="site-header">
   <nav class="nav" aria-label="Primary navigation">
-    <a class="brand" href="index.html" aria-label="Jopetnah International Limited — Home">
+    <a class="brand" href="./" aria-label="Jopetnah International Limited — Home">
       <img width="160" height="125" src="assets/icon.png" alt="Jopetnah International Limited logo">
       <span>JOPETNAH INTERNATIONAL</span>
     </a>
 
     <div class="nav-links" id="primary-navigation">
-      <a href="index.html">Home</a>
+      <a href="./">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="sustainability.html">Sustainability</a>
@@ -107,6 +108,7 @@
   </nav>
 </header>
 
+<main id="main-content">
 <div class="page-header">
   <div class="wrap">
     <span class="eyebrow">Partner With Us</span>
@@ -114,9 +116,6 @@
     <p class="lede">Every enquiry is an opportunity to understand a need, explore a possibility, or begin a professional relationship. Whether you need strategic advisory support, capacity building, recruitment facilitation, or coordinated multi-service delivery, we are ready to listen.</p>
   </div>
 </div>
-
-<main id="main-content">
-
 <section class="tight">
   <div class="wrap contact-grid">
     <!-- Left column: contact details -->
@@ -127,18 +126,8 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E86D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.58 7-13a7 7 0 1 0-14 0c0 5.42 7 13 7 13z"/><circle cx="12" cy="9" r="2.4"/></svg>
           </div>
           <div>
-            <div class="label">Headquarters</div>
-            <div class="val">Mutungo–Luzira, P.O. Box 124614, Kampala GPO, Uganda</div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="ic">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E86D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.58 7-13a7 7 0 1 0-14 0c0 5.42 7 13 7 13z"/><circle cx="12" cy="9" r="2.4"/></svg>
-          </div>
-          <div>
-            <div class="label">Business Point</div>
-            <div class="val">UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area, P.O. Box 124614, Kampala GPO, Uganda</div>
+            <div class="label">Headquarters &amp; Business Point</div>
+            <div class="val">U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area, P.O. Box 124614, Postal Code 1003, Kampala GPO, Uganda, East Africa</div>
           </div>
         </div>
 
@@ -193,7 +182,7 @@
 
     <!-- Right column: Formspree form -->
     <div>
-      <form action="https://formspree.io/f/xbgjwqkr" method="POST">
+      <form id="enquiry-form" action="https://formspree.io/f/xbgjwqkr" method="POST">
         <div class="form-field">
           <label for="name">Full name</label>
           <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
@@ -207,6 +196,38 @@
         <div class="form-field">
           <label for="org">Organisation (optional)</label>
           <input type="text" id="org" name="organisation" placeholder="Company or institution" autocomplete="organization">
+        </div>
+
+        <div class="form-field">
+          <label for="service">Service area of interest (optional)</label>
+          <select id="service" name="service">
+            <option value="">Select a service area</option>
+            <option value="General enquiry / not sure yet">General enquiry / not sure yet</option>
+            <optgroup label="Business &amp; Advisory Solutions">
+              <option value="Strategic Consultancy &amp; Advisory (Business Strategy, Advisory &amp; Commercial Support)" data-sector="01">Strategic Consultancy &amp; Advisory</option>
+              <option value="Research &amp; Development (Research, Feasibility, Market Intelligence &amp; Innovation)" data-sector="02">Research &amp; Development</option>
+              <option value="Training &amp; Capability Building (Training, Skills Development &amp; Institutional Capacity)" data-sector="03">Training &amp; Capability Building</option>
+              <option value="International Employment Bureau (Recruitment, Placement &amp; Workforce Facilitation)" data-sector="04">International Employment Bureau</option>
+              <option value="Marketing &amp; Advertising (Marketing, Advertising, Branding &amp; Business Promotion)" data-sector="05">Marketing &amp; Advertising</option>
+              <option value="Technology &amp; Digital Solutions (Digital Enablement, Online Presence &amp; Business Technology)" data-sector="06">Technology &amp; Digital Solutions</option>
+            </optgroup>
+            <optgroup label="Infrastructure &amp; Resources Support">
+              <option value="Engineering &amp; Construction (Construction, Building Materials, Plant &amp; Infrastructure Support)" data-sector="07">Engineering &amp; Construction</option>
+              <option value="Transport &amp; Logistics (Transport, Haulage, Clearing, Forwarding &amp; Distribution)" data-sector="09">Transport &amp; Logistics</option>
+              <option value="Petroleum, Oil, Gas &amp; Renewable Energy (Energy Supply, Petroleum Products &amp; Energy-Sector Support)" data-sector="14">Petroleum, Oil, Gas &amp; Renewable Energy</option>
+              <option value="Agricultural Development &amp; Agribusiness (Agricultural Trade, Value Addition, Processing &amp; Market Access)" data-sector="15">Agricultural Development &amp; Agribusiness</option>
+              <option value="Natural Resources &amp; Mining (Minerals, Metals, Mining Support &amp; Resource Facilitation)" data-sector="16">Natural Resources &amp; Mining</option>
+            </optgroup>
+            <optgroup label="Social &amp; Human Development">
+              <option value="Tourism &amp; Hospitality (Travel, Tourism, Accommodation &amp; Hospitality Support)" data-sector="08">Tourism &amp; Hospitality</option>
+              <option value="Healthcare &amp; Pharmaceuticals (Healthcare Supplies, Pharmaceutical Trade &amp; Health-Sector Support)" data-sector="10">Healthcare &amp; Pharmaceuticals</option>
+              <option value="Educational Services (Education, Vocational Skills &amp; Learning Support)" data-sector="13">Educational Services</option>
+            </optgroup>
+            <optgroup label="Trade &amp; Events">
+              <option value="FMCG &amp; General Merchandise (Import, Export, Wholesale, Retail, Sourcing &amp; Supply)" data-sector="11">FMCG &amp; General Merchandise</option>
+              <option value="Events &amp; Recreation Management (Events, Weddings, Catering, Equipment &amp; Entertainment)" data-sector="12">Events &amp; Recreation Management</option>
+            </optgroup>
+          </select>
         </div>
 
         <div class="form-field">
@@ -240,11 +261,11 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">Find Us</span>
-      <h2>Business Point Location</h2>
+      <h2>Headquarters &amp; Business Point Location</h2>
     </div>
     <div style="border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.08);">
       <iframe
-        title="Map showing the Jopetnah International Limited business point in Kampala, Uganda"
+        title="Map showing the Jopetnah International Limited headquarters and business point in Kampala, Uganda"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.757!2d32.582!3d0.313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMTgnNDYuOCJOIDMywrAzNCc1NS4yIkU!5e0!3m2!1sen!2sug!4v1690000000000!5m2!1sen!2sug"
         height="450"
         style="border:0; width:100%;"
@@ -254,7 +275,7 @@
       </iframe>
     </div>
     <p style="margin-top:12px; font-size:14px; color:var(--gray);">
-      UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area, Kampala, Uganda
+      U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area, P.O. Box 124614, Postal Code 1003, Kampala GPO, Uganda, East Africa
     </p>
   </div>
 </section>
@@ -365,7 +386,7 @@
       <div>
         <h2 class="footer-heading">Contact</h2>
         <ul>
-          <li>UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area, P.O. Box 124614, Kampala GPO, Uganda, East Africa &mdash; Zip Code 1003</li>
+          <li>U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area, P.O. Box 124614, Postal Code 1003, Kampala GPO, Uganda, East Africa</li>
           <li>+256 414 598 031</li>
           <li>+256 782 520 058</li>
           <li>+256 753 520 058</li>

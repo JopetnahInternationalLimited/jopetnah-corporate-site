@@ -130,4 +130,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // support, the real numbers already in the HTML are left exactly as
     // they are -- nothing further to do.
   }
+
+  // Contact form: pre-select the service dropdown from ?sector=NN, which is set by
+  // the "Discuss this sector" buttons on the Services page. An invalid or unknown
+  // value is ignored and the dropdown simply stays on its default.
+  (function () {
+    try {
+      var select = document.getElementById('service');
+      if (!select || !window.URLSearchParams) return;
+      var id = new URLSearchParams(window.location.search).get('sector');
+      if (!id || !/^\d{2}$/.test(id)) return;
+      var opt = select.querySelector('option[data-sector="' + id + '"]');
+      if (opt) select.value = opt.value;
+    } catch (err) { /* leave the default selection */ }
+  })();
 });

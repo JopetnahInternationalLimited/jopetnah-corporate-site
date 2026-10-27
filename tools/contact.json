@@ -1,0 +1,24 @@
+{
+  "_readme": "MASTER RECORD for contact details and retired wording. tools/check_contact.py fails (and CI fails) if any page, README or doc disagrees with it. To change a detail: edit here, update the pages, re-run python3 tools/check_contact.py.",
+  "address_street": "U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area",
+  "address_full": "U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area, P.O. Box 124614, Postal Code 1003, Kampala GPO, Uganda, East Africa",
+  "phones": [
+    "+256 414 598 031",
+    "+256 782 520 058",
+    "+256 753 520 058"
+  ],
+  "emails": [
+    "jopetnah.intl.ltd@gmail.com"
+  ],
+  "forbidden": [
+    "Mutungo",
+    "Luzira",
+    "conglomerate",
+    "UN Rise Road",
+    "Zip Code"
+  ],
+  "emails_ignored": [
+    "you@company.com"
+  ],
+  "emails_ignored_reason": "placeholder text shown inside the contact form email field"
+}
