@@ -92,6 +92,7 @@ def run(root=ROOT, dry=False, fetcher=fetch):
             new = PRECONNECT_RE.sub("", new)
         if new != text:
             page.write_text(new, encoding="utf8"); changed += 1
+            print(f"  rewrote {page.name}")
     print(f"Downloaded {downloaded} new file(s) ({size/1024:.0f} KB); {len(ok)} of {len(found)} available locally; {changed} page(s) rewritten.")
     for name, why in failed:
         print(f"  FAILED {name}: {why}")

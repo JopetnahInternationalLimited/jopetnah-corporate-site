@@ -165,3 +165,9 @@ Limits worth knowing: the accessibility scan runs in a simulated DOM, so **colou
 - Brand line "Connecting Capabilities. Creating Value." is for the homepage headline and the About closing heading; the slogan "Empowering Businesses with Practical Solutions" is the footer sign-off on every page. Use each once per page.
 - Images should be self-hosted (see `tools/localise_images.py`); avoid new hot-links to third-party hosts.
 
+## Fonts and images are self-hosted
+
+- **Fonts:** Poppins and Lora are served from `assets/fonts/` (SIL Open Font License; licence texts in `assets/fonts/LICENSES.txt`). The `@font-face` rules are at the top of `css/style.css` and two fonts are preloaded in each page's `<head>`. To add a weight, take the matching Latin `.woff2` from the `@fontsource` npm package, add a rule, and avoid adding a Google Fonts link.
+- **Colours:** use `--blue-solid` behind white text and `--blue-text` for blue text on light surfaces (the base `--blue` is only 3.9:1 on white).
+- **Photos:** see `docs/self-hosting-images.md` for the one-off task of replacing the remaining Unsplash hot-links.
+

@@ -1,3 +1,12 @@
+/* Self-hosted fonts: Poppins and Lora (SIL Open Font License 1.1; see assets/fonts/LICENSES.txt). Replaces the Google Fonts request. */
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/poppins-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 500; font-display: swap; src: url('../assets/fonts/poppins-latin-500-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/poppins-latin-600-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: swap; src: url('../assets/fonts/poppins-latin-700-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Lora'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/lora-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Lora'; font-style: normal; font-weight: 500; font-display: swap; src: url('../assets/fonts/lora-latin-500-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Lora'; font-style: italic; font-weight: 400; font-display: swap; src: url('../assets/fonts/lora-latin-400-italic.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 /* ============================================================
    Jopetnah International Limited — shared design system
    ============================================================ */
@@ -6,6 +15,8 @@
   --navy: #1B1E23;
   --red: #E0151B;
   --blue: #0E86D4;
+  --blue-solid: #0B72B8;  /* background behind white text: 5.1:1 (the base blue is 3.9:1) */
+  --blue-text: #0A5F94;   /* blue used as text on light surfaces: 6.8:1 */
   --blue-tint: #EAF4FC;
   --red-tint: #FDEAEA;
   --hairline: #E3E5E8;
@@ -73,7 +84,7 @@ img { max-width: 100%; display: block; }
   border: none;
 }
 .btn-primary {
-  background: linear-gradient(90deg, var(--red), var(--blue));
+  background: linear-gradient(90deg, var(--red), var(--blue-solid));
   color: var(--white);
 }
 .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(14,134,212,0.28); }
@@ -201,13 +212,13 @@ section.tight { padding: 48px 0; }
   font-family: var(--font-display); font-size: 13.6px; font-weight: 500; color: var(--navy);
   display: flex; align-items: center; gap: 10px;
 }
-.div-chip .n { color: var(--blue); font-weight: 700; font-size: 12px; }
+.div-chip .n { color: var(--blue-text); font-weight: 700; font-size: 12px; }
 @media (max-width: 900px) { .div-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .div-grid { grid-template-columns: 1fr; } }
 
 /* -------------------- CTA band -------------------- */
 .cta-band {
-  background: linear-gradient(90deg, var(--red), var(--blue));
+  background: linear-gradient(90deg, var(--red), var(--blue-solid));
   color: var(--white); text-align: center; border-radius: 10px;
   padding: 46px 30px;
 }
@@ -239,7 +250,7 @@ section.tight { padding: 48px 0; }
 .obj-row { display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid var(--hairline); }
 .obj-row:first-child { border-top: none; }
 .obj-num {
-  font-family: var(--font-display); font-weight: 700; color: var(--white); background: var(--blue);
+  font-family: var(--font-display); font-weight: 700; color: var(--white); background: var(--blue-solid);
   width: 30px; height: 30px; min-width:30px; border-radius: 50%; display:flex; align-items:center; justify-content:center;
   font-size: 13px;
 }
@@ -256,20 +267,20 @@ section.tight { padding: 48px 0; }
   background: none; border: none; cursor: pointer; text-align: left; font-family: var(--font-display);
 }
 .accordion-trigger .n {
-  font-weight: 700; color: var(--blue); font-size: 13px; min-width: 26px;
+  font-weight: 700; color: var(--blue-text); font-size: 13px; min-width: 26px;
 }
 .accordion-trigger .t { flex: 1; }
 .accordion-trigger .t .title { font-weight: 600; font-size: 15.5px; color: var(--navy); }
 .accordion-trigger .t .sub { font-size: 12.8px; color: var(--lgray); margin-top: 3px; font-family: var(--font-body); font-style: italic; }
 .accordion-trigger .chev { transition: transform .2s ease; flex-shrink: 0; color: var(--lgray); }
-.accordion-item.open .accordion-trigger .chev { transform: rotate(180deg); color: var(--blue); }
-.accordion-item.open .accordion-trigger .title { color: var(--blue); }
+.accordion-item.open .accordion-trigger .chev { transform: rotate(180deg); color: var(--blue-text); }
+.accordion-item.open .accordion-trigger .title { color: var(--blue-text); }
 .accordion-panel {
   max-height: 0; overflow: hidden; transition: max-height .28s ease;
 }
 .accordion-panel-inner { padding: 0 22px 22px 62px; font-size: 14.5px; color: var(--gray); }
 .accordion-panel-inner p { margin: 0 0 10px 0; }
-.accordion-panel-inner .term { color: var(--blue); font-weight: 600; font-family: var(--font-display); }
+.accordion-panel-inner .term { color: var(--blue-text); font-weight: 600; font-family: var(--font-display); }
 .accordion-panel-inner .tagline {
   margin-top: 10px; padding: 10px 16px; border-radius: 5px; color: var(--white);
   font-family: var(--font-display); font-weight: 600; font-size: 13px; display:inline-block;
@@ -346,7 +357,7 @@ section.tight { padding: 48px 0; }
 @media (max-width: 700px) { .icon-list { grid-template-columns: 1fr; } }
 
 .pillar-tag { display:inline-block; font-family: var(--font-display); font-weight:600; font-size:12px;
-  color: var(--blue); background: var(--blue-tint); padding: 4px 11px; border-radius: 14px; margin-bottom:10px; }
+  color: var(--blue-text); background: var(--blue-tint); padding: 4px 11px; border-radius: 14px; margin-bottom:10px; }
 
 .leadership-grid { display:grid; grid-template-columns: repeat(4,1fr); gap:12px; }
 .leadership-grid .role {
@@ -683,6 +694,7 @@ section:not(.stats-band):not(.cta-band) {
   --blue-tint: #13232F;  /* tinted panel background (vm-box) */
   --red-tint: #2A1517;   /* tinted panel background (vm-box, red variant) */
   --blue-text: #5FB6EF;  /* the AA-passing stand-in for --blue-as-text, re-tuned for a dark surface (8.3:1) */
+  --blue-solid: #0E86D4;  /* unchanged in dark mode */
 }
 
 /* Components that are already a fixed dark navy and don't need to change
@@ -939,7 +951,7 @@ body, .site-header, .glass, .value-card, .pillar, .accordion-item,
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(14, 134, 212, .4);
 }
-.qc-main { padding: 13px 20px; background: var(--blue); }
+.qc-main { padding: 13px 20px; background: var(--blue-solid); }
 .qc-call { width: 46px; height: 46px; justify-content: center; background: var(--navy); }
 .qc-whatsapp { width: 46px; height: 46px; justify-content: center; background: #25D366; }
 @media (max-width: 600px) {
@@ -1050,3 +1062,31 @@ details.collapsible .collapsible-body { padding: 0 22px 8px; }
 
 /* 16:9 cover image (was repeated as an inline style on 8 pages) */
 .img-16x9 { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+
+/* ===== Homepage hero (refined): two-line headline, top-aligned visual, slogan sign-off ===== */
+.hero { padding: 48px 0 64px; }
+.hero-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 48px; align-items: start; }
+.hero-copy .eyebrow { margin-bottom: 14px; }
+.hero h1 { max-width: none; font-size: clamp(30px, 3.9vw, 46px); line-height: 1.1; letter-spacing: -0.015em; margin: 0 0 12px; text-wrap: balance; }
+.hero h1 .h1-line { display: block; }
+.hero-support { font-size: clamp(1.05rem, 1.7vw, 1.3rem); margin: 0 0 22px; }
+.hero .lede { max-width: 54ch; margin: 0 0 12px; }
+.hero-note { color: var(--gray); font-size: 15.5px; max-width: 58ch; margin: 0; }
+.hero .cta-row { margin-top: 26px; }
+.hero-slogan { display: flex; align-items: center; gap: 14px; margin: 30px 0 0; font-family: var(--font-display); font-weight: 600; font-size: 13.5px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--navy); }
+.hero-slogan::before { content: ""; flex: 0 0 40px; height: 3px; border-radius: 2px; background: linear-gradient(90deg, var(--red), var(--blue-solid)); }
+.hero-visual { padding-top: 28px; }   /* drawing starts level with the headline */
+.orbit-wrap { aspect-ratio: 460 / 300; max-width: 540px; margin: 0 0 0 auto; }
+@media (max-width: 900px) {
+  .hero { padding: 32px 0 48px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 28px; }
+  .orbit-wrap { max-width: 440px; margin: 0 auto; }
+}
+@media (max-width: 480px) { .hero-slogan { font-size: 12px; letter-spacing: 0.07em; } }
+
+/* ===== Collapsible groups: spacing and the "Expand all / Collapse all" control ===== */
+details.collapsible + details.collapsible { margin-top: 12px; }
+.collapsible-toggle { margin-top: 24px; padding: 7px 16px; border: 1px solid var(--hairline); border-radius: 999px; background: var(--white); color: var(--blue-text); font-family: var(--font-display); font-weight: 600; font-size: 13.5px; cursor: pointer; }
+.collapsible-toggle:hover { background: var(--blue-tint); }
+.collapsible-toggle:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.collapsible-toggle + details.collapsible { margin-top: 12px; }
