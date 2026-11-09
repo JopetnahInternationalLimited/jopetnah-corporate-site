@@ -1,0 +1,4 @@
+{
+  "_note": "Records are keyed by the SHA-256 hash of each card's verification code. Add entries with tools/jil-staff-token.py. Do not add contact details or ID numbers.",
+  "records": {}
+}
