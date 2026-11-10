@@ -31,13 +31,11 @@ This is a deliberate choice, not an oversight. For a site of this size (10 real 
 ├── industries.html         Redirect → services.html (SEO alias)
 │
 ├── css/
-│   ├── style.css           Shared design system stylesheet (all pages)
-│   └── news-articles.css   News listing and article template (news pages only)
+│   └── style.css           Single shared stylesheet (all pages)
 ├── js/
 │   └── script.js           Mobile nav toggle + services accordion
 ├── assets/
-│   ├── icon.png             Logo mark (globe + "j")
-│   └── fonts/               Self-hosted Poppins and Lora (woff2) + OFL licences
+│   └── icon.png             Logo mark (globe + "j")
 ├── favicon.ico
 ├── robots.txt
 ├── sitemap.xml
@@ -58,15 +56,27 @@ Although the *deployed* files are plain static HTML, they were *generated* using
 
 ## Design System Reference
 
-The full reference is in **[css-architecture.md](css-architecture.md)** (stack decisions, token tables, conventions, breakpoints, testing). In short:
+All colors, fonts, and spacing are defined once as CSS custom properties at the top of `style.css`:
 
-- All colours, type sizes, radii, spacing and layout values are CSS custom properties at the top of `css/style.css` (section 1).
-- Components use **semantic tokens** (`--color-bg`, `--color-ink`, `--color-link`, ...). Dark mode only redefines these, so components should not need dark-specific rules.
-- The older names (`--navy`, `--gray`, `--paper`, `--blue`, `--hairline`, ...) still work as aliases because page HTML uses them in inline styles.
-- Fonts: `--font-display` is Poppins (headings, navigation, buttons, labels); `--font-body` is Lora (paragraph text).
-- Use only the six documented breakpoints: 1180, 900, 720, 600, 480 and 360px.
+```css
+:root {
+  --navy: #1B1E23;       /* primary text color */
+  --red: #E0151B;        /* brand accent */
+  --blue: #0E86D4;       /* brand accent */
+  --blue-tint: #EAF4FC;  /* light card backgrounds */
+  --red-tint: #FDEAEA;   /* light card backgrounds */
+  --hairline: #E3E5E8;   /* borders/dividers */
+  --gray: #53555B;       /* secondary text */
+  --lgray: #8A8D93;      /* tertiary/muted text */
+  --paper: #FBFBFC;      /* off-white section backgrounds */
+  --white: #FFFFFF;
 
-**Always use the tokens (`var(--color-link)`, `var(--space-4)`, ...) rather than hardcoding values** when writing new CSS — this is what makes a future rebrand or colour tweak a one-line change instead of a find-and-replace across the site.
+  --font-display: 'Poppins', 'Segoe UI', sans-serif;  /* headings, nav, buttons */
+  --font-body: 'Lora', Georgia, serif;                 /* paragraph text */
+}
+```
+
+**Always use these variables (`var(--blue)`, etc.) rather than hardcoding hex values** when writing new CSS — this is what makes a future rebrand or color tweak a one-line change instead of a find-and-replace across the whole file. See `brand-guidelines.md` for the full rationale behind these specific choices.
 
 ## Common Tasks
 
@@ -107,7 +117,7 @@ python3 -m http.server 8000
 
 ## Known Limitations
 
-- **Fonts are self-hosted** — Poppins and Lora are served from `assets/fonts/` (Latin subset). Text outside the Latin range falls back to the system font. To add a weight, add the `woff2` file and an `@font-face` rule in section 0 of `css/style.css`.
+- **Fonts require internet** — Poppins/Lora load from Google Fonts CDN. If self-hosting them becomes a priority, fonts would need to be downloaded into `assets/fonts/` and referenced via `@font-face` instead of the current `<link>` tag.
 - **Contact form has no backend** — it submits via `mailto:`, which opens the visitor's email client rather than posting to a server. Fine for low volume; consider a form service (e.g., Formspree) if inquiry volume grows.
 - **No image optimization pipeline** — if/when photography is added, images should be manually compressed and sized appropriately before committing (no automated build step will do this for you).
 

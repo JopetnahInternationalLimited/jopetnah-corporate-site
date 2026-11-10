@@ -13,8 +13,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <link rel="canonical" href="https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/news-strategy-to-execution.html">
 
-  <link rel="preload" href="assets/fonts/poppins-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/lora-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
@@ -76,7 +77,6 @@
   </script>
 </head>
 <body>
-<a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="index.html" aria-label="Jopetnah International Limited — Home">
@@ -92,7 +92,7 @@
         <a href="news.html" class="active" aria-current="page">News</a>
         <a href="contact.html">Contact</a>
       </div>
-      <div class="nav-actions">
+      <div style="display:flex;align-items:center;">
         <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
 <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="2" x2="12" y2="4"></line><line x1="12" y1="20" x2="12" y2="22"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="2" y1="12" x2="4" y2="12"></line><line x1="20" y1="12" x2="22" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
 <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -109,7 +109,7 @@
     </nav>
   </header>
 
-  <main id="main-content" tabindex="-1">
+  <main>
     <section class="jn-hero">
       <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&amp;fit=crop&amp;w=2000&amp;q=80" alt="Organized warehouse and logistics operations" width="2000" height="1100">
       <div class="wrap">
@@ -167,17 +167,17 @@
       </div>
     </section>
 
-    <section class="bg-surface">
+    <section style="background:var(--paper);">
       <div class="wrap">
         <div class="section-head">
           <span class="eyebrow">Explore More</span>
           <h2>Related Insights</h2>
         </div>
         <div class="value-grid">
-          <a class="value-card link-plain" href="news-digital-transformation.html"><h3>Driving Digital Transformation: The Importance of Responsible Technology Adoption in Uganda</h3><p>Why responsible technology adoption, effective governance and business strategy matter for organisational growth.</p></a>
-          <a class="value-card link-plain" href="news-resilient-value-chains.html"><h3>Building Resilient Local Value Chains in a Changing Regional Market</h3><p>Why production, quality, processing, transport, and market access need to work together.</p></a>
+          <a class="value-card" href="news-digital-transformation.html" style="text-decoration:none;color:inherit;"><h3>Driving Digital Transformation: The Importance of Responsible Technology Adoption in Uganda</h3><p>Why responsible technology adoption, effective governance and business strategy matter for organisational growth.</p></a>
+          <a class="value-card" href="news-resilient-value-chains.html" style="text-decoration:none;color:inherit;"><h3>Building Resilient Local Value Chains in a Changing Regional Market</h3><p>Why production, quality, processing, transport, and market access need to work together.</p></a>
         </div>
-        <p class="u-mt-5"><a class="link-strong" href="news.html">All news &amp; insights &rarr;</a></p>
+        <p style="margin-top:20px;"><a href="news.html" style="color:var(--blue-text);font-weight:600;">All news &amp; insights &rarr;</a></p>
       </div>
     </section>
 
@@ -207,7 +207,7 @@
             <strong>Empowering Businesses with Practical Solutions.</strong>
             Jopetnah International Limited is a Kampala-based multi-sector services company providing practical, integrated solutions across 16 strategic sectors.
           </p>
-          <p class="footnote">
+          <p style="margin-top:10px; font-size:12.5px;">
             <a href="https://www.facebook.com/profile.php?id=100063008632130">Facebook</a> &middot;
             <a href="https://www.linkedin.com/company/jopetnah-international-limited">LinkedIn</a> &middot;
             <a href="https://www.youtube.com/@JopetnahInternationalLimited">YouTube</a> &middot;
@@ -254,9 +254,9 @@
         &nbsp;|&nbsp; Company Reg. No.: 80010001250674
         &nbsp;&bull;&nbsp; TIN: 1018486351
         &nbsp;|&nbsp;
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="privacy.html" style="color:#9599A1;">Privacy Policy</a>
         &nbsp;&bull;&nbsp;
-        <a href="terms.html">Terms of Service</a>
+        <a href="terms.html" style="color:#9599A1;">Terms of Service</a>
       </div>
     </div>
   </footer>
