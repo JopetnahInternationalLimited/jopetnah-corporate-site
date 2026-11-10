@@ -89,7 +89,6 @@ We seek to create practical value by connecting:
 | **Primary Market** | Uganda / East Africa |
 | **Live Website** | [GitHub Pages](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/) *(custom domain pending — see [Custom Domain](#custom-domain))* |
 | **Corporate Tagline** | Empowering Businesses with Practical Solutions |
-| **Brand Line** | Connecting Capabilities. Creating Value. |
 
 \*The 30+ figure reflects Jopetnah's broader international business network: relationships, engagements, partnerships, market connections, clients, suppliers and other commercial interactions. It does not represent 30+ offices, permanent establishments or completed projects. Country-level records are maintained internally and subject to periodic verification.
 
@@ -762,19 +761,27 @@ The corporate website itself is a lightweight static site built with **HTML, CSS
 | **Corporate Email** | jopetnah.intl.ltd@gmail.com |
 | **Primary Market** | Uganda / East Africa |
 
-## Headquarters & Business Point
+## Headquarters
 
-**U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area**
+**Mutungo–Luzira**
 P.O. Box 124614
-Postal Code 1003
+Kampala GPO
+Uganda
+
+## Business Point
+
+**UN Rise Road, Plot 3, House No. 3**
+8th Street, Industrial Area
+P.O. Box 124614
 Kampala GPO
 Uganda, East Africa
+Zip Code: 1003
 
 ## Telephone
 
-- +256 414 598 031
-- +256 782 520 058
-- +256 753 520 058
+- +256 414 598031
+- +256 782 520058
+- +256 753 520058
 
 ---
 
@@ -839,7 +846,8 @@ jopetnah-corporate-site/
 ├── industries.html       Redirect → services.html (excluded from sitemap)
 │
 ├── css/
-│   └── style.css
+│   ├── style.css             Design system: tokens, components, responsive rules
+│   └── news-articles.css     News listing and article template (news pages only)
 │
 ├── js/
 │   └── script.js
@@ -883,12 +891,12 @@ jopetnah-corporate-site/
 The corporate website is a lightweight static site with no framework and no build tools.
 
 - **HTML5 / CSS3 / vanilla JavaScript (ES6)**
-- **Fonts:** Poppins (headings and navigation) and Lora (body text), served via the Google Fonts CDN
+- **Fonts:** Poppins (headings and navigation) and Lora (body text), self-hosted in `assets/fonts/` (SIL Open Font License) — no third-party font requests
 - **Contact form:** processed by [Formspree](https://formspree.io), a third-party form service
 - **Map:** an embedded Google Map on the Contact page
 - **Hosting:** GitHub Pages, auto-deployed from the `main` branch on every push
 - **Metadata:** Open Graph, Twitter Card and canonical tags for discoverability and social sharing (rollout to every page is tracked in the [Roadmap](#roadmap))
-- **Third-party services in use:** GitHub Pages (hosting), Google Fonts, Google Maps and Formspree — all disclosed in the [Privacy Policy](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html)
+- **Third-party services in use:** GitHub Pages (hosting), Google Maps, Unsplash (some photographs) and Formspree — disclosed in the [Privacy Policy](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html)
 - **No database, no backend of our own, no user accounts** — content is maintained directly in versioned HTML
 
 Architecture rationale, including why the project deliberately avoids a build pipeline at its current size, is documented in [`docs/development-guide.md`](docs/development-guide.md).
@@ -954,7 +962,7 @@ This repository contains a static marketing website with no backend, database or
 
 # Data Protection & Privacy
 
-Personal information submitted through the Contact form (name, email, organisation, message), or sent to us by email, is used to respond to enquiries and is not sold or rented. The form is processed by Formspree, a third-party service, so submissions are transmitted to Formspree's servers. We run no analytics or advertising trackers, but GitHub Pages (hosting), Google Fonts and the embedded Google Map may receive technical data such as visitors' IP addresses.
+Personal information submitted through the Contact form (name, email, organisation, message), or sent to us by email, is used to respond to enquiries and is not sold or rented. The form is processed by Formspree, a third-party service, so submissions are transmitted to Formspree's servers. We run no analytics or advertising trackers, but GitHub Pages (hosting), the embedded Google Map and Unsplash (which supplies some photographs) may receive technical data such as visitors' IP addresses.
 
 Full detail is on the [live Privacy Policy page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html).
 
@@ -1018,11 +1026,13 @@ Contributors and internal reviewers should not add a figure or claim unless it c
 
 # Connect With Us
 
-**Headquarters & Business Point:** U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area, P.O. Box 124614, Postal Code 1003, Kampala GPO, Uganda, East Africa
+**Headquarters:** Mutungo–Luzira, P.O. Box 124614, Kampala GPO, Uganda
+
+**Business Point:** UN Rise Road, Plot 3, House No. 3, 8th Street, Industrial Area, P.O. Box 124614, Kampala GPO, Uganda, East Africa — Zip Code 1003
 
 **Email:** [jopetnah.intl.ltd@gmail.com](mailto:jopetnah.intl.ltd@gmail.com)
 
-**Telephone:** +256 414 598 031 · +256 782 520 058 · +256 753 520 058
+**Telephone:** +256 414 598031 · +256 782 520058 · +256 753 520058
 
 **Website:** [GitHub Pages](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/) *(www.jopetnah.com pending — see [Custom Domain](#custom-domain))*
 
@@ -1058,7 +1068,7 @@ Enquiries should be directed to [jopetnah.intl.ltd@gmail.com](mailto:jopetnah.in
 | **Company Registration No.** | 80010001250674 |
 | **TIN** | 1018486351 |
 | **Jurisdiction** | Republic of Uganda |
-| **Headquarters & Business Point** | U.N. Rise Road, Plot 3, House No. 3, Off 8th Street, Industrial Area, P.O. Box 124614, Postal Code 1003, Kampala GPO, Uganda, East Africa |
+| **Headquarters** | Mutungo–Luzira, P.O. Box 124614, Kampala GPO, Uganda |
 
 Applicable sector-specific licences, regulatory registrations and certifications are listed in [Quality, Risk & Compliance](#quality-risk--compliance) where verified and current.
 
@@ -1075,6 +1085,6 @@ This is not an open-source licence. Public visibility of this repository is prov
 ---
 
 <p align="center">
-  <strong>Connecting Capabilities. Creating Value.</strong><br>
+  <strong>Empowering Businesses with Practical Solutions</strong><br>
   Established 2016 • Kampala, Uganda
 </p>
