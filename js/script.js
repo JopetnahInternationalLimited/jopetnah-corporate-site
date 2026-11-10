@@ -130,46 +130,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // support, the real numbers already in the HTML are left exactly as
     // they are -- nothing further to do.
   }
-
-  // Contact form: pre-select the service dropdown from ?sector=NN, which is set by
-  // the "Discuss this sector" buttons on the Services page. An invalid or unknown
-  // value is ignored and the dropdown simply stays on its default.
-  (function () {
-    try {
-      var select = document.getElementById('service');
-      if (!select || !window.URLSearchParams) return;
-      var id = new URLSearchParams(window.location.search).get('sector');
-      if (!id || !/^\d{2}$/.test(id)) return;
-      var opt = select.querySelector('option[data-sector="' + id + '"]');
-      if (opt) select.value = opt.value;
-    } catch (err) { /* leave the default selection */ }
-  })();
-
-  // Collapsible groups (About page): one button expands or collapses every section in the group.
-  // Added by script, so without JavaScript each section still opens and closes on its own.
-  (function () {
-    try {
-      document.querySelectorAll('.exec-body').forEach(function (group) {
-        var items = group.querySelectorAll('details.collapsible');
-        if (items.length < 2) return;
-        var btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'collapsible-toggle';
-        function allOpen() { return Array.prototype.every.call(items, function (d) { return d.open; }); }
-        function sync() {
-          var open = allOpen();
-          btn.textContent = open ? 'Collapse all sections' : 'Expand all sections';
-          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-        }
-        btn.addEventListener('click', function () {
-          var open = !allOpen();
-          items.forEach(function (d) { d.open = open; });
-          sync();
-        });
-        items.forEach(function (d) { d.addEventListener('toggle', sync); });
-        items[0].parentNode.insertBefore(btn, items[0]);
-        sync();
-      });
-    } catch (err) { /* leave the sections as plain collapsibles */ }
-  })();
 });

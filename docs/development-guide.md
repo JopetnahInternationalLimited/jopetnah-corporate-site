@@ -31,11 +31,13 @@ This is a deliberate choice, not an oversight. For a site of this size (10 real 
 ├── industries.html         Redirect → services.html (SEO alias)
 │
 ├── css/
-│   └── style.css           Single shared stylesheet (all pages)
+│   ├── style.css           Shared design system stylesheet (all pages)
+│   └── news-articles.css   News listing and article template (news pages only)
 ├── js/
 │   └── script.js           Mobile nav toggle + services accordion
 ├── assets/
-│   └── icon.png             Logo mark (globe + "j")
+│   ├── icon.png             Logo mark (globe + "j")
+│   └── fonts/               Self-hosted Poppins and Lora (woff2) + OFL licences
 ├── favicon.ico
 ├── robots.txt
 ├── sitemap.xml
@@ -56,27 +58,15 @@ Although the *deployed* files are plain static HTML, they were *generated* using
 
 ## Design System Reference
 
-All colors, fonts, and spacing are defined once as CSS custom properties at the top of `style.css`:
+The full reference is in **[css-architecture.md](css-architecture.md)** (stack decisions, token tables, conventions, breakpoints, testing). In short:
 
-```css
-:root {
-  --navy: #1B1E23;       /* primary text color */
-  --red: #E0151B;        /* brand accent */
-  --blue: #0E86D4;       /* brand accent */
-  --blue-tint: #EAF4FC;  /* light card backgrounds */
-  --red-tint: #FDEAEA;   /* light card backgrounds */
-  --hairline: #E3E5E8;   /* borders/dividers */
-  --gray: #53555B;       /* secondary text */
-  --lgray: #8A8D93;      /* tertiary/muted text */
-  --paper: #FBFBFC;      /* off-white section backgrounds */
-  --white: #FFFFFF;
+- All colours, type sizes, radii, spacing and layout values are CSS custom properties at the top of `css/style.css` (section 1).
+- Components use **semantic tokens** (`--color-bg`, `--color-ink`, `--color-link`, ...). Dark mode only redefines these, so components should not need dark-specific rules.
+- The older names (`--navy`, `--gray`, `--paper`, `--blue`, `--hairline`, ...) still work as aliases because page HTML uses them in inline styles.
+- Fonts: `--font-display` is Poppins (headings, navigation, buttons, labels); `--font-body` is Lora (paragraph text).
+- Use only the six documented breakpoints: 1180, 900, 720, 600, 480 and 360px.
 
-  --font-display: 'Poppins', 'Segoe UI', sans-serif;  /* headings, nav, buttons */
-  --font-body: 'Lora', Georgia, serif;                 /* paragraph text */
-}
-```
-
-**Always use these variables (`var(--blue)`, etc.) rather than hardcoding hex values** when writing new CSS — this is what makes a future rebrand or color tweak a one-line change instead of a find-and-replace across the whole file. See `brand-guidelines.md` for the full rationale behind these specific choices.
+**Always use the tokens (`var(--color-link)`, `var(--space-4)`, ...) rather than hardcoding values** when writing new CSS — this is what makes a future rebrand or colour tweak a one-line change instead of a find-and-replace across the site.
 
 ## Common Tasks
 
@@ -117,7 +107,7 @@ python3 -m http.server 8000
 
 ## Known Limitations
 
-- **Fonts require internet** — Poppins/Lora load from Google Fonts CDN. If self-hosting them becomes a priority, fonts would need to be downloaded into `assets/fonts/` and referenced via `@font-face` instead of the current `<link>` tag.
+- **Fonts are self-hosted** — Poppins and Lora are served from `assets/fonts/` (Latin subset). Text outside the Latin range falls back to the system font. To add a weight, add the `woff2` file and an `@font-face` rule in section 0 of `css/style.css`.
 - **Contact form has no backend** — it submits via `mailto:`, which opens the visitor's email client rather than posting to a server. Fine for low volume; consider a form service (e.g., Formspree) if inquiry volume grows.
 - **No image optimization pipeline** — if/when photography is added, images should be manually compressed and sized appropriately before committing (no automated build step will do this for you).
 
@@ -129,45 +119,3 @@ This plain-HTML approach stops being the right choice if any of the following ha
 - Content needs to come from a CMS or database rather than hand-written HTML
 
 At that point, migrating to a static site generator (e.g., Eleventy, Astro, or Jekyll — the last of which GitHub Pages supports natively) would be worth the added complexity. Not needed today.
-
-## Sector and pillar names: one master record
-
-The 16 sector names, their long "scope" wording, and the four pillar names live in **one place**: `tools/sectors.json`. They appear on the homepage, Services, About, Impact, Sustainability and the contact-form dropdown, and those pages must never be edited by hand for this wording.
-
-To change a name:
-
-1. Edit `tools/sectors.json` (`name` = official short label; `scope` = long descriptive wording used on the Services page and in enquiry emails). Do not change `id` values: they are the `#sector-NN` anchors that other pages link to. Sector numbers are deliberately **not shown to visitors**; pages list sectors grouped under their pillar, and the number survives only as an invisible key (`id="sector-NN"`, `data-sector="NN"` or a link anchor) that the script uses to find each entry.
-2. Run `python3 tools/sync_sectors.py` (Python 3, no packages needed). It rewrites only the controlled text and lists what changed.
-3. Review `git diff`, commit the JSON and the regenerated pages together.
-
-`python3 tools/sync_sectors.py --check` changes nothing and exits with an error if any page has drifted; the **Site Quality Checks** workflow runs it on every push and pull request. It also verifies that sectors sit under the right pillar on the homepage and Sustainability pages (moving a sector between pillars is a structural edit: change `pillar` in the JSON, then move that sector's block under the right pillar heading on the homepage, Services, About, Impact and Sustainability pages by hand; the check lists any page that disagrees).
-
-Not covered by the script: the README and company-profile documents, and free-text mentions of a sector inside articles and policy pages.
-
-Note: GitHub Pages publishes everything in the repository, so `tools/sectors.json` is publicly reachable. It contains only wording that is already public on the site.
-
-## Automated checks (run on every push and pull request)
-
-| Check | Command | What it guards |
-|---|---|---|
-| HTML validity | Nu validator via the workflow | Broken or invalid markup |
-| Broken links | lychee via the workflow | Dead internal and external links |
-| Sector wording | `python3 tools/sync_sectors.py --check` | Sector and pillar names identical on every page |
-| Contact details | `python3 tools/check_contact.py` | One address, one phone format, one email, no retired wording (master: `tools/contact.json`) |
-| Accessibility | `npm install --no-save jsdom@30.1.3 axe-core@4.14.0` then `node tools/axe_check.js` | axe-core violations on every page |
-
-Limits worth knowing: the accessibility scan runs in a simulated DOM, so **colour contrast is not assessed** and a pass is not a WCAG conformance claim; the validator's bundled CSS checker is outdated, so CSS is excluded and modern properties are not flagged; the contact-page map iframe uses the valid `loading="lazy"` attribute, which some older validator builds report incorrectly.
-
-## Conventions kept on purpose
-
-- The homepage canonical URL is the directory form (`.../jopetnah-corporate-site/`); internal "Home" links use `./`.
-- Homepage `<title>` is tuned to fit search results (about 580px); the Open Graph and Twitter titles carry the full legal name.
-- Brand line "Connecting Capabilities. Creating Value." is for the homepage headline and the About closing heading; the slogan "Empowering Businesses with Practical Solutions" is the footer sign-off on every page. Use each once per page.
-- Images should be self-hosted (see `tools/localise_images.py`); avoid new hot-links to third-party hosts.
-
-## Fonts and images are self-hosted
-
-- **Fonts:** Poppins and Lora are served from `assets/fonts/` (SIL Open Font License; licence texts in `assets/fonts/LICENSES.txt`). The `@font-face` rules are at the top of `css/style.css` and two fonts are preloaded in each page's `<head>`. To add a weight, take the matching Latin `.woff2` from the `@fontsource` npm package, add a rule, and avoid adding a Google Fonts link.
-- **Colours:** use `--blue-solid` behind white text and `--blue-text` for blue text on light surfaces (the base `--blue` is only 3.9:1 on white).
-- **Photos:** see `docs/self-hosting-images.md` for the one-off task of replacing the remaining Unsplash hot-links.
-
