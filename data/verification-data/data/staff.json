@@ -1,0 +1,12 @@
+{
+  "_note": "Records are keyed by the SHA-256 hash of each card's verification code. Add entries with tools/jil-staff-token.py. Do not add contact details or ID numbers.",
+  "records": {
+    "4ba71f5a30556d8cd7983e65f4884b323da788a60aa1b9ba6d95639385ce7229": {
+      "staff_no": "JIL-001",
+      "name": "Okello Carlos Torach",
+      "title": "Managing Director",
+      "status": "active",
+      "valid_until": "2031-11-11"
+    }
+  }
+}
