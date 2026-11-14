@@ -890,12 +890,12 @@ jopetnah-corporate-site/
 The corporate website is a lightweight static site with no framework and no build tools.
 
 - **HTML5 / CSS3 / vanilla JavaScript (ES6)**
-- **Fonts:** Poppins (headings and navigation) and Lora (body text), served via the Google Fonts CDN
+- **Fonts:** Poppins (headings and navigation) and Lora (body text), self-hosted in `assets/fonts/` (SIL Open Font License) — no third-party font requests
 - **Contact form:** processed by [Formspree](https://formspree.io), a third-party form service
 - **Map:** an embedded Google Map on the Contact page
 - **Hosting:** GitHub Pages, auto-deployed from the `main` branch on every push
 - **Metadata:** Open Graph, Twitter Card and canonical tags for discoverability and social sharing (rollout to every page is tracked in the [Roadmap](#roadmap))
-- **Third-party services in use:** GitHub Pages (hosting), Google Fonts, Google Maps and Formspree — all disclosed in the [Privacy Policy](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html)
+- **Third-party services in use:** GitHub Pages (hosting), Google Maps, Unsplash (some photographs) and Formspree — all disclosed in the [Privacy Policy](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html)
 - **No database, no backend of our own, no user accounts** — content is maintained directly in versioned HTML
 
 Architecture rationale, including why the project deliberately avoids a build pipeline at its current size, is documented in [`docs/development-guide.md`](docs/development-guide.md).
@@ -961,7 +961,7 @@ This repository contains a static marketing website with no backend, database or
 
 # Data Protection & Privacy
 
-Personal information submitted through the Contact form (name, email, organisation, message), or sent to us by email, is used to respond to enquiries and is not sold or rented. The form is processed by Formspree, a third-party service, so submissions are transmitted to Formspree's servers. We run no analytics or advertising trackers, but GitHub Pages (hosting), Google Fonts and the embedded Google Map may receive technical data such as visitors' IP addresses.
+Personal information submitted through the Contact form (name, email, organisation, message), or sent to us by email, is used to respond to enquiries and is not sold or rented. The form is processed by Formspree, a third-party service, so submissions are transmitted to Formspree's servers. We run no analytics or advertising trackers, but GitHub Pages (hosting), the embedded Google Map and Unsplash (which supplies some photographs) may receive technical data such as visitors' IP addresses.
 
 Full detail is on the [live Privacy Policy page](https://jopetnahinternationallimited.github.io/jopetnah-corporate-site/privacy.html).
 

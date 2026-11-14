@@ -20,10 +20,10 @@ The site is a static GitHub Pages site with no build step. The CSS stack is ther
 | Technology | Verdict | Reasoning |
 |---|---|---|
 | Vanilla CSS | **Adopt (retain)** | Zero dependencies, zero build, works on GitHub Pages as is. |
-| CSS custom properties (design tokens) | **Adopt and extend** | The site already relied on them. Tokens grew from 20 (colour and font only) to 86 (colour roles, type, radius, spacing, layout). |
+| CSS custom properties (design tokens) | **Adopt and extend** | The site already relied on them. Tokens grew from 21 (colour and font only) to 89 (colour roles, type, radius, spacing, layout). |
 | CSS Grid and Flexbox | **Retain** | Already used for every layout; no change needed. |
 | `clamp()` fluid type | **Adopt (limited)** | Used for the hero, page title and article title only, with a static fallback inside `@supports`. |
-| Utility and pattern classes | **Adopt (small set)** | About 40 named classes replaced 761 of the original 913 repeated inline styles. They are named by role (`.copy-muted`, `.media-frame`, `.wrap--860`), not a utility framework. |
+| Utility and pattern classes | **Adopt (small set)** | About 40 named classes replaced 726 of the 903 repeated inline styles. They are named by role (`.copy-muted`, `.media-frame`, `.wrap--860`), not a utility framework. |
 | BEM | **Retain the existing naming; use `--` modifiers in new code** | Class names are already descriptive component names (`.accordion-trigger`, `.footer-brand`). A mass rename adds risk and no benefit. New variants use the BEM modifier style (for example `.cta-band--dark`). |
 | Logical properties | **Adopt for new code only** | The site is English, left to right. Retrofitting existing rules gives no user benefit. |
 | Mobile-first media queries | **Partly: new components only** | The existing layout is desktop-first (`max-width`). Converting it is a rewrite with no visible gain. The breakpoints were consolidated instead. |
@@ -49,13 +49,13 @@ Read top to bottom. A later rule of equal specificity overrides an earlier one, 
 | 3 | Typography | headings, `.eyebrow`, `.section-head` |
 | 4 | Layout | `.wrap`, sections, `.hero`, `.page-header` |
 | 5 | Components | buttons, header and nav, cards, accordion, forms, stats and CTA bands, footer, compare table, quick-contact, leadership |
-| 6 | Page components | home orbit and sector grid, contact, sustainability, policy pages |
+| 6 | Page components | home hero, orbit and sector grid; sector lists and "Discuss this sector" buttons; About collapsibles; contact; sustainability; policy pages |
 | 7 | Utilities | small helpers (see section 5 below) |
 | 8 | Responsive | every media query, grouped by breakpoint |
 | 9 | Accessibility | focus rings, skip link, selection |
 | 10 | Motion and print | reduced motion, print |
 
-Fonts are in `assets/fonts/` (Latin subset, SIL Open Font License; licence texts are alongside). Only Poppins 700 and Lora 400 are preloaded in each page's `<head>`.
+Fonts are in `assets/fonts/` (Latin subset, SIL Open Font License; see `assets/fonts/LICENSES.txt`). Only Poppins 700 and Lora 400 are preloaded in each page's `<head>`.
 
 ---
 
@@ -66,7 +66,8 @@ Fonts are in `assets/fonts/` (Latin subset, SIL Open Font License; licence texts
 | Token | Value | Use |
 |---|---|---|
 | `--brand-blue` | `#0E86D4` | primary corporate blue: backgrounds, borders, icons, gradients |
-| `--brand-blue-deep` | `#0A5F94` | blue used as text, and solid backgrounds behind white text (6.7:1) |
+| `--brand-blue-deep` | `#0A5F94` | blue used as text on light surfaces (6.7:1) |
+| `--brand-blue-solid` | `#0B72B8` | solid blue behind white text, and the end of the brand gradient (5.1:1) |
 | `--brand-red` | `#E0151B` | accent and gradient start |
 | `--brand-red-deep` | `#B10E13` | small red text on tinted backgrounds |
 | `--brand-ink` | `#1B1E23` | deep navy / ink |
@@ -96,14 +97,14 @@ Fonts are in `assets/fonts/` (Latin subset, SIL Open Font License; licence texts
 | Group | Tokens |
 |---|---|
 | Type (rem) | `--fs-2xs` 11px, `--fs-xs` 12, `--fs-sm` 13, `--fs-md` 14, `--fs-lg` 15, `--fs-base` 16, `--fs-xl` 17, `--fs-2xl` 18, `--fs-3xl` 19, `--fs-4xl` 24, `--fs-5xl` 26, `--fs-6xl` 28, `--fs-7xl` 34 |
-| Fluid type | `--fs-hero` 30 to 42px, `--fs-page-title` 28 to 34px, `--fs-article-title` 27 to 36px |
+| Fluid type | `--fs-hero` 30 to 46px (homepage headline), `--fs-page-title` 28 to 34px (34px above about 486px) |
 | Radius | `--radius-xs` 4, `-sm` 6, `-md` 8, `-lg` 10, `-xl` 12, `-pill` 999 |
 | Spacing | `--space-1` 4px up to `--space-10` 64px (4, 8, 12, 16, 20, 24, 32, 40, 48, 64) |
 | Layout | `--maxw` 1180px, `--gutter` 28px (20px on phones), `--section-y` 68px (52px on phones), `--section-y-tight` 48px (38px) |
 | Elevation | `--shadow-card`, `--shadow-soft`, `--shadow-hover`, `--shadow-header` |
 | Fonts | `--font-display` Poppins (navigation, headings, labels, buttons); `--font-body` Lora (paragraphs and long-form text) |
 
-Font sizes use `rem`, so text follows the visitor's browser font-size setting.
+Font sizes use `rem`, so text follows the visitor's browser font-size setting. A few legacy sizes that are not on the scale (for example 12.5px, 13.8px, 14.5px) are kept as exact `rem` values so the existing design does not shift. Move them onto the scale in a future design pass.
 
 ### Legacy aliases
 
@@ -133,7 +134,7 @@ Font sizes use `rem`, so text follows the visitor's browser font-size setting.
 
 Each is written as `element.class` (for example `p.copy-muted`) so it matches the specificity of component rules such as `.value-card p`, as the inline style it replaced always did. Add a new class only when the same inline style appears several times.
 
-**Inline styles.** 152 inline `style=""` attributes remain (913 originally). They are one-off layout tweaks. When you edit a page, turn any pattern that appears more than a few times into a class rather than copying the inline style.
+**Inline styles.** 177 inline `style=""` attributes remain (903 before the refactor). They are one-off layout tweaks. When you edit a page, turn any pattern that appears more than a few times into a class rather than copying the inline style.
 
 **Adding a component.**
 1. Put the rule in section 5 or 6 of `style.css` (or in `news-articles.css` if only news pages use it).
@@ -162,7 +163,7 @@ Every page has the same seven header links (Home, About, Services, Sustainabilit
 
 ## 7. Accessibility rules
 
-- Text contrast of at least 4.5:1 (3:1 for large text) in both themes. White text on `--brand-blue` is only 3.9:1, so solid backgrounds behind small white text use `--brand-blue-deep`. Button labels over the red-to-blue gradient stay white in both themes (measured minimum 4.66:1); the label must never use `--color-bg`, which turns near-black in dark mode.
+- Text contrast of at least 4.5:1 (3:1 for large text) in both themes. White text on `--brand-blue` is only 3.9:1, so solid backgrounds behind small white text use `--brand-blue-solid`. Button labels over the red-to-blue gradient stay white in both themes (measured minimum 5.8:1); the label must never use `--color-bg`, which turns near-black in dark mode.
 - Automated checkers cannot test text over a gradient. Measure it: hide the text, sample the background pixels beneath it, and compute the ratio.
 - Heading levels must not skip (h1, then h2, then h3). The W3C Nu HTML Checker reports 0 errors on all pages; keep it that way.
 - Every interactive element shows a visible focus ring (3px, `--color-focus`). Do not set `outline: none` without a replacement indicator.
@@ -176,7 +177,7 @@ Every page has the same seven header links (Home, About, Services, Sustainabilit
 
 - No third-party requests for styles or fonts. Seven Latin `woff2` files total about 95 KB, loaded with `font-display: swap`; two are preloaded.
 - Give every image `width` and `height` attributes to avoid layout shift.
-- The two stylesheets are about 10.3 KB and 2.1 KB gzipped. Keep new CSS lean and remove rules you replace.
+- The two stylesheets are about 11.2 KB and 2.0 KB gzipped. Keep new CSS lean and remove rules you replace.
 - Cached copies: GitHub Pages caches CSS for several minutes. After a deploy, a hard refresh may be needed to see changes.
 
 ---
@@ -187,6 +188,5 @@ Every page has the same seven header links (Home, About, Services, Sustainabilit
 2. Check both themes, using the toggle in the header.
 3. Resize from 320px to 1920px. Check 320, 360, 600, 720, 900, 1024, 1180 and 1280 in particular. Nothing should scroll sideways, and the header should stay on one line above 640px.
 4. Tab through the page with the keyboard. Focus must always be visible.
-5. Run an accessibility checker (for example axe DevTools or Lighthouse) in both themes, and validate the HTML with the W3C Nu checker (`java -Xss1m -jar vnu.jar --errors-only *.html`).
-
-Known limitations are listed in the CSS report delivered with this change.
+5. If you touch sector wording, run `python3 tools/sync_sectors.py --check`.
+6. Run an accessibility checker (for example axe DevTools or Lighthouse) in both themes, and validate the HTML with the W3C Nu checker (`java -Xss1m -jar vnu.jar --errors-only *.html`).

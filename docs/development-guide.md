@@ -117,7 +117,7 @@ python3 -m http.server 8000
 
 ## Known Limitations
 
-- **Fonts require internet** — Poppins/Lora load from Google Fonts CDN. If self-hosting them becomes a priority, fonts would need to be downloaded into `assets/fonts/` and referenced via `@font-face` instead of the current `<link>` tag.
+- **Fonts are self-hosted** — Poppins and Lora are served from `assets/fonts/` (Latin subset). Text outside the Latin range falls back to the system font. To add a weight, add the `woff2` file and an `@font-face` rule in section 0 of `css/style.css`.
 - **Contact form has no backend** — it submits via `mailto:`, which opens the visitor's email client rather than posting to a server. Fine for low volume; consider a form service (e.g., Formspree) if inquiry volume grows.
 - **No image optimization pipeline** — if/when photography is added, images should be manually compressed and sized appropriately before committing (no automated build step will do this for you).
 
