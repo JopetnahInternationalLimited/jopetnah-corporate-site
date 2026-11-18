@@ -209,24 +209,74 @@ Leads the overall strategy and operations of Jopetnah International Limited. Ful
 </div>
 </section>
 
-<section class="tight bg-surface">
-<div class="wrap">
+<section class="tight bg-surface" id="structure">
+<div class="wrap" id="jil-org">
+<style>
+#jil-org{--o-head:#173B5E;--o-on-head:#fff;--o-line:rgba(23,59,94,.22);--o-tint:rgba(14,134,212,.07);--o-tint2:rgba(14,134,212,.13);--o-blue:#0E86D4;--o-sum:#173B5E}
+html[data-theme="dark"] #jil-org{--o-head:#8CC8F0;--o-on-head:#0B1620;--o-line:rgba(140,200,240,.28);--o-tint:rgba(14,134,212,.12);--o-tint2:rgba(14,134,212,.2);--o-sum:#173B5E}
+#jil-org *,#jil-org *::before,#jil-org *::after{box-sizing:border-box}
+#jil-org .o-tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 26px}
+#jil-org .o-tools button{font:inherit;font-size:.9rem;font-weight:700;color:var(--o-head);background:transparent;border:1.5px solid var(--o-head);border-radius:999px;padding:8px 18px;cursor:pointer}
+#jil-org .o-tools button:hover{background:var(--o-head);color:var(--o-on-head)}
+#jil-org .o-tools button:focus-visible,#jil-org summary:focus-visible{outline:3px solid var(--o-blue);outline-offset:2px}
+#jil-org .o-gov{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,260px);gap:0 28px;max-width:900px;margin:0 auto;align-items:start}
+#jil-org .o-chain{display:grid;justify-items:center}
+#jil-org .o-node{width:100%;padding:16px;text-align:center;border:1.5px solid var(--o-blue);border-radius:12px;background:var(--o-tint);font-weight:700}
+#jil-org .o-node.o-board{background:var(--o-tint2)}
+#jil-org .o-node small{display:block;font-weight:400;color:var(--gray)}
+#jil-org .o-node .o-sup{margin-top:6px;font-size:.84rem}
+#jil-org .o-conn{width:2px;height:26px;background:var(--o-blue);margin:0 auto}
+#jil-org .o-assure{grid-column:2;grid-row:1;align-self:center;position:relative;border:1.5px dashed var(--o-head);border-radius:12px;background:var(--o-tint);padding:14px 16px;font-size:.9rem}
+#jil-org .o-assure::before{content:"";position:absolute;left:-28px;top:50%;width:28px;border-top:2px dashed var(--o-head)}
+#jil-org .o-assure h4{margin:0 0 4px;font-size:.98rem;color:var(--o-head)}
+#jil-org .o-assure p{margin:0;color:var(--gray)}
+#jil-org h3.o-h{text-align:center;color:var(--o-head);margin:30px 0 4px;font-size:1.25rem}
+#jil-org .o-sub{text-align:center;color:var(--gray);margin:0 0 16px;font-size:.92rem}
+#jil-org .o-central{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:0;padding:0;list-style:none}
+#jil-org .o-central li{border:1px solid var(--o-line);background:var(--o-tint);padding:14px;text-align:center;border-radius:10px;font-weight:700;font-size:.94rem}
+#jil-org .o-central small{display:block;margin-top:4px;font-weight:400;color:var(--gray);font-size:.82rem;line-height:1.4}
+#jil-org .o-divs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+#jil-org .o-div{border:1px solid var(--o-line);border-radius:12px;overflow:hidden}
+#jil-org .o-div summary{cursor:pointer;list-style:none;background:var(--o-sum);color:#fff;padding:17px 20px;font-weight:700}
+#jil-org .o-div summary::-webkit-details-marker{display:none}
+#jil-org .o-div summary::after{content:"+";float:right;font-size:1.2rem}
+#jil-org .o-div[open] summary::after{content:"\2212"}
+#jil-org .o-dc{padding:16px 20px}
+#jil-org .o-dc h4{color:var(--o-head);font-size:1rem;margin:0 0 8px}
+#jil-org .o-dc ul{padding-left:20px;margin:0;color:var(--gray)}#jil-org .o-dc li{margin:6px 0}
+#jil-org .o-note{border-top:1px solid var(--o-line);margin:12px 0 0;padding-top:10px;color:var(--gray);font-size:.88rem}
+#jil-org .o-deliv{border:1px solid var(--o-line);background:var(--o-tint);border-radius:12px;padding:20px;margin-top:6px}
+#jil-org .o-deliv h4{margin:0 0 6px;color:var(--o-head);font-size:1.05rem}#jil-org .o-deliv p{margin:0;color:var(--gray)}
+#jil-org .o-foot{color:var(--gray);font-size:.88rem;margin-top:24px;max-width:70ch}
+@media (max-width:850px){#jil-org .o-central{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:700px){#jil-org .o-gov{grid-template-columns:1fr}#jil-org .o-assure{grid-column:1;grid-row:auto;margin-top:14px}#jil-org .o-assure::before{left:50%;top:-14px;width:0;height:14px;border-top:0;border-left:2px dashed var(--o-head)}}
+@media (max-width:620px){#jil-org .o-divs{grid-template-columns:1fr}}
+@media (max-width:380px){#jil-org .o-central{grid-template-columns:1fr}}
+@media print{#jil-org .o-tools{display:none}#jil-org .o-div summary{background:none;color:inherit;border-bottom:1px solid currentColor}#jil-org .o-div summary::after{content:""}}
+</style>
 <div class="section-head">
 <span class="eyebrow">Structure</span>
 <h2>Organisational Framework</h2>
 </div>
 <p style="color:var(--gray); max-width:70ch;">
-Our structure is intentionally straightforward to maintain clear accountability:
+Our structure is intentionally straightforward to maintain clear accountability. It brings together central corporate oversight and four complementary operating divisions to coordinate capabilities and deliver practical solutions.
 </p>
-<ul style="color:var(--gray); line-height:1.8; padding-left:20px; margin-top:12px;">
-<li>Board of Directors / Oversight</li>
-<li>Managing Director</li>
-<li>Director of Human Resources &amp; Public Relations</li>
-<li>Company Secretary</li>
-<li>Departmental Heads</li>
-<li>Technical Specialists and Project Teams</li>
-<li>Administrative and Support Functions</li>
-</ul>
+<div class="o-tools"><button type="button" data-org="open">Expand all divisions</button><button type="button" data-org="close">Collapse all divisions</button></div>
+<div class="o-gov"><div class="o-chain">
+<div class="o-node">SHAREHOLDERS<small>Ownership and reserved shareholder decisions</small></div><div class="o-conn"></div>
+<div class="o-node o-board">BOARD OF DIRECTORS<small>Strategic direction, governance and oversight</small></div><div class="o-conn"></div>
+<div class="o-node">MANAGING DIRECTOR (MD)<small>Executive leadership and overall management</small><small class="o-sup">Supporting leadership roles: Director &ndash; Human Resources &amp; Public Relations; Company Secretary (profiles to be published)</small></div></div>
+<aside class="o-assure"><h4>Independent Audit, Risk &amp; Compliance Assurance</h4><p>Internal Audit maintains functional accountability to the Board or its Audit Committee. Administrative coordination must not compromise its independence.</p></aside></div>
+<div class="o-conn" style="margin-top:0"></div>
+<h3 class="o-h">Central Corporate Functions</h3><p class="o-sub">Shared services that support every division.</p>
+<ul class="o-central"><li>Finance &amp; Investment<small>Budgeting, accounts, reporting and investment oversight.</small></li><li>Corporate Services &amp; Administration<small>Offices, records, people administration and day-to-day support.</small></li><li>Strategy, Planning &amp; Performance<small>Company plans, targets and performance review.</small></li><li>Business Development &amp; Partnerships<small>New opportunities, client relationships and partner agreements.</small></li><li>Communications, Marketing &amp; PR<small>Brand, public communication and media relations.</small></li><li>Legal, Contracts &amp; Compliance<small>Contracts, licences, regulatory compliance and legal risk.</small></li><li>Procurement &amp; Supply Chain<small>Buying, supplier management and continuity of supply.</small></li><li>ICT &amp; Digital Systems<small>Company systems, data security and digital tools.</small></li></ul>
+<div class="o-conn" style="margin-top:22px"></div>
+<h3 class="o-h" style="margin-top:12px">Operating Divisions</h3><p class="o-sub">Four divisions under the direction of the Managing Director. Select a division to see its functions.</p>
+<div class="o-divs"><details class="o-div"><summary>1. Business &amp; Advisory</summary><div class="o-dc"><h4>Principal functions</h4><ul><li>Strategic Consultancy &amp; Advisory</li><li>Research &amp; Development</li><li>Training &amp; Capability Building</li><li>Marketing &amp; Advertising</li><li>Technology &amp; Digital Solutions</li></ul><p class="o-note">Supports business strategy, organisational development, innovation, capacity building and digital transformation.</p></div></details><details class="o-div"><summary>2. Infrastructure &amp; Resources</summary><div class="o-dc"><h4>Principal functions</h4><ul><li>Engineering &amp; Construction</li><li>Petroleum, Oil, Gas &amp; Renewable Energy</li><li>Agricultural Development &amp; Agribusiness</li><li>Natural Resources &amp; Mining</li></ul><p class="o-note">Coordinates infrastructure, engineering, energy, agricultural and natural-resource-related activities.</p></div></details><details class="o-div"><summary>3. Social &amp; Human Development</summary><div class="o-dc"><h4>Principal functions</h4><ul><li>International Employment Bureau</li><li>Healthcare &amp; Pharmaceuticals</li><li>Educational Services</li></ul><p class="o-note">Covers employment services, health-related activities, pharmaceuticals and education initiatives.</p></div></details><details class="o-div"><summary>4. Trade &amp; Events</summary><div class="o-dc"><h4>Principal functions</h4><ul><li>Tourism &amp; Hospitality</li><li>Transport &amp; Logistics</li><li>FMCG &amp; General Merchandise</li><li>Events &amp; Recreation</li></ul><p class="o-note">Coordinates trading, distribution, logistics, tourism, hospitality and event-related services.</p></div></details></div>
+<div class="o-conn" style="margin-top:20px"></div>
+<div class="o-deliv"><h4>Project &amp; Operational Delivery</h4><p>Delivery may involve divisional managers, project teams, technical specialists, support personnel and approved consultants, contractors or strategic partners. These categories are distinguished from direct employees.</p></div>
+<p class="o-foot">Public overview of the proposed corporate structure. Specific appointments, committee establishment and delegated authorities are subject to formal approval. Licences and registrations applicable to each activity are covered under <a href="#compliance">Compliance &amp; Accountability</a> below.</p>
+<script>(function(){var r=document.getElementById("jil-org");if(!r)return;r.addEventListener("click",function(e){var b=e.target.closest("button[data-org]");if(!b)return;var o=b.getAttribute("data-org")==="open";r.querySelectorAll("details.o-div").forEach(function(x){x.open=o;});});})();</script>
 </div>
 </section>
 
@@ -255,7 +305,7 @@ The full list, including our supporting guidelines on environmental, workplace a
 </div>
 </section>
 
-<section class="tight bg-surface">
+<section class="tight bg-surface" id="compliance">
 <div class="wrap">
 <div class="section-head">
 <span class="eyebrow">Standards</span>
