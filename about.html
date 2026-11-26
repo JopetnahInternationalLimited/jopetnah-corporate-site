@@ -68,6 +68,16 @@
   ]
 }
 </script>
+<style>
+.gov-stack{max-width:820px;margin:0 auto 8px;display:flex;flex-direction:column;align-items:center}
+.gov-node{width:100%;text-align:center;padding:14px 16px;border:1.5px solid var(--blue);border-radius:12px;background:rgba(14,134,212,.07);font-weight:700}
+.gov-node.gov-top{background:rgba(14,134,212,.13)}
+.gov-node small{display:block;font-weight:400;color:var(--gray);margin-top:3px;font-size:.84rem}
+.gov-conn{width:2px;height:20px;background:var(--blue)}
+.gov-divs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;width:100%}
+.gov-divs .gov-node{font-size:.92rem}
+@media (max-width:720px){.gov-divs{grid-template-columns:repeat(2,1fr)}}
+</style>
 </head>
 
 <body>
@@ -739,25 +749,39 @@
       <span class="eyebrow">Governance</span>
       <h2>Leadership &amp; Governance</h2>
     </div>
-    <p style="color:var(--gray); max-width:75ch; margin-bottom:20px;">
-      Jopetnah International Limited operates under a governance structure
-      focused on accountability, professional standards, responsible
-      decision-making, ethical conduct, and sustainable growth.
+    <p style="color:var(--gray); max-width:75ch; margin-bottom:24px;">
+      Jopetnah International Limited is organised around accountability,
+      professional standards, responsible decision-making, ethical conduct
+      and sustainable growth. Our structure is intentionally straightforward:
+      central oversight and shared corporate functions supporting four
+      operating divisions.
     </p>
-    <div class="leadership-grid">
-      <div class="role">Board of Directors</div>
-      <div class="role">Managing Director</div>
-      <div class="role">Director of Human Resources &amp; Public Relations</div>
-      <div class="role">Company Secretary</div>
-      <div class="role">Departmental Heads</div>
-      <div class="role">Technical Specialists</div>
-      <div class="role">Project Teams</div>
+    <div class="gov-stack">
+      <div class="gov-node gov-top">Shareholders<small>Ownership and reserved shareholder decisions</small></div>
+      <div class="gov-conn"></div>
+      <div class="gov-node gov-top">Board of Directors<small>Strategic direction, governance and oversight</small></div>
+      <div class="gov-conn"></div>
+      <div class="gov-node">Managing Director<small>Executive leadership and overall management</small><small>Supporting roles: Director &ndash; Human Resources &amp; Public Relations; Company Secretary</small></div>
+      <div class="gov-conn"></div>
+      <div class="gov-node">Central Corporate Functions<small>Finance &amp; Investment &middot; Corporate Services &amp; Administration &middot; Strategy, Planning &amp; Performance &middot; Business Development &amp; Partnerships &middot; Communications, Marketing &amp; PR &middot; Legal, Contracts &amp; Compliance &middot; Procurement &amp; Supply Chain &middot; ICT &amp; Digital Systems</small></div>
+      <div class="gov-conn"></div>
+      <div class="gov-divs">
+        <div class="gov-node">Business &amp; Advisory</div>
+        <div class="gov-node">Infrastructure &amp; Resources</div>
+        <div class="gov-node">Social &amp; Human Development</div>
+        <div class="gov-node">Trade &amp; Events</div>
+      </div>
     </div>
-    <p style="font-size:13px; color:var(--gray); margin-top:16px;">
-      Additional leadership profiles and biographies will be published
-      following internal review and authorisation. See our
-      <a class="link-strong" href="governance.html">Governance page</a>
-      and <a class="link-strong" href="transparency.html">Transparency page</a>.
+    <p style="font-size:13px; color:var(--gray); margin-top:16px; max-width:80ch;">
+      Internal audit maintains functional accountability to the Board or its
+      Audit Committee. Delivery is supported by departmental heads, technical
+      leads and project teams. This is a public overview of our proposed
+      corporate structure; specific appointments, committees and delegated
+      authorities are subject to formal approval, and additional leadership
+      profiles will be published following internal review and authorisation.
+      See our <a class="link-strong" href="governance.html">Governance page</a>
+      for the full organisational chart and our
+      <a class="link-strong" href="transparency.html">Transparency page</a>.
     </p>
   </div>
 </section>
